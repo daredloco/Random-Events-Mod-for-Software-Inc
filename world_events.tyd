@@ -79,10 +79,10 @@ Event
         Conditions[]
         Options[
         {
-            ButtonText "What a sad day!"
+            ButtonText "How sad!"
             Effects[]
             Title "Details"
-            Description "Earlier that day, he gave an autogram to Mark David Chapman who would shot him later.\nIn the following days after his death hundreds of fans gathered outside his apartement in mouring."
+            Description "Earlier that day, he gave an autogram to Mark David Chapman who would shoot him later.\nIn the following days after his death hundreds of fans gathered outside his apartement in mouring."
             Notification "<b>John Lennon</b> was shot by an <b>obsessed fan</a>!"
             NotificationSound Issue #Can be Good Issue Neutral Warning
         }]
@@ -164,6 +164,74 @@ Event
         }]
         Chance 50
     }
+##November 10.81##
+##December 11.81##
+
+###1982###
+##January 0.82##
+##February 1.82##
+##March 2.82##
+Event
+    {
+        Title "Argentina invades the Falkland Islands"
+        Description "Argentina invades the Falkland Islands and the UK sends the Royal Navy, RAF and the Army to retake possession of the Falkland Islands."
+        Date "2.82" #Month.Year and Year is 70 for 1970, 80 for 1980, 100 for 2000 etc and month starts from 0 i guess
+        Conditions[]
+        Options[
+        {
+            ButtonText "Antagonists!"
+            Effects[]
+            Title "Details"
+            Description "During the conflict Argentine Exocet missile sinks HMS Sheffield on May 4th and the Nuclear submarine HMS Conqueror sinks the Argentine cruiser General Belgrano. Argentina surrenders on June 14th."
+            Notification "<b>Argentina</b> invades the Falkland Islands!"
+            NotificationSound Good #Can be Good Issue Neutral Warning
+        }]
+        Chance 50
+    }
+##April 3.82##
+Event
+    {
+        Title "Proclamation of the Constitution Act"
+        Description "Queen Elizabeth II and Prime Minister Pierre Trudeau signed the Proclamation of the Constitution Act in Canada.\nThe Act finalized the patriation process that has been ongoing in Canada for years, resulting in the establishment of full sovereignty and independence of the nation.\nThe proclamation also includes the Canadian Carter of Rights and Freedoms which outlines 34 basic rights that would be guaranteed in the country."
+        Date "3.82" #Month.Year and Year is 70 for 1970, 80 for 1980, 100 for 2000 etc and month starts from 0 i guess
+        Conditions[]
+        Options[
+        {
+            ButtonText "Beautiful"
+            Effects[]
+            Title "Details"
+            Description "Canada did gain it's fully independence from the Crown after this Act."
+            Notification "<b>Queen Elizabeth II</b> and <b>Pierre Trudeau</b> signed the Proclamation of the Constitution Act today!"
+            NotificationSound Good #Can be Good Issue Neutral Warning
+        }]
+        Chance 50
+    }
+##May 4.82##
+##June 5.82##
+##July 6.82##
+##August 7.82##
+##September 8.82##
+##October 9.82##
+##November 10.82##
+Event
+    {
+        Title "Michael Jackson's Thriller"
+        Description "The King of Pop’s nine song album was produced by legendary musician Quincy Jones and is Jackson’s sixth studio album.\nIt features songs like Billie Jean, Beat It, Human Nature, Pretty Young Thing, Wanna Be Startin’ Somethin’, and Thriller."
+        Date "10.82" #Month.Year and Year is 70 for 1970, 80 for 1980, 100 for 2000 etc and month starts from 0 i guess
+        Conditions[]
+        Options[
+        {
+            ButtonText "The King!"
+            Effects[]
+            Title "Details"
+            Description "It was also known for the 14-minute long horror-themed music video with memorable choreography that took MTV by storm. Since its release it has become the one of the highest-selling albums of all time."
+            Notification "<b>Michael Jackson</b> did release his sixth studio album <b>Thriller</b> today!"
+            NotificationSound Good #Can be Good Issue Neutral Warning
+        }]
+        Chance 50
+    }
+##December 11.82##
+
 ###1990###
 ###2000###
 ###2010###
