@@ -811,7 +811,7 @@ Event
         ]
         Title "Software Exploit"
         Description "A small exploit was found in your software and you lost some fans due to this."
-        Notification "Due to the backlash of the exploit in your software you did lose {0} fans and you had {2} refunds!"
+        Notification "Due to the backlash of the exploit in your software {NAME} you did lose {0} fans and you had {2} refunds!"
         NotificationSound Issue #Can be Good Issue Neutral Warning
     }]
     Chance 10
