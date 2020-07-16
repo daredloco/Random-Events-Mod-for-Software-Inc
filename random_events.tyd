@@ -217,18 +217,18 @@ Event
         Effects[
             {
             IsVisible 1
-            EffectMinValue -15
-            EffectMaxValue -5
+            EffectMinValue 15
+            EffectMaxValue 5
             EffectName "Stockmarket SingleLoss"
             Effect "stockmarket_singleloss"
             }
         ]
         Title "Stock crashes"
         Description "The prices for the companys stocks will crash."
-        Notification "The prices for the companys stocks will crash by <b>{0}%</b>!"
+        Notification "The prices for the companys stocks are falling <b>{0}%</b>!"
         NotificationSound Issue #Can be Good Issue Neutral Warning
     }]
-    Chance 15
+    Chance 10
 }
 ###StockMarket single win###
 Event
@@ -249,12 +249,12 @@ Event
             Effect "stockmarket_singlewin"
             }
         ]
-        Title "Stock crashes"
+        Title "Stock raises"
         Description "The prices for the companys stocks will raise."
-        Notification "The prices for the companys stocks did raise by <b>{0}%</b>!"
+        Notification "The prices for the companys stocks raise by <b>{0}%</b>!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     }]
-    Chance 15
+    Chance 10
 }
 ###Stock Market crash (small)###
 Event
@@ -269,7 +269,7 @@ Event
         Effects[
             {
             IsVisible 1
-            EffectValue -5
+            EffectValue 5
             EffectName "Stockmarket Loss"
             Effect "stockmarket_loss"
             }
@@ -279,7 +279,7 @@ Event
         Notification "The Stockmarket did crash by <b>5%</b>!"
         NotificationSound Issue #Can be Good Issue Neutral Warning
     }]
-    Chance 20
+    Chance 15
 }
 ###Stock Market Crash (medium)###
 Event
@@ -294,7 +294,7 @@ Event
         Effects[
             {
             IsVisible 1
-            EffectValue -10
+            EffectValue 10
             EffectName "Stockmarket Loss"
             Effect "stockmarket_loss"
             }
@@ -304,7 +304,7 @@ Event
         Notification "The Stockmarket did crash by <b>10%</b>!"
         NotificationSound Issue #Can be Good Issue Neutral Warning
     }]
-    Chance 15
+    Chance 10
 }
 ###Stock Market Crash (big)###
 Event
@@ -319,7 +319,7 @@ Event
         Effects[
             {
             IsVisible 1
-            EffectValue -25
+            EffectValue 25
             EffectName "Stockmarket Loss"
             Effect "stockmarket_loss"
             }
@@ -329,7 +329,7 @@ Event
         Notification "The Stockmarket did crash by <b>25%</b>!"
         NotificationSound Issue #Can be Good Issue Neutral Warning
     }]
-    Chance 10
+    Chance 5
 }
 ###Stock Market Boom (small)###
 Event
@@ -354,7 +354,7 @@ Event
         Notification "The Stockmarket prices did raise by <b>5%</b>!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     }]
-    Chance 20
+    Chance 15
 }
 ###Stock Market Boom (medium)###
 Event
@@ -379,7 +379,7 @@ Event
         Notification "The Stockmarket prices raising by <b>10%</b>!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     }]
-    Chance 15
+    Chance 10
 }
 ###Stock Market Boom (big)###
 Event
@@ -404,7 +404,7 @@ Event
         Notification "The Stockmarket prices raising by <b>25%</b>!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     }]
-    Chance 10
+    Chance 5
 }
 ###Youtube Leader Education###
 Event
@@ -775,6 +775,46 @@ Event
         NotificationSound Good #Can be Good Issue Neutral Warning
     }]
     Chance 30
+}
+###Backdoor Software###
+Event
+{
+    Title "Exploit in software!"
+    Description "A small exploit was found in your software {NAME}.\nYou should fix it!"
+    Conditions[
+        "has_software&has_bugs>0"
+    ]
+    Options[
+        {
+        ButtonText "Thats bad"
+        Effects[
+            {
+                IsVisible 1
+                EffectMinValue -1000
+                EffectMaxValue -100
+                EffectName "Fans Change"
+                Effect "fans_change"
+            };
+            {
+                IsVisible 1
+                EffectMinValue 50
+                EffectMaxValue 500
+                EffectName "Software Refunds"
+                Effect "software_refunds"
+            };
+            {
+                IsVisible 1
+                EffectValue 1
+                EffectName "New Bug"
+                Effect "change_bugs"
+            }
+        ]
+        Title "Software Exploit"
+        Description "A small exploit was found in your software and you lost some fans due to this."
+        Notification "Due to the backlash of the exploit in your software you did lose {0} fans and you had {2} refunds!"
+        NotificationSound Issue #Can be Good Issue Neutral Warning
+    }]
+    Chance 10
 }
 ###Scandal FPS###
 Event
