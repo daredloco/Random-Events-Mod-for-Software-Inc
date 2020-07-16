@@ -232,6 +232,37 @@ Event
     }
 ##December 11.82##
 
+###1983###
+##January 0.83##
+##February 1.83##
+##March 2.83##
+##April 3.83##
+##May 4.83##
+##June 5.83##
+##July 6.83##
+##August 7.83##
+##September 8.83##
+##October 9.83##
+Event
+    {
+        Title "United States invades Grenada"
+        Description "President Reagan did send over 5,000 Marines to the island of Grenada after the government was overthrown in a bloody coup by a Cuban trained military forces."
+        Date "9.83" #Month.Year and Year is 70 for 1970, 80 for 1980, 100 for 2000 etc and month starts from 0 i guess
+        Conditions[]
+        Options[
+        {
+            ButtonText "The King!"
+            Effects[]
+            Title "Details"
+            Description "The U.S. invasion was a success despite encountering resistance. The U.S. civilians were rescued, the Cuban troops surrendered, and there were only 19 U.S. troop casualties in total."
+            Notification "<b>President Reagan</b> did send 5,000 Marines to <b>Grenada</b>!"
+            NotificationSound Neutral #Can be Good Issue Neutral Warning
+        }]
+        Chance 50
+    }
+##November 10.83##
+##December 11.83##
+
 ###1990###
 ###2000###
 ###2010###
