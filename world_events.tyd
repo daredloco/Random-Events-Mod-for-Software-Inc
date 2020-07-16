@@ -1,12 +1,12 @@
 ﻿###1970###
 
 ###1980###
-##January##
-##February##
+##January 0.80##
+##February 1.80##
 Event
     {
-        Title "Ice hockey: USA wins against UDSSR"
-        Description "At the Winter Olympics 1980 in Lake Placid the US Olympics ice hockey team won 4-3 against the favorites from the UDSSR.\nIt was the first match the UDSSR lost since 1968 and it was later called the 'Miracle on Ice'."
+        Title "Ice hockey: USA wins against USSR"
+        Description "At the Winter Olympics 1980 in Lake Placid the US Olympics ice hockey team won 4-3 against the favorites from the USSR.\nIt was the first match the USSR lost since 1968 and it was later called the 'Miracle on Ice'."
         Date "1.80" #Month.Year and Year is 70 for 1970, 80 for 1980, 100 for 2000 etc and month starts from 0 i guess
         Conditions[]
         Options[
@@ -22,14 +22,14 @@ Event
             ]
             Title "Details"
             Description "After defeating the Sovjets in the first game, the US team could also beat Finland 4-2 and win the olympic gold medal."
-            Notification "The <b>USA</b> wins 4-3 against the <b>UDSSR</b> at the 'Miracle of Ice'!"
+            Notification "The <b>USA</b> wins 4-3 against the <b>USSR</b> at the 'Miracle of Ice'!"
             NotificationSound Neutral #Can be Good Issue Neutral Warning
         }]
-        Chance 100
+        Chance 50
     }
-##March##
-##April##
-##May##
+##March 2.80##
+##April 3.80##
+##May 4.80##
 Event
     {
         Title "Rubik's Cube"
@@ -45,12 +45,12 @@ Event
             Notification "The <b>Rubik's cube</b> hits the stores!"
             NotificationSound Good #Can be Good Issue Neutral Warning
         }]
-        Chance 100
+        Chance 50
     }
-##June##
-##July##
-##August##
-##September##
+##June 5.80##
+##July 6.80##
+##August 7.80##
+##September 8.80##
 Event
     {
         Title "Iran-Iraq War"
@@ -66,11 +66,11 @@ Event
             Notification "<b>Iraqi troops</b> invaded Western Iran!"
             NotificationSound Issue #Can be Good Issue Neutral Warning
         }]
-        Chance 100
+        Chance 50
     }
-##October##
-##November##
-##December##
+##October 9.80##
+##November 10.80##
+##December 11.80##
 Event
     {
         Title "John Lennon shot to death"
@@ -86,9 +86,55 @@ Event
             Notification "<b>John Lennon</b> was shot by an <b>obsessed fan</a>!"
             NotificationSound Issue #Can be Good Issue Neutral Warning
         }]
-        Chance 100
+        Chance 50
     }
-
+###1981###
+##January 0.81##
+##February 1.81##
+##March 2.81##
+##April 3.81##
+Event
+    {
+        Title "Space Shuttle Columbia"
+        Description "NASA launched the very first Space Shuttle mission.\nRobert Crippen and John Young were in space for two days, six hours, twenty minutes, fifty-three seconds."
+        Date "3.81" #Month.Year and Year is 70 for 1970, 80 for 1980, 100 for 2000 etc and month starts from 0 i guess
+        Conditions[]
+        Options[
+        {
+            ButtonText "The sky is no limit"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Simulation game popularity"
+                    Effect "popularity_change_gamesimulation"
+                }
+            ]
+            Title "Details"
+            Description "The purpose of the mission was to test the stability of the new spacecraft and to safely launch the vehicle into space and return it to Earth so that the craft was reusable."
+            Notification "The <b>Space Shuttle Columbia</b> was sent to Space!"
+            NotificationSound Good #Can be Good Issue Neutral Warning
+        }]
+        Chance 50
+    }
+##October 9.81##
+Event
+    {
+        Title "Venera 13 Spacecraft"
+        Description "Venera 13 was created, along with Venera 14, as two-part spacecrafts. One part was the lander that would be dropped to the surface of Venus to conduct experiments and the other was the bus that would carry the landers and relay data between the landers and Earth as well as conducting other experiments."
+        Date "9.81" #Month.Year and Year is 70 for 1970, 80 for 1980, 100 for 2000 etc and month starts from 0 i guess
+        Conditions[]
+        Options[
+        {
+            ButtonText "Whats Venus?"
+            Effects[]
+            Title "Details"
+            Description "The Venera 13 spacecraft reached Venus on March 1, 1982 and successfully deposited its lander. Once on the surface of Venus it took the first panoramic color photos of the landscape and drilled into the surface of the planet to take a sample. The spacecraft also studied cosmic gamma-ray bursts."
+            Notification "The <b>Venera 13 Spacecraft</b> was sent to Venus today!"
+            NotificationSound Good #Can be Good Issue Neutral Warning
+        }]
+        Chance 50
+    }
 ###1990###
 ###2000###
 ###2010###
