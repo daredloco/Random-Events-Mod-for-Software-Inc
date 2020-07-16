@@ -1,6 +1,6 @@
 ---
 name: New Event
-about: Descript the Event you wish here
+about: Tell us more about the Event you wish here
 title: ''
 labels: enhancement
 assignees: ''
