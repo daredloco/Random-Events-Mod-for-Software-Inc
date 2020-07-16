@@ -1,0 +1,805 @@
+###Fan pays debts###
+Event
+{
+    Title "Paid debt"
+    Description "One of your fans wants to pay your debts!"
+    Conditions[
+        "has_fans"
+        "has_money<0"
+    ]
+    Options[{
+        ButtonText "Ok"
+        Effects[{
+            IsVisible 1
+            EffectValue "Yes"
+            EffectName "Paid Debts"
+            Effect "pay_debt"
+        }]
+        Title "Fan pays debts"
+        Description "A fan will pay your debts"
+        Notification "Your <b>Fan</b> did pay all your debts!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    };
+    {
+        ButtonText "No"
+        Effects[{
+            IsVisible 0
+            EffectMinValue 100
+            EffectMaxValue 1000
+            EffectName "Add Fans"
+            Effect "fans_change"
+        }]
+        Title "Fan doesn't pay debts"
+        Description "You don't want your fan to pay your debts"
+        Notification "You didn't allow your <b>Fan</b> to pay your debts and it seems the people did like it!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    }]
+    Chance 20
+}
+###Donation from fan###
+Event
+{
+    Title "Gift from Fan"
+    Description "Your biggest fan wants to help your company and donate money for you!"
+    Conditions[
+        "has_money<10000"
+        "has_fans"
+    ]
+    Options[{
+        ButtonText "I accept it"
+        Effects[{
+            IsVisible 1
+            EffectMinValue 1000
+            EffectMaxValue 5000
+            EffectName "Company Money"
+            Effect "company_money"
+        }]
+        Title "You accept your fans donation"
+        Description "Your fan will donate money for you"
+        Notification "Your <b>biggest fan</b> did donate ${0} to you!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    };
+    {
+        ButtonText "I can't accept that"
+        Effects[{
+            IsVisible 0
+            EffectMinValue 100
+            EffectMaxValue 1000
+            EffectName "Fans"
+            Effect "fans_change"
+        }]
+        Title "You can't accept the donation"
+        Description "You told the fan you cannot accept the donation"
+        Notification "You couldn't accept your fans donation, but the people did really like that and you won {0} new fans!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    }]
+    Chance 25
+}
+###Gift from Grandma###
+Event
+{
+    Title "Gift from Grandma"
+    Description "Your grandma sees you're struggling a little and she wants to send you money!"
+    Conditions[
+        "has_money<10000"
+    ]
+    Options[{
+        ButtonText "Thanks Gran!"
+        Effects[{
+            IsVisible 1
+            EffectMinValue 500
+            EffectMaxValue 2500
+            EffectName "Company Money"
+            Effect "company_money"
+        }]
+        Title "Grandma gives money"
+        Description "Your Grandma will send you money"
+        Notification "Your lovely <b>Grandmother</b> did send you ${0}! You should visit her from time to time."
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    };
+    {
+        ButtonText "No thanks."
+        Effects[{
+            IsVisible 1
+            EffectMinValue 500
+            EffectMaxValue 2500
+            EffectName "Company Money"
+            Effect "company_money"
+        }]
+        Title "Are you serious?"
+        Description "Did you really think your grandmother would accept a no? Seems like you don't know her very well"
+        Notification "Your lovely <b>Grandmother</b> did send you ${0}! You should visit her from time to time and you should <b>never</b> again say no to her!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    }]
+    Chance 40
+}
+###Car on ice###
+Event
+{
+    Title "Car on Ice"
+    Description "You start losing the control over your car.\nWhat will you do to evade an accident?"
+    Conditions[
+        "player_has_car"
+        "has_snow"
+    ]
+    Options[{
+        ButtonText "Full Brake"
+        Effects[{
+            IsVisible 0
+            EffectMinValue 2000
+            EffectMaxValue 4000
+            EffectName "Pay bill"
+            Effect "company_bill"
+        }]
+        Title "Make a full brake."
+        Description "Make a full brake"
+        Notification "You crash your car because a full break is the worst you can do on an icey road.\n Pay ${0} for repairs!"
+        NotificationSound Issue #Can be Good Issue Neutral Warning
+    };
+    {
+        ButtonText "Stop accelerating"
+        Effects[]
+        Title "Stop accelerating"
+        Description "Just don't accelerate"
+        Notification "You've luck and get away without making an accident."
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    };
+    {
+        ButtonText "Steer left"
+        Effects[
+            {
+                IsVisible 0
+                EffectMinValue 100
+                EffectMaxValue 1000
+                EffectName "Pay bill"
+                Effect "company_bill"
+            }
+        ]
+        Title "Steer left"
+        Description "You'll steer to the left"
+        Notification "You steer to the left side, lose the control over your car and crash.\nPay ${0} for repairs!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    };
+    {
+        ButtonText "Steer right"
+        Effects[
+            {
+                IsVisible 0
+                EffectMinValue 100
+                EffectMaxValue 1000
+                EffectName "Pay bill"
+                Effect "company_bill"
+            }
+        ]
+        Title "Steer right"
+        Description "You'll steer to the right"
+        Notification "You steer to the right side, lose the control over your car and crash.\nPay ${0} for repairs!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    }]
+    Chance 20
+}
+###Bus Ticket###
+Event
+{
+    Title "Bus Ticket"
+    Description "Your bus pass isn't valid anymore and you need to buy a bus ticket for $5."
+    Conditions[
+        "player_has_car!"
+        "has_snow"
+    ]
+    Options[{
+        ButtonText "Thats expensive!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 5
+            EffectName "Company Money"
+            Effect "company_money"
+            }
+        ]
+        Title "Pay bus pass"
+        Description "Pay $5 for your bus pass"
+        Notification "You paid <b>${0}</b> for your bus ticket."
+        NotificationSound Neutral #Can be Good Issue Neutral Warning
+    }]
+    Chance 65
+}
+###Stock Market single cash###
+Event
+{
+    Title "Single Stock Crash"
+    Description "Due to a bad business year the stockprices for {NAME} did fall."
+    Conditions[
+        "has_stockmarket"
+    ]
+    Options[{
+        ButtonText "Oh no!"
+        Effects[
+            {
+            IsVisible 1
+            EffectMinValue -15
+            EffectMaxValue -5
+            EffectName "Stockmarket SingleLoss"
+            Effect "stockmarket_singleloss"
+            }
+        ]
+        Title "Stock crashes"
+        Description "The prices for the companys stocks will crash."
+        Notification "The prices for the companys stocks will crash by <b>{0}%</b>!"
+        NotificationSound Issue #Can be Good Issue Neutral Warning
+    }]
+    Chance 15
+}
+###StockMarket single win###
+Event
+{
+    Title "Single Stock Boom"
+    Description "Due to a good business year the stockprices for {NAME} did raise."
+    Conditions[
+        "has_stockmarket"
+    ]
+    Options[{
+        ButtonText "Great news!"
+        Effects[
+            {
+            IsVisible 1
+            EffectMinValue 5
+            EffectMaxValue 15
+            EffectName "Stockmarket SingleWin"
+            Effect "stockmarket_singlewin"
+            }
+        ]
+        Title "Stock crashes"
+        Description "The prices for the companys stocks will raise."
+        Notification "The prices for the companys stocks did raise by <b>{0}%</b>!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    }]
+    Chance 15
+}
+###Stock Market crash (small)###
+Event
+{
+    Title "Stock Market Crash"
+    Description "Due to a bad business year the Stockmarket crashes by 5%!"
+    Conditions[
+        "has_stockmarket"
+    ]
+    Options[{
+        ButtonText "Oh no!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue -5
+            EffectName "Stockmarket Loss"
+            Effect "stockmarket_loss"
+            }
+        ]
+        Title "Stockmarket crashes"
+        Description "The Stockmarket will crash by 5%."
+        Notification "The Stockmarket did crash by <b>5%</b>!"
+        NotificationSound Issue #Can be Good Issue Neutral Warning
+    }]
+    Chance 20
+}
+###Stock Market Crash (medium)###
+Event
+{
+    Title "Stock Market Crash"
+    Description "Due to bad investments by major investment agencies the Stockmarket crashes by 10%!"
+    Conditions[
+        "has_stockmarket"
+    ]
+    Options[{
+        ButtonText "Oh no!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue -10
+            EffectName "Stockmarket Loss"
+            Effect "stockmarket_loss"
+            }
+        ]
+        Title "Stockmarket crashes"
+        Description "The Stockmarket will crash by 10%."
+        Notification "The Stockmarket did crash by <b>10%</b>!"
+        NotificationSound Issue #Can be Good Issue Neutral Warning
+    }]
+    Chance 15
+}
+###Stock Market Crash (big)###
+Event
+{
+    Title "Stock Market Crash"
+    Description "Due to the crash of various big banks and investment agencies the Stockmarket crashes by 25%!"
+    Conditions[
+        "has_stockmarket"
+    ]
+    Options[{
+        ButtonText "Oh no!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue -25
+            EffectName "Stockmarket Loss"
+            Effect "stockmarket_loss"
+            }
+        ]
+        Title "Stockmarket crashes"
+        Description "The Stockmarket will crash by 25%."
+        Notification "The Stockmarket did crash by <b>25%</b>!"
+        NotificationSound Issue #Can be Good Issue Neutral Warning
+    }]
+    Chance 10
+}
+###Stock Market Boom (small)###
+Event
+{
+    Title "Stock Market Boom"
+    Description "Due to a good business year the Stockmarket prices raised by 5%!"
+    Conditions[
+        "has_stockmarket"
+    ]
+    Options[{
+        ButtonText "Nice!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 5
+            EffectName "Stockmarket Win"
+            Effect "stockmarket_win"
+            }
+        ]
+        Title "Stockmarket Booms"
+        Description "The Stockmarket will raise by 5%."
+        Notification "The Stockmarket prices did raise by <b>5%</b>!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    }]
+    Chance 20
+}
+###Stock Market Boom (medium)###
+Event
+{
+    Title "Stock Market Boom"
+    Description "Due to good investments by major investment agencies the Stockmarket prices will raise by 10%!"
+    Conditions[
+        "has_stockmarket"
+    ]
+    Options[{
+        ButtonText "Sweet!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 10
+            EffectName "Stockmarket win"
+            Effect "stockmarket_win"
+            }
+        ]
+        Title "Stockmarket booms"
+        Description "The Stockmarket prices will raise by 10%."
+        Notification "The Stockmarket prices raising by <b>10%</b>!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    }]
+    Chance 15
+}
+###Stock Market Boom (big)###
+Event
+{
+    Title "Stock Market Boom"
+    Description "Due to excelent investments by major investment agencies the Stockmarket prices will raise by 25%!"
+    Conditions[
+        "has_stockmarket"
+    ]
+    Options[{
+        ButtonText "Sweet!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 25
+            EffectName "Stockmarket win"
+            Effect "stockmarket_win"
+            }
+        ]
+        Title "Stockmarket booms"
+        Description "The Stockmarket prices will raise by 25%."
+        Notification "The Stockmarket prices raising by <b>25%</b>!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    }]
+    Chance 10
+}
+###Youtube Leader Education###
+Event
+{
+    Title "Youtube Education"
+    Description "{NAME} educated himself with some Youtube Videos and gained experience in Leadership."
+    Conditions[
+        "has_leader"
+        "is_year>2005"
+    ]
+    Options[{
+        ButtonText "Very good!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 100
+            EffectName "Leadership Experience"
+            Effect "add_leaderexp"
+            }
+        ]
+        Title "Youtube is great!"
+        Description "Thanks to YouTube your employee will gain 100 experience in leadership"
+        Notification "Thanks to YouTube your employee did gain {0} experience in <b>leadership</b>!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    }]
+    Chance 34
+}
+###Youtube Designer Education###
+Event
+{
+    Title "Youtube Education"
+    Description "{NAME} educated himself with some Youtube Videos and gained experience in Design."
+    Conditions[
+        "has_designer"
+        "is_year>2005"
+    ]
+    Options[{
+        ButtonText "Very good!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 100
+            EffectName "Designer Experience"
+            Effect "add_designerexp"
+            }
+        ]
+        Title "Youtube is great!"
+        Description "Thanks to YouTube your employee will gain 100 experience in design"
+        Notification "Thanks to YouTube your employee did gain {0} experience in <b>design</b>!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    }]
+    Chance 34
+}
+###Youtube Programmer Education###
+Event
+{
+    Title "Youtube Education"
+    Description "{NAME} educated himself with some Youtube Videos and gained experience in programming."
+    Conditions[
+        "has_programmer"
+        "is_year>2005"
+    ]
+    Options[{
+        ButtonText "Very good!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 100
+            EffectName "Programmer Experience"
+            Effect "add_programmerexp"
+            }
+        ]
+        Title "Youtube is great!"
+        Description "Thanks to YouTube your employee will gain 100 experience in programming"
+        Notification "Thanks to YouTube your employee did gain {0} experience in <b>programming</b>!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    }]
+    Chance 34
+}
+###Youtube Artist Education###
+Event
+{
+    Title "Youtube Education"
+    Description "{NAME} educated himself with some Youtube Videos and gained experience in art."
+    Conditions[
+        "has_artist"
+        "is_year>2005"
+    ]
+    Options[{
+        ButtonText "Very good!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 100
+            EffectName "Artist Experience"
+            Effect "add_artistexp"
+            }
+        ]
+        Title "Youtube is great!"
+        Description "Thanks to YouTube your employee will gain 100 experience in art"
+        Notification "Thanks to YouTube your employee did gain {0} experience in <b>art</b>!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    }]
+    Chance 34
+}
+###Youtube Service Education###
+Event
+{
+    Title "Youtube Education"
+    Description "{NAME} educated himself with some Youtube Videos and gained experience in service."
+    Conditions[
+        "has_service"
+        "is_year>2005"
+    ]
+    Options[{
+        ButtonText "Very good!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 100
+            EffectName "Service Experience"
+            Effect "add_serviceexp"
+            }
+        ]
+        Title "Youtube is great!"
+        Description "Thanks to YouTube your employee will gain 100 experience in service"
+        Notification "Thanks to YouTube your employee did gain {0} experience in <b>service</b>!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    }]
+    Chance 34
+}
+###Online Course Leader###
+Event
+{
+    Title "Online Course"
+    Description "{NAME} wants to make an Online Course for Leadership."
+    Conditions[
+        "has_leader"
+        "is_year>1998"
+    ]
+    Options[
+        {
+        ButtonText "I will pay!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 300
+            EffectName "Leader Experience"
+            Effect "add_leaderexp"
+            };
+            {
+                IsVisible 1
+                EffectValue 1000
+                EffectName "Company Bill"
+                Effect "company_bill"
+            }
+        ]
+        Title "Online Course"
+        Description "Your Employee will gain 300 Experience in Leadership and you will pay $1000 for the Course."
+        Notification "Your Employee did gain 300 Experience in <b>Leadership</b> and you paid $1000 for the Online Course!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    };
+    {
+        ButtonText "I won't pay!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 100
+            EffectName "Leader Experience"
+            Effect "add_leaderexp"
+            }
+        ]
+        Title "Online Course"
+        Description "Your Employee will gain 100 Experience in Leadership and you will pay nothing for the Course."
+        Notification "Your Employee did gain 100 Experience in <b>Leadership</b> and you paid nothing for the Online Course!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    }]
+    Chance 30
+}
+###Online Course Designer###
+Event
+{
+    Title "Online Course"
+    Description "{NAME} wants to make an Online Course for Design."
+    Conditions[
+        "has_designer"
+        "is_year>1998"
+    ]
+    Options[
+        {
+        ButtonText "I will pay!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 300
+            EffectName "Designer Experience"
+            Effect "add_designerexp"
+            };
+            {
+                IsVisible 1
+                EffectValue 1000
+                EffectName "Company Bill"
+                Effect "company_bill"
+            }
+        ]
+        Title "Online Course"
+        Description "Your Employee will gain 300 Experience in Design and you will pay $1000 for the Course."
+        Notification "Your Employee did gain 300 Experience in <b>Design</b> and you paid $1000 for the Online Course!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    };
+    {
+        ButtonText "I won't pay!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 100
+            EffectName "Designer Experience"
+            Effect "add_designerexp"
+            }
+        ]
+        Title "Online Course"
+        Description "Your Employee will gain 100 Experience in Design and you will pay nothing for the Course."
+        Notification "Your Employee did gain 100 Experience in <b>Design</b> and you paid nothing for the Online Course!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    }]
+    Chance 30
+}
+###Online Course Programmer###
+Event
+{
+    Title "Online Course"
+    Description "{NAME} wants to make an Online Course for Programming."
+    Conditions[
+        "has_programmer"
+        "is_year>1998"
+    ]
+    Options[
+        {
+        ButtonText "I will pay!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 300
+            EffectName "Programmer Experience"
+            Effect "add_programmerexp"
+            };
+            {
+                IsVisible 1
+                EffectValue 1000
+                EffectName "Company Bill"
+                Effect "company_bill"
+            }
+        ]
+        Title "Online Course"
+        Description "Your Employee will gain 300 Experience in Programming and you will pay $1000 for the Course."
+        Notification "Your Employee did gain 300 Experience in <b>Programming</b> and you paid $1000 for the Online Course!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    };
+    {
+        ButtonText "I won't pay!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 100
+            EffectName "Programmer Experience"
+            Effect "add_programmerexp"
+            }
+        ]
+        Title "Online Course"
+        Description "Your Employee will gain 100 Experience in Programming and you will pay nothing for the Course."
+        Notification "Your Employee did gain 100 Experience in <b>Programming</b> and you paid nothing for the Online Course!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    }]
+    Chance 30
+}
+###Online Course Artist###
+Event
+{
+    Title "Online Course"
+    Description "{NAME} wants to make an Online Course for Art."
+    Conditions[
+        "has_artist"
+        "is_year>1998"
+    ]
+    Options[
+        {
+        ButtonText "I will pay!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 300
+            EffectName "Artist Experience"
+            Effect "add_artistexp"
+            };
+            {
+                IsVisible 1
+                EffectValue 1000
+                EffectName "Company Bill"
+                Effect "company_bill"
+            }
+        ]
+        Title "Online Course"
+        Description "Your Employee will gain 300 Experience in Art and you will pay $1000 for the Course."
+        Notification "Your Employee did gain 300 Experience in <b>Art</b> and you paid $1000 for the Online Course!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    };
+    {
+        ButtonText "I won't pay!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 100
+            EffectName "Artist Experience"
+            Effect "add_artistexp"
+            }
+        ]
+        Title "Online Course"
+        Description "Your Employee will gain 100 Experience in Art and you will pay nothing for the Course."
+        Notification "Your Employee did gain 100 Experience in <b>Art</b> and you paid nothing for the Online Course!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    }]
+    Chance 30
+}
+###Online Course Service###
+Event
+{
+    Title "Online Course"
+    Description "{NAME} wants to make an Online Course for Service."
+    Conditions[
+        "has_service"
+        "is_year>1998"
+    ]
+    Options[
+        {
+        ButtonText "I will pay!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 300
+            EffectName "Service Experience"
+            Effect "add_serviceexp"
+            };
+            {
+                IsVisible 1
+                EffectValue 1000
+                EffectName "Company Bill"
+                Effect "company_bill"
+            }
+        ]
+        Title "Online Course"
+        Description "Your Employee will gain 300 Experience in Service and you will pay $1000 for the Course."
+        Notification "Your Employee did gain 300 Experience in <b>Service</b> and you paid $1000 for the Online Course!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    };
+    {
+        ButtonText "I won't pay!"
+        Effects[
+            {
+            IsVisible 1
+            EffectValue 100
+            EffectName "Service Experience"
+            Effect "add_serviceexp"
+            }
+        ]
+        Title "Online Course"
+        Description "Your Employee will gain 100 Experience in Service and you will pay nothing for the Course."
+        Notification "Your Employee did gain 100 Experience in <b>Service</b> and you paid nothing for the Online Course!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    }]
+    Chance 30
+}
+###Scandal FPS###
+Event
+{
+    Title "Scandal!"
+    Description "You did just run into a scandal as modders found the 'cold tea' code parts for your game {NAME}.\nThis part of the game was never meant to be in the release version, but here you are."
+    Conditions[
+        "has_gamefps"
+    ]
+    Options[
+        {
+        ButtonText "Damn programmers!"
+        Effects[
+            {
+                IsVisible 1
+                EffectMinValue 5000
+                EffectMaxValue 15000
+                EffectName "Company Bill"
+                Effect "company_bill"
+            }
+        ]
+        Title "Cold tea mod"
+        Description "After modders found out about this never to be released game code they for sure did exploit it and the authorities aren't happy about it."
+        Notification "Due to legal actions from the authorities you had to pay a ${0} fee!"
+        NotificationSound Issue #Can be Good Issue Neutral Warning
+    }]
+    Chance 10
+}

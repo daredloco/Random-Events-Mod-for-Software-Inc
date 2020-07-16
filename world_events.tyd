@@ -1,0 +1,95 @@
+﻿###1970###
+
+###1980###
+##January##
+##February##
+Event
+    {
+        Title "Ice hockey: USA wins against UDSSR"
+        Description "At the Winter Olympics 1980 in Lake Placid the US Olympics ice hockey team won 4-3 against the favorites from the UDSSR.\nIt was the first match the UDSSR lost since 1968 and it was later called the 'Miracle on Ice'."
+        Date "1.80" #Month.Year and Year is 70 for 1970, 80 for 1980, 100 for 2000 etc and month starts from 0 i guess
+        Conditions[]
+        Options[
+        {
+            ButtonText "USA! USA!"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Sports game popularity"
+                    Effect "popularity_change_gamesports"
+                }
+            ]
+            Title "Details"
+            Description "After defeating the Sovjets in the first game, the US team could also beat Finland 4-2 and win the olympic gold medal."
+            Notification "The <b>USA</b> wins 4-3 against the <b>UDSSR</b> at the 'Miracle of Ice'!"
+            NotificationSound Neutral #Can be Good Issue Neutral Warning
+        }]
+        Chance 100
+    }
+##March##
+##April##
+##May##
+Event
+    {
+        Title "Rubik's Cube"
+        Description "Erno Rubik did create the Rubik's Cube 1970 and it was first patented 1975 in Hungary.\nIt was introduced to a broader audience in early 1980 and got famous around the globe within a year."
+        Date "4.80" # September 1980|Month.Year and Year is 70 for 1970, 80 for 1980, 100 for 2000 etc and month starts from 0 i guess
+        Conditions[]
+        Options[
+        {
+            ButtonText "I like puzzles!"
+            Effects[]
+            Title "Details"
+            Description "The following year was a huge success for the Rubik's Cube and competitions emerged for who could solve the puzzle fastest."
+            Notification "The <b>Rubik's cube</b> hits the stores!"
+            NotificationSound Good #Can be Good Issue Neutral Warning
+        }]
+        Chance 100
+    }
+##June##
+##July##
+##August##
+##September##
+Event
+    {
+        Title "Iran-Iraq War"
+        Description "Iraqi president Saddam Hussein ordered his forces to invade Western Iran today."
+        Date "8.80" #Month.Year and Year is 70 for 1970, 80 for 1980, 100 for 2000 etc and month starts from 0 i guess
+        Conditions[]
+        Options[
+        {
+            ButtonText "Oh my god!"
+            Effects[]
+            Title "Details"
+            Description "This war will last until August 1990 and will cost over one million peoples life."
+            Notification "<b>Iraqi troops</b> invaded Western Iran!"
+            NotificationSound Issue #Can be Good Issue Neutral Warning
+        }]
+        Chance 100
+    }
+##October##
+##November##
+##December##
+Event
+    {
+        Title "John Lennon shot to death"
+        Description "It is a bad day for every Beatles fan, John Lennon got shot and killed by an obsessed fan outside of his apartment in Manhattan.\nHe only got 40 years old."
+        Date "11.80" #Month.Year and Year is 70 for 1970, 80 for 1980, 100 for 2000 etc and month starts from 0 i guess
+        Conditions[]
+        Options[
+        {
+            ButtonText "What a sad day!"
+            Effects[]
+            Title "Details"
+            Description "Earlier that day, he gave an autogram to Mark David Chapman who would shot him later.\nIn the following days after his death hundreds of fans gathered outside his apartement in mouring."
+            Notification "<b>John Lennon</b> was shot by an <b>obsessed fan</a>!"
+            NotificationSound Issue #Can be Good Issue Neutral Warning
+        }]
+        Chance 100
+    }
+
+###1990###
+###2000###
+###2010###
+###2020###
