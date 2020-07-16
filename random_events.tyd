@@ -803,3 +803,43 @@ Event
     }]
     Chance 10
 }
+###Scandal Antivirus###
+Event
+{
+    Title "Scandal!"
+    Description "Your Antivirus software {NAME} had bugs and hackers could use them to enter the users software!\nYou will lose reputation and fans because of this, but luckily you don't have to pay."
+    Conditions[
+        "has_antivirus&has_bugs>0"
+    ]
+    Options[
+        {
+        ButtonText "Oh No..."
+        Effects[
+            {
+                IsVisible 1
+                EffectMinValue -5000
+                EffectMaxValue -1000
+                EffectName "Fans Change Antivirus"
+                Effect "fans_change_antivirus"
+            };
+            {
+                IsVisible 1
+                EffectValue -1
+                EffectName "Change Business Reputation"
+                Effect "change_businessrep"
+            };
+            {
+                IsVisible 1
+                EffectMinValue 100
+                EffectMaxValue 1000
+                EffectName "Software Refunds"
+                Effect "software_refunds"
+            }
+        ]
+        Title "Antivirus Backdoor"
+        Description "One of the bugs inside your software did open a backdoor for hackers and they could use it to gain control over the users system."
+        Notification "Due to the backlash of the backdoor in your Antivirus software you did lose {0} fans, {1} reputation and you had {2} refunds!"
+        NotificationSound Issue #Can be Good Issue Neutral Warning
+    }]
+    Chance 10
+}

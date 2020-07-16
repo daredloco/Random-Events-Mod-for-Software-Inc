@@ -41,6 +41,7 @@ stockmarket_singleloss = A stock will lose a percentage of its value
 stockmarket_singlewin = A stock will gain a percentage of its value
 change_employee_satisfaction = Changes the employees satisfaction 
 change_employee_stress = changes the employees stress level
+change_bugs = changes the amount of bugs for a software product
 
 CONDITIONS: (most can be used with "is_year>2000" {valid signs: >, <, >=, <=, =, !, !=})
 has_software = checks if the player has a softwareproduct => returns SoftwareProduct
@@ -71,6 +72,11 @@ has_stockmarket = checks if the game has a stockmarket and returns a random Stoc
 
 SUB CONDITIONS: (Use: "has_2deditor&&release_date>2")
 release_date = checks if the Main Conditions release date is X months difference to the value from today
-has_sales = NOT INCLUDED IN THIS VERSION
-sick_days = NOT INCLUDED IN THIS VERSION
+has_bugs = checks if the software product has bugs
+is_sequel = checks if the software product is a sequel (true/false)
+has_sequel = checks if the software product has a sequel (true/false)
+has_offsales = checks if the software product has offline sales
+has_onsales = checks if the software product has online sales
+sick_days = checks if and how many sick days an Actor has
+is_female = checks if the actor is female (true/false)
 years_in_company = NOT INCLUDED IN THIS VERSION
