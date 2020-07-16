@@ -117,6 +117,35 @@ Event
         }]
         Chance 50
     }
+##May 4.81##
+##June 5.81##
+Event
+    {
+        Title "Movie: Raiders of the Lost Ark"
+        Description "The popular film “Raiders of the Lost Ark” has its debut in theaters throughout the United States.\nIt's a movie from Steven Spielberg and George Lucas with Harrison Ford as main actor."
+        Date "5.81" #Month.Year and Year is 70 for 1970, 80 for 1980, 100 for 2000 etc and month starts from 0 i guess
+        Conditions[]
+        Options[
+        {
+            ButtonText "Indy is the best!"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Adventure game popularity"
+                    Effect "popularity_change_gameadventure"
+                }
+            ]
+            Title "Details"
+            Description "The comedy-driven action/adventure film, was the first to feature the character of Indiana Jones. It became the highest grossing film of 1981 and remains one of the most popular and highest grossing film of all time."
+            Notification "The movie <b>Raiders of the Lost Ark</b> has its debut in the USA!"
+            NotificationSound Good #Can be Good Issue Neutral Warning
+        }]
+        Chance 50
+    }
+##July 6.81##
+##August 7.81##
+##September 8.81##
 ##October 9.81##
 Event
     {
