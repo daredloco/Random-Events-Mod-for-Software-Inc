@@ -204,7 +204,7 @@ Event
     }]
     Chance 65
 }
-###Stock Market single cash###
+###Stock Market single crash###
 Event
 {
     Title "Single Stock Crash"
@@ -225,7 +225,7 @@ Event
         ]
         Title "Stock crashes"
         Description "The prices for the companys stocks will crash."
-        Notification "The prices for the companys stocks are falling <b>{0}%</b>!"
+        Notification "The prices for {NAME}s stocks are falling by <b>{0}%</b>!"
         NotificationSound Issue #Can be Good Issue Neutral Warning
     }]
     Chance 10
@@ -251,7 +251,7 @@ Event
         ]
         Title "Stock raises"
         Description "The prices for the companys stocks will raise."
-        Notification "The prices for the companys stocks raise by <b>{0}%</b>!"
+        Notification "The prices for {NAME}s stocks raise by <b>{0}%</b>!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     }]
     Chance 10
@@ -427,7 +427,7 @@ Event
         ]
         Title "Youtube is great!"
         Description "Thanks to YouTube your employee will gain 100 experience in leadership"
-        Notification "Thanks to YouTube your employee did gain {0} experience in <b>leadership</b>!"
+        Notification "Thanks to YouTube your employee {NAME} did gain {0} experience in <b>leadership</b>!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     }]
     Chance 34
@@ -453,7 +453,7 @@ Event
         ]
         Title "Youtube is great!"
         Description "Thanks to YouTube your employee will gain 100 experience in design"
-        Notification "Thanks to YouTube your employee did gain {0} experience in <b>design</b>!"
+        Notification "Thanks to YouTube your employee {NAME} did gain {0} experience in <b>design</b>!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     }]
     Chance 34
@@ -479,7 +479,7 @@ Event
         ]
         Title "Youtube is great!"
         Description "Thanks to YouTube your employee will gain 100 experience in programming"
-        Notification "Thanks to YouTube your employee did gain {0} experience in <b>programming</b>!"
+        Notification "Thanks to YouTube your employee {NAME} did gain {0} experience in <b>programming</b>!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     }]
     Chance 34
@@ -505,7 +505,7 @@ Event
         ]
         Title "Youtube is great!"
         Description "Thanks to YouTube your employee will gain 100 experience in art"
-        Notification "Thanks to YouTube your employee did gain {0} experience in <b>art</b>!"
+        Notification "Thanks to YouTube your employee {NAME} did gain {0} experience in <b>art</b>!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     }]
     Chance 34
@@ -531,7 +531,7 @@ Event
         ]
         Title "Youtube is great!"
         Description "Thanks to YouTube your employee will gain 100 experience in service"
-        Notification "Thanks to YouTube your employee did gain {0} experience in <b>service</b>!"
+        Notification "Thanks to YouTube your employee {NAME} did gain {0} experience in <b>service</b>!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     }]
     Chance 34
@@ -564,7 +564,7 @@ Event
         ]
         Title "Online Course"
         Description "Your Employee will gain 300 Experience in Leadership and you will pay $1000 for the Course."
-        Notification "Your Employee did gain 300 Experience in <b>Leadership</b> and you paid $1000 for the Online Course!"
+        Notification "Your Employee {NAME} did gain 300 Experience in <b>Leadership</b> and you paid $1000 for the Online Course!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     };
     {
@@ -612,7 +612,7 @@ Event
         ]
         Title "Online Course"
         Description "Your Employee will gain 300 Experience in Design and you will pay $1000 for the Course."
-        Notification "Your Employee did gain 300 Experience in <b>Design</b> and you paid $1000 for the Online Course!"
+        Notification "Your Employee {NAME} did gain 300 Experience in <b>Design</b> and you paid $1000 for the Online Course!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     };
     {
@@ -660,7 +660,7 @@ Event
         ]
         Title "Online Course"
         Description "Your Employee will gain 300 Experience in Programming and you will pay $1000 for the Course."
-        Notification "Your Employee did gain 300 Experience in <b>Programming</b> and you paid $1000 for the Online Course!"
+        Notification "Your Employee {NAME} did gain 300 Experience in <b>Programming</b> and you paid $1000 for the Online Course!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     };
     {
@@ -708,7 +708,7 @@ Event
         ]
         Title "Online Course"
         Description "Your Employee will gain 300 Experience in Art and you will pay $1000 for the Course."
-        Notification "Your Employee did gain 300 Experience in <b>Art</b> and you paid $1000 for the Online Course!"
+        Notification "Your Employee {NAME} did gain 300 Experience in <b>Art</b> and you paid $1000 for the Online Course!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     };
     {
@@ -756,7 +756,7 @@ Event
         ]
         Title "Online Course"
         Description "Your Employee will gain 300 Experience in Service and you will pay $1000 for the Course."
-        Notification "Your Employee did gain 300 Experience in <b>Service</b> and you paid $1000 for the Online Course!"
+        Notification "Your Employee {NAME} did gain 300 Experience in <b>Service</b> and you paid $1000 for the Online Course!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     };
     {
@@ -838,7 +838,7 @@ Event
         ]
         Title "Cold tea mod"
         Description "After modders found out about this never to be released game code they for sure did exploit it and the authorities aren't happy about it."
-        Notification "Due to legal actions from the authorities you had to pay a ${0} fee!"
+        Notification "Due to legal actions from the authorities you had to pay a ${0} fee for the 'cold tea' mod inside {NAME}!"
         NotificationSound Issue #Can be Good Issue Neutral Warning
     }]
     Chance 10
@@ -865,7 +865,7 @@ Event
             {
                 IsVisible 1
                 EffectValue -1
-                EffectName "Change Business Reputation"
+                EffectName "Business Reputation"
                 Effect "change_businessrep"
             };
             {
@@ -878,8 +878,61 @@ Event
         ]
         Title "Antivirus Backdoor"
         Description "One of the bugs inside your software did open a backdoor for hackers and they could use it to gain control over the users system."
-        Notification "Due to the backlash of the backdoor in your Antivirus software you did lose {0} fans, {1} reputation and you had {2} refunds!"
+        Notification "Due to the backlash of the backdoor in your Antivirus software {NAME} you did lose {0} fans, {1} reputation and you had {2} refunds!"
         NotificationSound Issue #Can be Good Issue Neutral Warning
     }]
     Chance 10
+}
+###Overworked Employee###
+Event
+{
+    Title "Overworked Employee"
+    Description "Your employee {NAME} did overwork himself, due to the ongoing crunch.\nHe asks if he can go home, will you allow it?"
+    Conditions[
+        "has_employee&is_crunching&is_working"
+    ]
+    Options[
+        {
+        ButtonText "Yes, for sure."
+        Effects[
+            {
+                IsVisible 1
+                EffectValue 10
+                EffectName "Employee Satisfaction"
+                Effect "change_employee_satisfaction"
+            };
+            {
+                IsVisible 1
+                EffectValue -10
+                EffectName "Employee Stress"
+                Effect "change_employee_stress"
+            }
+        ]
+        Title "Happy Employee"
+        Description "Your Employee will be very happy about your decision to let him go home and therefor gain satisfaction and lose stress"
+        Notification "You did send your employee <b>{NAME}</b> home, because he did overwork himself!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+    };
+    {
+        ButtonText "No, we need him!"
+        Effects[
+            {
+                IsVisible 1
+                EffectValue -10
+                EffectName "Employee Satisfaction"
+                Effect "change_employee_satisfaction"
+            };
+            {
+                IsVisible 1
+                EffectValue 10
+                EffectName "Employee Stress"
+                Effect "change_employee_stress"
+            }
+        ]
+        Title "Stressed Employee"
+        Description "Your Employee will be stressed about your decision to not let him go home and therefor lose satisfaction and gain stress"
+        Notification "You didn't allow your employee <b>{NAME}</b> to go home and he just got more stressed out!"
+        NotificationSound Warning #Can be Good Issue Neutral Warning
+    }]
+    Chance 20
 }
