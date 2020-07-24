@@ -1,0 +1,95 @@
+EVENTS:
+
+
+
+EFFECTS:
+company_money = adds/removes money from the company
+company_bill = adds a 'bill' to the balance
+company_deals = adds a 'deal' to the balance 
+software_offsales = adds/removes offline sales to a softwareproduct
+software_onsales = adds/removes online sales to a softwareproduct
+software_refunds = adds refunds to a softwareproduct
+fans_change = adds/removes fans to a random category (category of the first softwareproduct in the list)
+fans_change_os = adds/removes fans to OS (category of the first os in the list)
+fans_change_oscomputer = adds/removes fans to Computer OS
+fans_change_osconsole = adds/removes fans to Console OS
+fans_change_osphone = adds/removes fans to Phone OS
+fans_change_office = adds/removes fans to Office Software
+fans_change_2deditor = adds/removes fans to 2D Editor
+fans_change_3deditor = adds/removes fans to 3D Editor
+fans_change_audiotool = adds/removes fans to Audo Tool
+fans_change_antivirus = adds/removes fans to Antivirus
+fans_change_game = adds/removes fans to random game category (category of the first game found in the list)
+fans_change_gamerpg = adds/removes fans to rpg game
+fans_change_gameadventure = adds/removes fans from adventure game
+fans_change_gamesimulation = adds/removes fans to simulation game
+fans_change_gamesports = adds/removes fans from sports game
+fans_change_gamerts = adds/removes fans to RTS game
+fans_change_gamefps = adds/removes fans to FPS game
+popularity_change_(same as fans_change_*) = changes the popularity of a category
+pay_debt = Pays players debt
+add_exp = Adds random experience to an employee
+add_leaderexp = Adds leader experience to an employee
+add_designerexp = Adds designer experience to an employee
+add_programmerexp = Adds programmer experience to an employee
+add_artistexp = Adds artist experience to an employee
+add_serviceexp = Adds service experience to an employee
+change_businessrep = Changes the business reputation of the company
+stockmarket_loss = All stocks will lose a percentage of their value
+stockmarket_win = All stocks will gain a percentage of their value
+stockmarket_singleloss = A stock will lose a percentage of its value
+stockmarket_singlewin = A stock will gain a percentage of its value
+change_employee_satisfaction = Changes the employees satisfaction 
+change_employee_stress = changes the employees stress level
+change_bugs = changes the amount of bugs for a software product
+
+CONDITIONS: (most can be used with "is_year>2000" {valid signs: >, <, >=, <=, =, !, !=})
+has_software = checks if the player has a softwareproduct => returns SoftwareProduct
+has_workitem = checks if the player has a workitem (running project) => returns null
+has_game or has_game* = checks if the player has a game (* = rpg, adventure, simulation, sports, rts, fps) => returns SoftwareProduct
+has_os or has_os* = checks if the player has an OS (* = computer, console, phone) => returns SoftwareProduct
+has_2deditor = checks if the player has a 2D Editor => returns SoftwareProduct
+has_3deditor = checks if the player has a 3D Editor => returns SoftwareProduct
+has_audiotool = checks if the player has an audio Tool => returns SoftwareProduct
+has_office = checks if the player has office software => returns SoftwareProduct
+has_antivirus = checks if the player has antivirus => returns SoftwareProduct
+has_staff = checks if the player has staff => returns Actor
+has_employee = checks if the player has employee => returns Actor
+has_leader = checks if the player has a leader => returns Actor
+has_designer = checks if the player has a designer => returns Actor
+has_programmer = checks if the player has a programmer => returns Actor
+has_artist = checks if the player has an artist => returns Actor
+has_service = checks if the player has a service employee => returns Actor
+is_year = checks if its a year => returns nothing
+is_month = checks if its a month => returns nothing
+has_fans = checks if the player has fans => returns nothing
+has_money = checks if the player has money => returns nothing
+has_snow = checks if there is snow at the gameworld => returns nothing
+has_stars = checks if the player has businessstars => returns nothing
+player_has_car = checks if the player has a car => returns nothing
+has_popularity* = checks if the category has popularity (* = os**, game**, 2deditor, 3deditor, audiotool, office, antivirus) => returns nothing
+has_stockmarket = checks if the game has a stockmarket and returns a random StockMarket object => returns StockMarket
+has_supportwork = checks if the player has any supportwork => returns SupportWork
+has_activedeal = checks if the player has any active deals => returns WorkItem
+has_softwareworkitem = checks if any workitem is a softwareworkitem => returns SoftwareWorkItem
+has_softwarealpha = checks if any workitem is in alpha/beta stage => returns SoftwareAlpha
+has_designdocument = checks if any workitem is in design stage => returns DesignDocument
+
+SUB CONDITIONS: (Use: "has_2deditor&&release_date>2" for true/false use "has_alpha" <- true or "has_alpha!" <- false)
+release_date = checks if the Main Conditions release date is X months difference to the value from today <= reads SoftwareProduct
+has_bugs = checks if the software product has bugs <= reads SoftwareProduct
+is_sequel = checks if the software product is a sequel (true/false) <= reads SoftwareProduct
+has_sequel = checks if the software product has a sequel (true/false) <= reads SoftwareProduct
+has_offsales = checks if the software product has offline sales <= reads SoftwareProduct
+has_onsales = checks if the software product has online sales <= reads SoftwareProduct
+is_alpha = checks if the softwarealpha is in alpha (true/false) <= reads SoftwareAlpha
+is_beta = checks if the softwarealpha is in beta (true/false) <= reads SoftwareAlpha
+from_playercompany = checks if the design/alpha is from the playercompany (true/false) <= reads SoftwareAlpha and DesignDocument
+is_working = checks if the actor is working or not (true/false) <= reads Actor
+is_founder = checks if the actor is the founder or not (true/false) <= reads Actor
+is_crunching = checks if the actor is crunching (true/false) <= reads Actor
+is_stressed = checks if the actor is stressed <= reads Actor
+is_satisfied = checks if the actor is satisfied <= reads Actor
+sick_days = checks if and how many sick days an Actor has <= reads Actor
+is_female = checks if the actor is female (true/false) <= reads Actor
+years_in_company = NOT INCLUDED IN THIS VERSION
