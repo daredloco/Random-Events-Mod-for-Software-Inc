@@ -822,7 +822,7 @@ Event
     Title "Scandal!"
     Description "You did just run into a scandal as modders found the 'cold tea' code parts for your game {NAME}.\nThis part of the game was never meant to be in the release version, but here you are."
     Conditions[
-        "has_gamefps"
+        "has_gamefps&release_date<12"
     ]
     Options[
         {
@@ -897,13 +897,13 @@ Event
         Effects[
             {
                 IsVisible 1
-                EffectValue 10
+                EffectValue 0.25
                 EffectName "Employee Satisfaction"
                 Effect "change_employee_satisfaction"
             };
             {
                 IsVisible 1
-                EffectValue -10
+                EffectValue -0.25
                 EffectName "Employee Stress"
                 Effect "change_employee_stress"
             }
@@ -918,13 +918,13 @@ Event
         Effects[
             {
                 IsVisible 1
-                EffectValue -10
+                EffectValue -0.25
                 EffectName "Employee Satisfaction"
                 Effect "change_employee_satisfaction"
             };
             {
                 IsVisible 1
-                EffectValue 10
+                EffectValue 0.25s
                 EffectName "Employee Stress"
                 Effect "change_employee_stress"
             }

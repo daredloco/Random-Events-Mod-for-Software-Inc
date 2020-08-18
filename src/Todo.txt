@@ -1,0 +1,60 @@
+﻿*Skandale (partially added)
+*Add 10 more Events
+*Add World Events for 1980
+*Add World Events for 1990
+*Add World Events for 2000
+*Add World Events for 2010
+*Add World Events for 2020
+*Add an option to choose from "Fire all World Events or Fire per chance"
+*change the Car on Ice and busticket event to add condition founder_at_work
+*make release_date & has_bugs to read SoftwareAlpha as well so you can check SoftwareAlpha as well
+*make an effect so actors will go home
+*make an effect to fix bugs in beta phase
+*make a subcondition to check if an employee is satisfied and one to check if he is stressed
+
+BUGS:
+*Event Effects won't show up even if its IsVisible is true (fixed)
+*Event Effect show up, but only the last one and not all (fixed)
+*Event effects won't show up in Notification (Fixed)
+*Cooldown isn't working (Fixed)
+*Events stop being called after a while (Couldn't reproduce, needs a long time run, didnt happen in 1h play)
+*World Events won't be added (Fixed, removed OnActive selection)
+*AutoEvent isn't fired with World Events (Fixed, Created AutoWorldEvent)
+*WorldEvent can't be fired with Call_World_Event (Fixed, ignore conditions)
+*SubConditions sometimes use mainlist directly, but should check if sublist is bigger than 0 and if so they should take from there (fixed)
+
+Done:
+53 Effects
+52 Conditions
+16 SubConditions
+
+[h3]Version 2.2[/h3]
+[list]
+[*] New Events: Overworked Employee
+[*] New Conditions: has_supportwork, has_activedeal, has_softwareworkitem, has_softwarealpha, has_designdocument
+[*] New SubConditions: is_alpha, is_beta, from_playercompany, is_working, is_founder, is_crunching, is_stressed, is_satisfied
+[*] New Effects: goes_home
+[*] Fixed Bugs: A bug where more than 1 subconditions would be ignored as it did always read from the maincondition
+[*] Changes: Added software/employeenames to all notifications
+[/list]
+
+[h3]Version 2.1.2[/h3]
+[list]
+[*] Fixed Bugs: Bug where the condition has_snow was never true
+[/list]
+
+[h3]Version 2.1.1[/h3]
+[list]
+[*] Changed position of buttons inside Event window
+[*] Fixed Bugs: Single Stock Event had wrong, Stock loss wasn't falling but raising as well
+[*] Changes: Lowered stock market event chances, added product/actor name to the notifications
+[*] 1 New Events
+[/list]
+[h3]Version 2.1[/h3]
+[list]
+[*] 2 new Random Events
+[*] 11 new World Events
+[*] New Effects: change_bugs
+[*] New Sub Condition: has_bugs, is_sequel, has_sequel, has_sick_days, is_female
+[*] Fixed Bugs: World Events won't be added to the database, AutoEvent didn't fire World Events, Couldn't fire WorldEvents with "Call_World_Event" console command
+[/list]

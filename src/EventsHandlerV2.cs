@@ -1200,6 +1200,10 @@ namespace RandomEvents
 			{
 				if (debugMode)
 					DevConsole.Console.Log("Checking Condition " + Main);
+
+				//Workaround because GameSettings.Instance.Founder can be null
+				GameSettings.Instance.Founder = GameSettings.Instance.sActorManager.Actors.First(x => x.employee.Founder);
+
 				//Check main condition first and set a ConditionObjects list
 				#region main condition
 				#region Variable Condition
@@ -2798,12 +2802,13 @@ namespace RandomEvents
 				{
 					if (IsVariableCondition && VariableSign == "!")
 					{
-						if (GameSettings.Instance.Founder.CarIdx > 0)
+						
+						if (GameSettings.Instance.Founder.MyCar != null)
 							return false;
 					}
 					else
 					{
-						if (GameSettings.Instance.Founder.CarIdx < 1)
+						if (GameSettings.Instance.Founder.MyCar == null)
 							return false;
 					}
 				}
