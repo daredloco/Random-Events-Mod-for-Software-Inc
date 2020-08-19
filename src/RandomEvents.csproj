@@ -59,10 +59,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EventsBehaviour.cs" />
-    <Compile Include="EventsHandler.cs" />
     <Compile Include="EventsHandlerV2.cs" />
-    <Compile Include="EventsWindow.cs" />
     <Compile Include="Helpers.cs" />
     <Compile Include="MyModMeta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
