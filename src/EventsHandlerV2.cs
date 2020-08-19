@@ -752,8 +752,18 @@ namespace RandomEvents
 				else if (Effect == "software_refunds")
 				{
 					//Adds refunds to the sales
-					float refundcost = product.Price * int.Parse(EffectValue);
-					product.AddToCashflow(0, 0, int.Parse(EffectValue), -refundcost, 0, TimeOfDay.Instance.GetDate());
+					int effectVal = int.Parse(EffectValue);
+					int totalsales = 0;
+					for(int i = 0; i < product.GetUnitSales(false).Count; i++)
+					{
+						totalsales += product.GetUnitSales(false)[i];
+					}
+					if(totalsales < effectVal)
+					{
+						effectVal = totalsales;
+					}
+					float refundcost = product.Price * effectVal;
+					product.AddToCashflow(0, 0, effectVal, -refundcost, 0, TimeOfDay.Instance.GetDate());
 				}
 				else if (Effect == "fans_change")
 				{
