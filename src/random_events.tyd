@@ -924,7 +924,7 @@ Event
             };
             {
                 IsVisible 1
-                EffectValue 0.25s
+                EffectValue 0.25
                 EffectName "Employee Stress"
                 Effect "change_employee_stress"
             }
