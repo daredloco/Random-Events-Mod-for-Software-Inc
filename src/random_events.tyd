@@ -936,3 +936,111 @@ Event
     }]
     Chance 20
 }
+###Employee gains leadership experience###
+Event
+{
+    Title "Employee gains experience"
+    Description "Your employee {NAME} did learn alot while working and gain some leadership experience"
+    Conditions[
+        "has_leader&is_working"
+    ]
+    Options[
+        {
+        ButtonText "Thats great news!"
+        Effects[
+            {
+                IsVisible 1
+                EffectValue 100
+                EffectName "Leader Experience"
+                Effect "add_leaderexp"
+            }
+        ]
+        Title "Work pays out!"
+        Description "Your Employee gains 100 leadership experience."
+        Notification "Your employee <b>{NAME}</b> did gain 100 leadership experience!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+        }
+    ]
+    Chance 10
+}
+###Employee gains design experience###
+Event
+{
+    Title "Employee gains experience"
+    Description "Your employee {NAME} did learn alot while working and gain some design experience"
+    Conditions[
+        "has_designer&is_working"
+    ]
+    Options[
+        {
+        ButtonText "Thats great news!"
+        Effects[
+            {
+                IsVisible 1
+                EffectValue 100
+                EffectName "Designer Experience"
+                Effect "add_designerexp"
+            }
+        ]
+        Title "Work pays out!"
+        Description "Your Employee gains 100 design experience."
+        Notification "Your employee <b>{NAME}</b> did gain 100 design experience!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+        }
+    ]
+    Chance 10
+}
+###Employee gains programming experience###
+Event
+{
+    Title "Employee gains experience"
+    Description "Your employee {NAME} did learn alot while working and gain some programming experience"
+    Conditions[
+        "has_programmer&is_working"
+    ]
+    Options[
+        {
+        ButtonText "Thats great news!"
+        Effects[
+            {
+                IsVisible 1
+                EffectValue 100
+                EffectName "Programmer Experience"
+                Effect "add_programmerexp"
+            }
+        ]
+        Title "Work pays out!"
+        Description "Your Employee gains 100 programming experience."
+        Notification "Your employee <b>{NAME}</b> did gain 100 programming experience!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+        }
+    ]
+    Chance 10
+}
+###Employee gains art experience###
+Event
+{
+    Title "Employee gains experience"
+    Description "Your employee {NAME} did learn alot while working and gain some art experience"
+    Conditions[
+        "has_artist&is_working"
+    ]
+    Options[
+        {
+        ButtonText "Thats great news!"
+        Effects[
+            {
+                IsVisible 1
+                EffectValue 100
+                EffectName "Artist Experience"
+                Effect "add_artistexp"
+            }
+        ]
+        Title "Work pays out!"
+        Description "Your Employee gains 100 art experience."
+        Notification "Your employee <b>{NAME}</b> did gain 100 art experience!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+        }
+    ]
+    Chance 10
+}
