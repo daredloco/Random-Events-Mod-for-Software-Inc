@@ -32,6 +32,7 @@ Done:
 [list]
 [*] New Events: Employee gains experience (art, programming, design, leadership),
 Employee gets happy because of snow/rain, Employee gets sad because of snow/rain
+[*] New Conditions: has_rain
 [/list]
 
 [h3]Version 2.2[/h3]
