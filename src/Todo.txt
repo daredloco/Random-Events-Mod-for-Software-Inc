@@ -28,6 +28,12 @@ Done:
 52 Conditions
 16 SubConditions
 
+[h3]Version 2.3[/h3]
+[list]
+[*] New Events: Employee gains experience (art, programming, design, leadership),
+Employee gets happy because of snow, Employee gets sad because of snow
+[/list]
+
 [h3]Version 2.2[/h3]
 [list]
 [*] New Events: Overworked Employee

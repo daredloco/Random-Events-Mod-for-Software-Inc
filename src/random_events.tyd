@@ -1044,3 +1044,59 @@ Event
     ]
     Chance 10
 }
+
+###Employee gets happy because of snow
+Event
+{
+    Title "Employee gets happy because of snow"
+    Description "Your employee {NAME} really likes snow and gets happy because it snows!"
+    Conditions[
+        "has_employee&has_snow>0.2"
+    ]
+    Options[
+        {
+        ButtonText "Glad he likes snow"
+        Effects[
+            {
+                IsVisible 1
+                EffectValue 5
+                EffectName "Employee satisfaction"
+                Effect "change_employee_satisfaction"
+            }
+        ]
+        Title "Snow makes your Employee happy!"
+        Description "Your Employee gains 5 satisfaction."
+        Notification "Your employee <b>{NAME}</b> did gain 5 satisfaction because of the snow!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+        }
+    ]
+    Chance 10
+}
+
+###Employee gets sad because of snow
+Event
+{
+    Title "Employee gets sad because of snow"
+    Description "Your employee {NAME} really hates snow and gets sad because it snows!"
+    Conditions[
+        "has_employee&has_snow>0.2"
+    ]
+    Options[
+        {
+        ButtonText "Not everybody likes snow"
+        Effects[
+            {
+                IsVisible 1
+                EffectValue -5
+                EffectName "Employee satisfaction"
+                Effect "change_employee_satisfaction"
+            }
+        ]
+        Title "Snow makes your Employee sad!"
+        Description "Your Employee loses 5 satisfaction."
+        Notification "Your employee <b>{NAME}</b> did lose 5 satisfaction because of the snow!"
+        NotificationSound Issue #Can be Good Issue Neutral Warning
+        }
+    ]
+    Chance 10
+}
