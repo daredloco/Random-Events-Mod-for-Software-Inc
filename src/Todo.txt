@@ -31,7 +31,7 @@ Done:
 [h3]Version 2.3[/h3]
 [list]
 [*] New Events: Employee gains experience (art, programming, design, leadership),
-Employee gets happy because of snow, Employee gets sad because of snow
+Employee gets happy because of snow/rain, Employee gets sad because of snow/rain
 [/list]
 
 [h3]Version 2.2[/h3]

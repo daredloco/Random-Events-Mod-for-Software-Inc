@@ -1100,3 +1100,59 @@ Event
     ]
     Chance 10
 }
+
+###Employee gets happy because of rain
+Event
+{
+    Title "Employee gets happy because of rain"
+    Description "Your employee {NAME} really likes rain and gets happy because it rains!"
+    Conditions[
+        "has_employee&has_rain"
+    ]
+    Options[
+        {
+        ButtonText "Glad he likes rain"
+        Effects[
+            {
+                IsVisible 1
+                EffectValue 5
+                EffectName "Employee satisfaction"
+                Effect "change_employee_satisfaction"
+            }
+        ]
+        Title "Rain makes your Employee happy!"
+        Description "Your Employee gains 5 satisfaction."
+        Notification "Your employee <b>{NAME}</b> did gain 5 satisfaction because of the rain!"
+        NotificationSound Good #Can be Good Issue Neutral Warning
+        }
+    ]
+    Chance 10
+}
+
+###Employee gets sad because of rain
+Event
+{
+    Title "Employee gets sad because of rain"
+    Description "Your employee {NAME} really hates rain and gets sad because it rains!"
+    Conditions[
+        "has_employee&has_rain"
+    ]
+    Options[
+        {
+        ButtonText "Not everybody likes rain"
+        Effects[
+            {
+                IsVisible 1
+                EffectValue -5
+                EffectName "Employee satisfaction"
+                Effect "change_employee_satisfaction"
+            }
+        ]
+        Title "Rain makes your Employee sad!"
+        Description "Your Employee loses 5 satisfaction."
+        Notification "Your employee <b>{NAME}</b> did lose 5 satisfaction because of the rain!"
+        NotificationSound Issue #Can be Good Issue Neutral Warning
+        }
+    ]
+    Chance 10
+}

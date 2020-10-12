@@ -3768,6 +3768,11 @@ namespace RandomEvents
 							return false;
 					}
 				}
+				else if (ConditionString == "has_rain")
+				{
+					if (TimeOfDay.Instance.RainFactor < 0.1f)
+						return false;
+				}
 
 				//Set a random object as conditionobject
 				if (mainlist.Count > 0)
