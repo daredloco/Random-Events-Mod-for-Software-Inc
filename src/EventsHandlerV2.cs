@@ -5531,6 +5531,52 @@ namespace RandomEvents
 					else if (SubConditionString == "years_in_company")
 					{
 						//TODO: Find out how to get how many years the Actor is inside company
+						foreach(object obj in mainlist)
+						{
+							Actor actor = obj as Actor;
+							SDateTime dt = actor.employee.Hired;
+							//TODO: Calculate the years from TODAY to actor.employee.Hired
+						}
+					}
+					else if (SubConditionString == "salary")
+					{
+						List<object> tmplst = new List<object>();
+						foreach (object obj in mainlist)
+						{
+							Actor actor = obj as Actor;
+							float salary = actor.GetMonthlySalary();
+							if(SubVariableSign == "<")
+							{
+								if(salary < float.Parse(SubVariable))
+									tmplst.Add(actor);
+							}
+							else if(SubVariableSign == "<=")
+							{
+								if (salary <= float.Parse(SubVariable))
+									tmplst.Add(actor);
+							}
+							else if(SubVariableSign == ">")
+							{
+								if (salary > float.Parse(SubVariable))
+									tmplst.Add(actor);
+							}
+							else if(SubVariableSign == ">=")
+							{
+								if (salary >= float.Parse(SubVariable))
+									tmplst.Add(actor);
+							}
+							else if(SubVariableSign == "=")
+							{
+								if (salary == float.Parse(SubVariable))
+									tmplst.Add(actor);
+							}
+							else if(SubVariableSign == "!=")
+							{
+								if (salary != float.Parse(SubVariable))
+									tmplst.Add(actor);
+							}
+						}
+						sublist = tmplst;
 					}
 				}
 				if (sublist.Count < 1)

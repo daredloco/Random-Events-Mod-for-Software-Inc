@@ -5,6 +5,7 @@ Steam Workshop Link: https://steamcommunity.com/sharedfiles/filedetails/?id=2139
 
 [See included Effects and Conditions](content.txt)
 
+
 #### Manual Installation
 
 - Clone the project
