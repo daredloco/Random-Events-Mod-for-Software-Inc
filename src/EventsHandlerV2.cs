@@ -1158,14 +1158,14 @@ namespace RandomEvents
 				{
 					if (actor != null)
 					{
-						actor.employee.JobSatisfaction += int.Parse(EffectValue);
+						actor.employee.JobSatisfaction += float.Parse(EffectValue);
 					}
 				}
 				else if (Effect == "change_employee_stress")
 				{
 					if (actor != null)
 					{
-						actor.employee.Stress += int.Parse(EffectValue);
+						actor.employee.Stress += float.Parse(EffectValue);
 					}
 				}
 				else if (Effect == "change_bugs")
