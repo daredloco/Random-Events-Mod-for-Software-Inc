@@ -80,6 +80,11 @@ namespace RandomEvents
 
         void Fastforward_Click(bool check)
 		{
+            if (EventsHandlerV2.Instance == null)
+            {
+                return;
+            }
+
             EventsHandlerV2.skipfastforward = check;
             EventsHandlerV2.Instance.SaveSetting("SkipFastForward", EventsHandlerV2.skipfastforward.ToString());
         }
