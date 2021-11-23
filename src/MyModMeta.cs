@@ -55,6 +55,11 @@ namespace RandomEvents
 
         void EventMode_Click()
 		{
+            if(EventsHandlerV2.Instance == null)
+			{
+                return;
+			}
+
             if(EventsHandlerV2.eventMode == 1)
 			{
                 EventsHandlerV2.eventMode = 2;
