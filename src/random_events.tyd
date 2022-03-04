@@ -1268,3 +1268,52 @@ Event
     ]
     Chance 10
 }
+
+###Secret Agency wants to buy your OS###
+Event
+{
+    Title "Government Agency wants to buy your OS"
+    Description "A government agency wants to buy your OS, that will bring you a lot of money, but could cost you some fans!"
+    Conditions[
+        "has_os"
+    ]
+    Options[
+        {
+        ButtonText "I don't like governments!"
+        Effects[
+            {
+                IsVisible 1
+                EffectValue 500
+                EffectName "Fans Changed"
+                Effect "fans_change_os"
+            }
+        ]
+        Title "You won't sell your OS to the Agency"
+        Description "You don't want to sell the OS to the agency, you will gain some new fans!"
+        Notification "You gain 500 new fans because you won't sell your OS to the agency."
+        NotificationSound Good #Can be Good Issue Neutral Warning
+        };
+        {
+            ButtonText "I love Money!"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 100000
+                    EffectName "Company Money"
+                    Effect "company_money"
+                }
+                {
+                    IsVisible 1
+                    EffectValue -5000
+                    EffectName "Fans Changed"
+                    Effect "fans_change_os"
+                }
+            ]
+            Title "You will sell your OS to the Agency"
+            Description "You want to sell the OS to the agency, your fans won't like that at all!"
+            Notification "Your fans are angry with you and you lose some of them in protest to your action."
+            NotificationSound Issue #Can be Good Issue Neutral Warning
+            }
+    ]
+    Chance 10
+}
