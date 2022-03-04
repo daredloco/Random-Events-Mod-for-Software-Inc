@@ -776,6 +776,7 @@ Event
     }]
     Chance 30
 }
+
 ###Backdoor Software###
 Event
 {
@@ -816,6 +817,7 @@ Event
     }]
     Chance 2
 }
+
 ###Scandal FPS###
 Event
 {
@@ -843,6 +845,7 @@ Event
     }]
     Chance 2
 }
+
 ###Scandal Antivirus###
 Event
 {
@@ -883,6 +886,7 @@ Event
     }]
     Chance 2
 }
+
 ###Overworked Employee###
 Event
 {
@@ -936,6 +940,7 @@ Event
     }]
     Chance 20
 }
+
 ###Employee gains leadership experience###
 Event
 {
@@ -963,6 +968,7 @@ Event
     ]
     Chance 10
 }
+
 ###Employee gains design experience###
 Event
 {
@@ -990,6 +996,7 @@ Event
     ]
     Chance 10
 }
+
 ###Employee gains programming experience###
 Event
 {
@@ -1017,6 +1024,7 @@ Event
     ]
     Chance 10
 }
+
 ###Employee gains art experience###
 Event
 {
@@ -1100,6 +1108,7 @@ Event
     ]
     Chance 10
 }
+
 ###Employee gets happy because of rain
 Event
 {
@@ -1181,4 +1190,5 @@ Event
         NotificationSound Issue #Can be Good Issue Neutral Warning
         }
     ]
+    Chance 10
 }
