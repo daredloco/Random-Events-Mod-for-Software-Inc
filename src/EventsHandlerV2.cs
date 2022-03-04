@@ -1181,7 +1181,7 @@ namespace RandomEvents
 				}
 				else if (Effect == "add_marketing")
 				{
-					product.AddToMarketing(float.Parse(EffectValue));
+					product.AddToMarketing(MarketSimulation.Active.GetMaxAwareness(product) * float.Parse(EffectValue));
 				}
 				return EffectValue;
 			}
