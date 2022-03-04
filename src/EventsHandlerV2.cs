@@ -1179,6 +1179,10 @@ namespace RandomEvents
 					if (actor != null)
 						actor.GoHomeNow = true;
 				}
+				else if (Effect == "add_marketing")
+				{
+					product.AddToMarketing(float.Parse(EffectValue));
+				}
 				return EffectValue;
 			}
 		}

@@ -43,6 +43,7 @@ change_employee_satisfaction = Changes the employees satisfaction
 change_employee_stress = changes the employees stress level
 change_bugs = changes the amount of bugs for a software product
 goes_home = Sends employee home
+add_marketing = Adds/Removes marketing for a softwareproduct
 
 CONDITIONS: (most can be used with "is_year>2000" {valid signs: >, <, >=, <=, =, !, !=})
 has_software = checks if the player has a softwareproduct => returns SoftwareProduct
