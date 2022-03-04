@@ -1217,7 +1217,7 @@ Event
 Event
 {
     Title "Streamer promotes your game"
-    Description "A streamer recently reviewed your game <b>{{NAME}}</b> and praised it highly. The popularity for the game is rising!"
+    Description "A streamer recently reviewed your game <b>{NAME}</b> and praised it highly. The popularity for the game is rising!"
     Conditions[
         "has_game"
     ]
@@ -1233,8 +1233,8 @@ Event
             }
         ]
         Title "Streamer promotes your game"
-        Description "A streamer recently reviewed your game <b>{{NAME}}</b> and loves it."
-        Notification "You got some free marketing for the game because of the stream, because it was well received."
+        Description "A streamer recently reviewed your game <b>{NAME}</b> and loves it."
+        Notification "You got some free marketing for the game <b>{NAME}</b> because of the stream, because it was well received."
         NotificationSound Good #Can be Good Issue Neutral Warning
         }
     ]
@@ -1245,7 +1245,7 @@ Event
 Event
 {
     Title "Streamer hates your game"
-    Description "A streamer recently reviewed your game <b>{{NAME}}</b> and phates it. The popularity for the game is falling!"
+    Description "A streamer recently reviewed your game <b>{NAME}</b> and hates it. The popularity for the game is falling!"
     Conditions[
         "has_game"
     ]
@@ -1261,8 +1261,8 @@ Event
             }
         ]
         Title "Streamer hates your game"
-        Description "A streamer recently reviewed your game <b>{{NAME}}</b> and hates it."
-        Notification "You lost some marketing for the game because of the stream, because it was badly received."
+        Description "A streamer recently reviewed your game <b>{NAME}</b> and hates it."
+        Notification "You lost some marketing for the game <b>{NAME}</b> because of the stream, because it was badly received."
         NotificationSound Issue #Can be Good Issue Neutral Warning
         }
     ]
