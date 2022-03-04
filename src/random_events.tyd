@@ -1238,7 +1238,7 @@ Event
         NotificationSound Good #Can be Good Issue Neutral Warning
         }
     ]
-    Chance 15
+    Chance 10
 }
 
 ###Streamer talked bad about your game###
@@ -1266,5 +1266,5 @@ Event
         NotificationSound Issue #Can be Good Issue Neutral Warning
         }
     ]
-    Chance 15
+    Chance 10
 }
