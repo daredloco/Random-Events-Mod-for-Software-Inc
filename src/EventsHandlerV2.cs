@@ -5634,7 +5634,7 @@ namespace RandomEvents
 							{
 								if (product.Addons.Count > 0)
 								{
-									tmplist.Add(product.Addons.GetRandom());
+									tmplist.Add(product);
 								}
 							}
 						}
