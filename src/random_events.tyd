@@ -36,6 +36,7 @@ Event
     }]
     Chance 20
 }
+
 ###Donation from fan###
 Event
 {
@@ -75,6 +76,7 @@ Event
     }]
     Chance 25
 }
+
 ###Gift from Grandma###
 Event
 {
@@ -113,6 +115,7 @@ Event
     }]
     Chance 40
 }
+
 ###Car on ice###
 Event
 {
@@ -178,6 +181,7 @@ Event
     }]
     Chance 20
 }
+
 ###Bus Ticket###
 Event
 {
@@ -256,6 +260,7 @@ Event
     }]
     Chance 10
 }
+
 ###Stock Market crash (small)###
 Event
 {
@@ -281,6 +286,7 @@ Event
     }]
     Chance 15
 }
+
 ###Stock Market Crash (medium)###
 Event
 {
@@ -306,6 +312,7 @@ Event
     }]
     Chance 10
 }
+
 ###Stock Market Crash (big)###
 Event
 {
@@ -331,6 +338,7 @@ Event
     }]
     Chance 5
 }
+
 ###Stock Market Boom (small)###
 Event
 {
@@ -356,6 +364,7 @@ Event
     }]
     Chance 15
 }
+
 ###Stock Market Boom (medium)###
 Event
 {
@@ -381,6 +390,7 @@ Event
     }]
     Chance 10
 }
+
 ###Stock Market Boom (big)###
 Event
 {
@@ -406,6 +416,7 @@ Event
     }]
     Chance 5
 }
+
 ###Youtube Leader Education###
 Event
 {
@@ -432,6 +443,7 @@ Event
     }]
     Chance 34
 }
+
 ###Youtube Designer Education###
 Event
 {
@@ -458,6 +470,7 @@ Event
     }]
     Chance 34
 }
+
 ###Youtube Programmer Education###
 Event
 {
@@ -484,6 +497,7 @@ Event
     }]
     Chance 34
 }
+
 ###Youtube Artist Education###
 Event
 {
@@ -510,6 +524,7 @@ Event
     }]
     Chance 34
 }
+
 ###Youtube Service Education###
 Event
 {
@@ -536,6 +551,7 @@ Event
     }]
     Chance 34
 }
+
 ###Online Course Leader###
 Event
 {
@@ -584,6 +600,7 @@ Event
     }]
     Chance 30
 }
+
 ###Online Course Designer###
 Event
 {
@@ -632,6 +649,7 @@ Event
     }]
     Chance 30
 }
+
 ###Online Course Programmer###
 Event
 {
@@ -680,6 +698,7 @@ Event
     }]
     Chance 30
 }
+
 ###Online Course Artist###
 Event
 {
@@ -728,6 +747,7 @@ Event
     }]
     Chance 30
 }
+
 ###Online Course Service###
 Event
 {
@@ -1191,4 +1211,60 @@ Event
         }
     ]
     Chance 10
+}
+
+###Streamer promotes your game###
+Event
+{
+    Title "Streamer promotes your game"
+    Description "A streamer recently reviewed your game <b>{{NAME}}</b> and praised it highly. The popularity for the game is rising!"
+    Conditions[
+        "has_game"
+    ]
+    Options[
+        {
+        ButtonText "Thats great news!"
+        Effects[
+            {
+                IsVisible 1
+                EffectValue 100
+                EffectName "Marketing"
+                Effect "add_marketing"
+            }
+        ]
+        Title "Streamer promotes your game"
+        Description "A streamer recently reviewed your game <b>{{NAME}}</b> and loves it."
+        Notification "You got some free marketing for the game because of the stream, because it was well received."
+        NotificationSound Good #Can be Good Issue Neutral Warning
+        }
+    ]
+    Chance 15
+}
+
+###Streamer talked bad about your game###
+Event
+{
+    Title "Streamer hates your game"
+    Description "A streamer recently reviewed your game <b>{{NAME}}</b> and phates it. The popularity for the game is falling!"
+    Conditions[
+        "has_game"
+    ]
+    Options[
+        {
+        ButtonText "Thats bad news!"
+        Effects[
+            {
+                IsVisible 1
+                EffectValue -100
+                EffectName "Marketing"
+                Effect "add_marketing"
+            }
+        ]
+        Title "Streamer hates your game"
+        Description "A streamer recently reviewed your game <b>{{NAME}}</b> and hates it."
+        Notification "You lost some marketing for the game because of the stream, because it was badly received."
+        NotificationSound Issue #Can be Good Issue Neutral Warning
+        }
+    ]
+    Chance 15
 }
