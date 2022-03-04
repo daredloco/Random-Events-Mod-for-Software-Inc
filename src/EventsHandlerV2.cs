@@ -458,8 +458,11 @@ namespace RandomEvents
 
 						Button bt1 = Helpers.AddButton($"{windowEvent.Options[0].ButtonText}", new Rect(120, 145, 120, 30), new UnityAction(windowEvent.Options[0].Select), window);
 
+						//Replace {NAME} with name of object
+						string option1description = windowEvent.Options[0].Description.Replace("{NAME}", descriptionName);
+
 						//Add the tooltips
-						Helpers.AddTooltip($"{windowEvent.Options[0].Title}", $"{windowEvent.Options[0].Description}\n\n<b>Effects:</b>\n{bt1effects}", bt1.gameObject);
+						Helpers.AddTooltip($"{windowEvent.Options[0].Title}", $"{option1description}\n\n<b>Effects:</b>\n{bt1effects}", bt1.gameObject);
 
 						window.MinSize = new Vector2(200, 40);
 						break;
@@ -488,9 +491,13 @@ namespace RandomEvents
 						bt1 = Helpers.AddButton($"{windowEvent.Options[0].ButtonText}", new Rect(62, 145, 120, 30), new UnityAction(windowEvent.Options[0].Select), window);
 						Button bt2 = Helpers.AddButton($"{windowEvent.Options[1].ButtonText}", new Rect(188, 145, 120, 30), new UnityAction(windowEvent.Options[1].Select), window);
 
+						//Replace {NAME} with name of object
+						option1description = windowEvent.Options[0].Description.Replace("{NAME}", descriptionName);
+						string option2description = windowEvent.Options[1].Description.Replace("{NAME}", descriptionName);
+
 						//Add the tooltips
-						Helpers.AddTooltip($"{windowEvent.Options[0].Title}", $"{windowEvent.Options[0].Description}\n\n<b>Effects:</b>\n{bt1effects}", bt1.gameObject);
-						Helpers.AddTooltip($"{windowEvent.Options[1].Title}", $"{windowEvent.Options[1].Description}\n\n<b>Effects:</b>\n{bt2effects}", bt2.gameObject);
+						Helpers.AddTooltip($"{windowEvent.Options[0].Title}", $"{option1description}\n\n<b>Effects:</b>\n{bt1effects}", bt1.gameObject);
+						Helpers.AddTooltip($"{windowEvent.Options[1].Title}", $"{option2description}\n\n<b>Effects:</b>\n{bt2effects}", bt2.gameObject);
 
 						window.MinSize = new Vector2(200, 40);
 						break;
@@ -529,10 +536,15 @@ namespace RandomEvents
 						bt2 = Helpers.AddButton($"{windowEvent.Options[1].ButtonText}", new Rect(188, 145, 120, 30), new UnityAction(windowEvent.Options[1].Select), window);
 						Button bt3 = Helpers.AddButton($"{windowEvent.Options[2].ButtonText}", new Rect(62, 180, 120, 30), new UnityAction(windowEvent.Options[2].Select), window);
 
+						//Replace {NAME} with name of object
+						option1description = windowEvent.Options[0].Description.Replace("{NAME}", descriptionName);
+						option2description = windowEvent.Options[1].Description.Replace("{NAME}", descriptionName);
+						string option3description = windowEvent.Options[2].Description.Replace("{NAME}", descriptionName);
+
 						//Add the tooltips
-						Helpers.AddTooltip($"{windowEvent.Options[0].Title}", $"{windowEvent.Options[0].Description}\n\n<b>Effects:</b>\n{bt1effects}", bt1.gameObject);
-						Helpers.AddTooltip($"{windowEvent.Options[1].Title}", $"{windowEvent.Options[1].Description}\n\n<b>Effects:</b>\n{bt2effects}", bt2.gameObject);
-						Helpers.AddTooltip($"{windowEvent.Options[2].Title}", $"{windowEvent.Options[2].Description}\n\n<b>Effects:</b>\n{bt3effects}", bt3.gameObject);
+						Helpers.AddTooltip($"{windowEvent.Options[0].Title}", $"{option1description}\n\n<b>Effects:</b>\n{bt1effects}", bt1.gameObject);
+						Helpers.AddTooltip($"{windowEvent.Options[1].Title}", $"{option2description}\n\n<b>Effects:</b>\n{bt2effects}", bt2.gameObject);
+						Helpers.AddTooltip($"{windowEvent.Options[2].Title}", $"{option3description}\n\n<b>Effects:</b>\n{bt3effects}", bt3.gameObject);
 
 						window.MinSize = new Vector2(200, 40);
 						break;
@@ -581,11 +593,17 @@ namespace RandomEvents
 						bt3 = Helpers.AddButton($"{windowEvent.Options[2].ButtonText}", new Rect(62, 180, 120, 30), new UnityAction(windowEvent.Options[2].Select), window);
 						Button bt4 = Helpers.AddButton($"{windowEvent.Options[3].ButtonText}", new Rect(188, 180, 120, 30), new UnityAction(windowEvent.Options[3].Select), window);
 
+						//Replace {NAME} with name of object
+						option1description = windowEvent.Options[0].Description.Replace("{NAME}", descriptionName);
+						option2description = windowEvent.Options[1].Description.Replace("{NAME}", descriptionName);
+						option3description = windowEvent.Options[2].Description.Replace("{NAME}", descriptionName);
+						string option4description = windowEvent.Options[3].Description.Replace("{NAME}", descriptionName);
+
 						//Add the tooltips
-						Helpers.AddTooltip($"{windowEvent.Options[0].Title}", $"{windowEvent.Options[0].Description}\n\n<b>Effects:</b>\n{bt1effects}", bt1.gameObject);
-						Helpers.AddTooltip($"{windowEvent.Options[1].Title}", $"{windowEvent.Options[1].Description}\n\n<b>Effects:</b>\n{bt2effects}", bt2.gameObject);
-						Helpers.AddTooltip($"{windowEvent.Options[2].Title}", $"{windowEvent.Options[2].Description}\n\n<b>Effects:</b>\n{bt3effects}", bt3.gameObject);
-						Helpers.AddTooltip($"{windowEvent.Options[3].Title}", $"{windowEvent.Options[3].Description}\n\n<b>Effects:</b>\n{bt4effects}", bt4.gameObject);
+						Helpers.AddTooltip($"{windowEvent.Options[0].Title}", $"{option1description}\n\n<b>Effects:</b>\n{bt1effects}", bt1.gameObject);
+						Helpers.AddTooltip($"{windowEvent.Options[1].Title}", $"{option2description}\n\n<b>Effects:</b>\n{bt2effects}", bt2.gameObject);
+						Helpers.AddTooltip($"{windowEvent.Options[2].Title}", $"{option3description}\n\n<b>Effects:</b>\n{bt3effects}", bt3.gameObject);
+						Helpers.AddTooltip($"{windowEvent.Options[3].Title}", $"{option4description}\n\n<b>Effects:</b>\n{bt4effects}", bt4.gameObject);
 
 						window.MinSize = new Vector2(200, 40);
 						break;
@@ -725,6 +743,7 @@ namespace RandomEvents
 				Actor actor = obj as Actor;
 				//Employee employee = obj as Employee; //handled with actor
 				StockMarket marketobj = obj as StockMarket;
+
 				if (Effect == "company_money")
 				{
 					GameSettings.Instance.MyCompany.MakeTransaction(float.Parse(EffectValue), Company.TransactionCategory.NA);
@@ -3798,7 +3817,7 @@ namespace RandomEvents
 				//Set a random object as conditionobject
 				if (mainlist.Count > 0)
 				{
-					ConditionObject = mainlist[UnityEngine.Random.Range(0, mainlist.Count - 1)];
+					ConditionObject = mainlist.GetRandom();
 				}
 				#endregion
 
@@ -5604,7 +5623,8 @@ namespace RandomEvents
 				if (sublist.Count < 1)
 					return false;
 
-				ConditionObject = sublist[UnityEngine.Random.Range(0, sublist.Count - 1)];
+				ConditionObject = sublist.GetRandom();
+				//ConditionObject = sublist[UnityEngine.Random.Range(0, sublist.Count - 1)];
 				#endregion
 				return true;
 			}
