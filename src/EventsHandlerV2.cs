@@ -3775,6 +3775,21 @@ namespace RandomEvents
 					if (TimeOfDay.Instance.RainFactor < 0.1f)
 						return false;
 				}
+				else if (ConditionString == "has_multiple_founders")
+				{
+					var founders = GameSettings.Instance.sActorManager.Actors.Where(x => x.employee.Founder);
+					if (IsVariableCondition && VariableSign == "!")
+					{
+
+						if (founders.Count() > 1)
+							return false;
+					}
+					else
+					{
+						if (founders.Count() < 2)
+							return false;
+					}
+				}
 
 				//Set a random object as conditionobject
 				if (mainlist.Count > 0)
@@ -5537,6 +5552,7 @@ namespace RandomEvents
 						{
 							Actor actor = obj as Actor;
 							SDateTime dt = actor.employee.Hired;
+							
 							//TODO: Calculate the years from TODAY to actor.employee.Hired
 						}
 					}

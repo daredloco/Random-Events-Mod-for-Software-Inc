@@ -75,6 +75,7 @@ has_activedeal = checks if the player has any active deals => returns WorkItem
 has_softwareworkitem = checks if any workitem is a softwareworkitem => returns SoftwareWorkItem
 has_softwarealpha = checks if any workitem is in alpha/beta stage => returns SoftwareAlpha
 has_designdocument = checks if any workitem is in design stage => returns DesignDocument
+has_multiple_founders = checks if the company has more than one founder => returns nothing
 
 SUB CONDITIONS: (Use: "has_2deditor&&release_date>2" for true/false use "has_alpha" <- true or "has_alpha!" <- false)
 release_date = checks if the Main Conditions release date is X months difference to the value from today <= reads SoftwareProduct
