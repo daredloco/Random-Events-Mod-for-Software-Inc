@@ -28,6 +28,8 @@ namespace RandomEvents
 		static bool iscoolingdown = false;
 		int cooldownCounter = 0;
 
+		static Actor founder;
+
 		void AutoEvent(object sender, EventArgs args)
 		{
 			if (eventMode == 2)
@@ -1212,7 +1214,7 @@ namespace RandomEvents
 					DevConsole.Console.Log("Checking Condition " + Main);
 
 				//Workaround because GameSettings.Instance.Founder can be null
-				GameSettings.Instance.Founder = GameSettings.Instance.sActorManager.Actors.First(x => x.employee.Founder);
+				founder = GameSettings.Instance.sActorManager.Actors.GetRandomWhere(x => x.employee.Founder);
 
 				//Check main condition first and set a ConditionObjects list
 				#region main condition
@@ -1424,7 +1426,7 @@ namespace RandomEvents
 				else if (ConditionString == "has_gamerpg")
 				{
 					foreach (SoftwareProduct product in GameSettings.Instance.MyCompany.Products)
-						if (product.Type.Name == "Game" && product.Type.Category == "RPG")
+						if (product.Type.Name == "Game" && product.Type.Categories.ContainsKey("RPG"))
 							mainlist.Add(product);
 
 					if (IsVariableCondition)
@@ -1474,7 +1476,7 @@ namespace RandomEvents
 				else if (ConditionString == "has_gameadventure")
 				{
 					foreach (SoftwareProduct product in GameSettings.Instance.MyCompany.Products)
-						if (product.Type.Name == "Game" && product.Type.Category == "Adventure")
+						if (product.Type.Name == "Game" && product.Type.Categories.ContainsKey("Adventure"))
 							mainlist.Add(product);
 
 					if (IsVariableCondition)
@@ -1524,7 +1526,7 @@ namespace RandomEvents
 				else if (ConditionString == "has_gamesimulation")
 				{
 					foreach (SoftwareProduct product in GameSettings.Instance.MyCompany.Products)
-						if (product.Type.Name == "Game" && product.Type.Category == "Simulation")
+						if (product.Type.Name == "Game" && product.Type.Categories.ContainsKey("Simulation"))
 							mainlist.Add(product);
 
 					if (IsVariableCondition)
@@ -1574,7 +1576,7 @@ namespace RandomEvents
 				else if (ConditionString == "has_gamesports")
 				{
 					foreach (SoftwareProduct product in GameSettings.Instance.MyCompany.Products)
-						if (product.Type.Name == "Game" && product.Type.Category == "Sports")
+						if (product.Type.Name == "Game" && product.Type.Categories.ContainsKey("Sports"))
 							mainlist.Add(product);
 
 					if (IsVariableCondition)
@@ -1624,7 +1626,7 @@ namespace RandomEvents
 				else if (ConditionString == "has_gamerts")
 				{
 					foreach (SoftwareProduct product in GameSettings.Instance.MyCompany.Products)
-						if (product.Type.Name == "Game" && product.Type.Category == "RTS")
+						if (product.Type.Name == "Game" && product.Type.Categories.ContainsKey("RTS"))
 							mainlist.Add(product);
 
 					if (IsVariableCondition)
@@ -1674,7 +1676,7 @@ namespace RandomEvents
 				else if (ConditionString == "has_gamefps")
 				{
 					foreach (SoftwareProduct product in GameSettings.Instance.MyCompany.Products)
-						if (product.Type.Name == "Game" && product.Type.Category == "FPS")
+						if (product.Type.Name == "Game" && product.Type.Categories.ContainsKey("FPS"))
 							mainlist.Add(product);
 
 					if (IsVariableCondition)
@@ -1774,7 +1776,7 @@ namespace RandomEvents
 				else if (ConditionString == "has_oscomputer")
 				{
 					foreach (SoftwareProduct product in GameSettings.Instance.MyCompany.Products)
-						if (product.Type.Name == "Operating System" && product.Type.Category == "Computer")
+						if (product.Type.Name == "Operating System" && product.Type.Categories.ContainsKey("Computer"))
 							mainlist.Add(product);
 
 					if (IsVariableCondition)
@@ -1824,7 +1826,7 @@ namespace RandomEvents
 				else if (ConditionString == "has_osconsole")
 				{
 					foreach (SoftwareProduct product in GameSettings.Instance.MyCompany.Products)
-						if (product.Type.Name == "Operating System" && product.Type.Category == "Console")
+						if (product.Type.Name == "Operating System" && product.Type.Categories.ContainsKey("Console"))
 							mainlist.Add(product);
 
 					if (IsVariableCondition)
@@ -1874,7 +1876,7 @@ namespace RandomEvents
 				else if (ConditionString == "has_osphone")
 				{
 					foreach (SoftwareProduct product in GameSettings.Instance.MyCompany.Products)
-						if (product.Type.Name == "Operating System" && product.Type.Category == "Phone")
+						if (product.Type.Name == "Operating System" && product.Type.Categories.ContainsKey("Phone"))
 							mainlist.Add(product);
 
 					if (IsVariableCondition)
@@ -2813,12 +2815,12 @@ namespace RandomEvents
 					if (IsVariableCondition && VariableSign == "!")
 					{
 						
-						if (GameSettings.Instance.Founder.MyCar != null)
+						if (founder.MyCar != null)
 							return false;
 					}
 					else
 					{
-						if (GameSettings.Instance.Founder.MyCar == null)
+						if (founder.MyCar == null)
 							return false;
 					}
 				}
