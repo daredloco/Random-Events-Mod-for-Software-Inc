@@ -1199,7 +1199,7 @@ Event
         Effects[
             {
                 IsVisible 1
-                EffectValue 2000
+                EffectValue -2000
                 EffectName "Company Money"
                 Effect "company_money"
             }
