@@ -1227,7 +1227,7 @@ Event
         Effects[
             {
                 IsVisible 1
-                EffectValue 10
+                EffectValue 0.25
                 EffectName "Marketing"
                 Effect "add_marketing"
             }
@@ -1255,7 +1255,7 @@ Event
         Effects[
             {
                 IsVisible 1
-                EffectValue -10
+                EffectValue -0.25
                 EffectName "Marketing"
                 Effect "add_marketing"
             }
