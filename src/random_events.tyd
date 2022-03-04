@@ -1100,7 +1100,6 @@ Event
     ]
     Chance 10
 }
-
 ###Employee gets happy because of rain
 Event
 {
@@ -1155,4 +1154,31 @@ Event
         }
     ]
     Chance 10
+}
+
+###Water in Building
+Event
+{
+    Title "Water in Building"
+    Description "Due to the heavy rain, your roof has started leaking and needs to be repaired."
+    Conditions[
+        "has_rain"
+    ]
+    Options[
+        {
+        ButtonText "Damn Rain!"
+        Effects[
+            {
+                IsVisible 1
+                EffectValue 2000
+                EffectName "Company Money"
+                Effect "company_money"
+            }
+        ]
+        Title "Heavy rain has damaged your roof!"
+        Description "You have to pay $2000 in repair costs."
+        Notification "You have to pay $2000 in repair costs for your damaged roof!"
+        NotificationSound Issue #Can be Good Issue Neutral Warning
+        }
+    ]
 }
