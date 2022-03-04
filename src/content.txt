@@ -97,3 +97,4 @@ sick_days = checks if and how many sick days an Actor has <= reads Actor
 is_female = checks if the actor is female (true/false) <= reads Actor
 years_in_company = NOT INCLUDED IN THIS VERSION
 salary = checks if the salary of the employee matches <= reads Actor
+has_addon = checks if the Software Product has an addon <= reads SoftwareProduct, returns SoftwareAddon

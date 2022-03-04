@@ -741,6 +741,7 @@ namespace RandomEvents
 				DesignDocument designDocument = obj as DesignDocument;
 				SupportWork supportWork = obj as SupportWork;
 				Actor actor = obj as Actor;
+				SoftwareAddOn addon = obj as SoftwareAddOn;
 				//Employee employee = obj as Employee; //handled with actor
 				StockMarket marketobj = obj as StockMarket;
 
@@ -5618,6 +5619,27 @@ namespace RandomEvents
 							}
 						}
 						sublist = tmplst;
+					}
+					else if (SubConditionString == "has_addon")
+					{
+						List<object> condlist = mainlist;
+						if (sublist.Count > 0)
+							condlist = sublist;
+						List<object> tmplist = new List<object>();
+
+						foreach (object obj in condlist)
+						{
+							SoftwareProduct product = obj as SoftwareProduct;
+							if (product != null)
+							{
+								if (product.Addons.Count > 0)
+								{
+									tmplist.Add(product.Addons.GetRandom());
+								}
+							}
+						}
+						
+						sublist = tmplist;
 					}
 				}
 				if (sublist.Count < 1)
