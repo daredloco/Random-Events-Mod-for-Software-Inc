@@ -1290,7 +1290,7 @@ Event
         ]
         Title "You won't sell your OS to the Agency"
         Description "You don't want to sell the OS to the agency, you will gain some new fans!"
-        Notification "You gain 500 new fans because you won't sell your OS to the agency."
+        Notification "You gain {0} new fans because you won't sell your OS to the agency."
         NotificationSound Good #Can be Good Issue Neutral Warning
         };
         {
@@ -1298,7 +1298,9 @@ Event
             Effects[
                 {
                     IsVisible 1
-                    EffectValue 100000
+                    
+                    EffectMinValue 50000
+                    EffectMaxValue 150000
                     EffectName "Company Money"
                     Effect "company_money"
                 }
@@ -1311,9 +1313,39 @@ Event
             ]
             Title "You will sell your OS to the Agency"
             Description "You want to sell the OS to the agency, your fans won't like that at all!"
-            Notification "Your fans are angry with you and you lose some of them in protest to your action."
+            Notification "Your fans are angry with you and you lose {1} of them in protest to your action."
             NotificationSound Issue #Can be Good Issue Neutral Warning
             }
     ]
     Chance 10
 }
+
+###Found money on the ground###
+Event
+{
+    Title "Found Money"
+    Description "You did find Money on the ground!"
+    Conditions[
+    ]
+    Options[
+        {
+        ButtonText "Today is my lucky day!"
+        Effects[
+            {
+                IsVisible 1
+                EffectMinValue 5
+                EffectMaxValue 100
+                EffectName "Fans Changed"
+                Effect "fans_change_os"
+            }
+        ]
+        Title "You're a lucky person!"
+        Description "You found ${0} and are very happy about it!"
+        Notification "You found ${0} on the ground, you're a lucky person."
+        NotificationSound Good #Can be Good Issue Neutral Warning
+        }
+    ]
+    Chance 10
+}
+
+######
