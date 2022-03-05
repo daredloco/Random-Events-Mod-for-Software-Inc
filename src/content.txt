@@ -44,6 +44,10 @@ change_employee_stress = changes the employees stress level
 change_bugs = changes the amount of bugs for a software product
 goes_home = Sends employee home
 add_marketing = Adds/Removes marketing for a softwareproduct
+fire_employee = Fires the employee
+quit_employee = The employee will quit
+generates_bugs = Employee will generate bug in the project hes working on <= not included in this version
+fixes_bugs = Employee will fix bugs in the project hes working on <= not included in this version
 
 CONDITIONS: (most can be used with "is_year>2000" {valid signs: >, <, >=, <=, =, !, !=})
 has_software = checks if the player has a softwareproduct => returns SoftwareProduct

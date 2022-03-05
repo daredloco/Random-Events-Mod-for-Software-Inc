@@ -1203,6 +1203,37 @@ namespace RandomEvents
 				{
 					product.AddToMarketing(MarketSimulation.Active.GetMaxAwareness(product) * float.Parse(EffectValue));
 				}
+				else if (Effect == "fire_employee")
+				{
+					if(actor != null)
+						actor.Fire(false);
+				}
+				else  if (Effect == "quit_employee")
+				{
+					if(actor != null)
+						actor.Fire(true);
+				}
+				else if (Effect == "generates_bugs")
+				{
+					if(actor != null)
+					{
+						if(actor.MyWorkItem() != null)
+						{
+							//TODO: Do something with it
+						}
+					}
+				}
+				else if (Effect == "fixes_bugs")
+				{
+					if(actor != null)
+					{
+						if(actor.MyWorkItem() != null)
+						{
+							//TODO: Do somethign with it
+						}
+						
+					}
+				}
 				return EffectValue;
 			}
 		}
