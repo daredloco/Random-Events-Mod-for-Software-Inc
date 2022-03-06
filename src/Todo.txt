@@ -23,10 +23,20 @@ BUGS:
 *WorldEvent can't be fired with Call_World_Event (Fixed, ignore conditions)
 *SubConditions sometimes use mainlist directly, but should check if sublist is bigger than 0 and if so they should take from there (fixed)
 
+*Employee won't go home and has_crunch check seems to be broken
+
 Done:
-53 Effects
+56 Effects
 52 Conditions
 16 SubConditions
+
+[h3]Version 3.0[/h3]
+[list]
+[*] Updated to Beta 1
+[*] Added new Events
+[*] Added new Conditions
+[*] Added new SubConditions
+[/list]
 
 [h3]Version 2.3[/h3]
 [list]
