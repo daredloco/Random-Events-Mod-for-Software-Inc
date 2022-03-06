@@ -911,7 +911,7 @@ Event
 Event
 {
     Title "Overworked Employee"
-    Description "Your employee {NAME} did overwork himself, due to the ongoing crunch.\nHe asks if he can go home, will you allow it?"
+    Description "Your employee {NAME} did overwork himself, due to the ongoing crunch.\nHe asks if he/she can go home, will you allow it?"
     Conditions[
         "has_employee&is_crunching&is_working"
     ]
@@ -934,7 +934,7 @@ Event
         ]
         Title "Happy Employee"
         Description "Your Employee will be very happy about your decision to let him go home and therefor gain satisfaction and lose stress"
-        Notification "You did send your employee <b>{NAME}</b> home, because he did overwork himself!"
+        Notification "You did send your employee <b>{NAME}</b> home, because he/she did overwork himself!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     };
     {
@@ -955,7 +955,7 @@ Event
         ]
         Title "Stressed Employee"
         Description "Your Employee will be stressed about your decision to not let him go home and therefor lose satisfaction and gain stress"
-        Notification "You didn't allow your employee <b>{NAME}</b> to go home and he just got more stressed out!"
+        Notification "You didn't allow your employee <b>{NAME}</b> to go home and he/she just got more stressed out!"
         NotificationSound Warning #Can be Good Issue Neutral Warning
     }]
     Chance 20
@@ -1083,7 +1083,7 @@ Event
     ]
     Options[
         {
-        ButtonText "Glad he likes snow"
+        ButtonText "Glad he/she likes snow"
         Effects[
             {
                 IsVisible 1
@@ -1139,7 +1139,7 @@ Event
     ]
     Options[
         {
-        ButtonText "Glad he likes rain"
+        ButtonText "Glad he/she likes rain"
         Effects[
             {
                 IsVisible 1
@@ -1352,9 +1352,9 @@ Event
 Event
 {
     Title "Employee wants to quit"
-    Description "Your employee wants to quit, but would be persuaded to stay by a raise."
+    Description "Your employee {NAME} wants to quit, but would be persuaded to stay by a raise."
     Conditions[
-        "has_employee&&!is_founder"
+        "has_employee"
     ]
     Options[
         {
@@ -1397,7 +1397,7 @@ Event
     Title "Employee steals money"
     Description "Your employee steals money from the company!"
     Conditions[
-        "has_employee&&!is_founder"
+        "has_employee"
     ]
     Options[
         {
@@ -1417,8 +1417,8 @@ Event
             }
         ]
         Title "You will fire the employee!"
-        Description "Your employee {NAME} won't pay you the ${0} back, but you will fire him!"
-        Notification "You did fire your employee {NAME} for stealing ${0} from you."
+        Description "Your employee <b>{NAME}</b> won't pay you the money back, but you will fire him!"
+        Notification "You did fire your employee <b>{NAME}</b> for stealing ${0} from you."
         NotificationSound Issue #Can be Good Issue Neutral Warning
         };
         {
@@ -1433,8 +1433,8 @@ Event
                 }
             ]
             Title "You won't fire the employee!"
-            Description "Your employee {NAME} won't pay you the ${0} back, and you won't fire him!"
-            Notification "You did not fire your employee {NAME} for stealing ${0} from you."
+            Description "Your employee <b>{NAME}</b> won't pay you the ${0} back, and you won't fire him!"
+            Notification "You did not fire your employee <b>{NAME}</b> for stealing ${0} from you."
             NotificationSound Neutral #Can be Good Issue Neutral Warning
             }
     ]
