@@ -1351,3 +1351,51 @@ Event
 ###Employee wants to quit###
 
 ###Employee steals companies money###
+Event
+{
+    Title "Employee steals money"
+    Description "Your employee steals money from the company!"
+    Conditions[
+        "has_employee"
+    ]
+    Options[
+        {
+        ButtonText "Fire him!"
+        Effects[
+            {
+                IsVisible 1
+                EffectMinValue 500
+                EffectMaxValue 10000
+                EffectName "Company Money"
+                Effect "company_money"
+            };
+            {
+                IsVisible 1
+                EffectName "Fire Employee"
+                Effect "fire_employee"
+            }
+        ]
+        Title "You will fire the employee!"
+        Description "Your employee {NAME} won't pay you the ${0} back, but you will fire him!"
+        Notification "You did fire your employee {NAME} for stealing ${0} from you."
+        NotificationSound Issue #Can be Good Issue Neutral Warning
+        };
+        {
+            ButtonText "We need him!"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectMinValue 500
+                    EffectMaxValue 10000
+                    EffectName "Company Money"
+                    Effect "company_money"
+                }
+            ]
+            Title "You won't fire the employee!"
+            Description "Your employee {NAME} won't pay you the ${0} back, and you won't fire him!"
+            Notification "You did not fire your employee {NAME} for stealing ${0} from you."
+            NotificationSound Neutral #Can be Good Issue Neutral Warning
+            }
+    ]
+    Chance 15
+}
