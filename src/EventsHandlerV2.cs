@@ -2293,7 +2293,8 @@ namespace RandomEvents
 				{
 					foreach (Actor actor in GameSettings.Instance.sActorManager.Actors)
 						if (actor.AItype == AI.AIType.Employee)
-							mainlist.Add(actor);
+							if(actor.employee.Founder == false)
+								mainlist.Add(actor);
 
 					if (IsVariableCondition)
 					{
