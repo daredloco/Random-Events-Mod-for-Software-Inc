@@ -196,7 +196,7 @@ Event
         Effects[
             {
             IsVisible 1
-            EffectValue 5
+            EffectValue -5
             EffectName "Company Money"
             Effect "company_money"
             }
@@ -1324,7 +1324,7 @@ Event
 Event
 {
     Title "Found Money"
-    Description "You did find Money on the ground!"
+    Description "You did find ${0} on the ground!"
     Conditions[
     ]
     Options[
@@ -1335,12 +1335,12 @@ Event
                 IsVisible 1
                 EffectMinValue 5
                 EffectMaxValue 100
-                EffectName "Fans Changed"
-                Effect "fans_change_os"
+                EffectName "Company Money"
+                Effect "company_money"
             }
         ]
         Title "You're a lucky person!"
-        Description "You found ${0} and are very happy about it!"
+        Description "You found money and are very happy about it!"
         Notification "You found ${0} on the ground, you're a lucky person."
         NotificationSound Good #Can be Good Issue Neutral Warning
         }
@@ -1383,12 +1383,12 @@ Event
                 }
             ]
             Title "You won't fire the employee!"
-            Description "You give {NAME} a ${0} raise and convince him to stay."
+            Description "You give {NAME} a raise and convince him to stay."
             Notification "You gave {NAME} a ${0} raise and talked him into staying."
             NotificationSound Good #Can be Good Issue Neutral Warning
             }
     ]
-    Chance 15
+    Chance 10
 }
 
 ###Employee steals companies money###
@@ -1405,8 +1405,8 @@ Event
         Effects[
             {
                 IsVisible 1
-                EffectMinValue 500
-                EffectMaxValue 10000
+                EffectMinValue -500
+                EffectMaxValue -10000
                 EffectName "Company Money"
                 Effect "company_money"
             };
@@ -1426,8 +1426,8 @@ Event
             Effects[
                 {
                     IsVisible 1
-                    EffectMinValue 500
-                    EffectMaxValue 10000
+                    EffectMinValue -500
+                    EffectMaxValue -10000
                     EffectName "Company Money"
                     Effect "company_money"
                 }
@@ -1438,5 +1438,5 @@ Event
             NotificationSound Neutral #Can be Good Issue Neutral Warning
             }
     ]
-    Chance 15
+    Chance 10
 }
