@@ -1,4 +1,4 @@
-# Random Events Mod for Software Inc
+# Random Events Mod for Software Inc (For BETA 1)
  A mod that adds random and real events to the game Software Inc
 
 Steam Workshop Link: https://steamcommunity.com/sharedfiles/filedetails/?id=2139500907
