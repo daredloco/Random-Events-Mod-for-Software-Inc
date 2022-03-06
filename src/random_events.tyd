@@ -1349,6 +1349,47 @@ Event
 }
 
 ###Employee wants to quit###
+Event
+{
+    Title "Employee wants to quit"
+    Description "Your employee wants to quit, but would be persuaded to stay by a raise."
+    Conditions[
+        "has_employee&&!is_founder"
+    ]
+    Options[
+        {
+        ButtonText "Let him go!"
+        Effects[
+            {
+                IsVisible 1
+                EffectName "Quit Employee"
+                Effect "quit_employee"
+            }
+        ]
+        Title "Your employee will quit!"
+        Description "Your employee {NAME} is quitting and you may need to find a replacement."
+        Notification "Your employee {NAME} quit."
+        NotificationSound Issue #Can be Good Issue Neutral Warning
+        };
+        {
+            ButtonText "Give him a Raise!"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectMinValue 100
+                    EffectMaxValue 500
+                    EffectName "Change Salary"
+                    Effect "change_salary"
+                }
+            ]
+            Title "You won't fire the employee!"
+            Description "You give {NAME} a ${0} raise and convince him to stay."
+            Notification "You gave {NAME} a ${0} raise and talked him into staying."
+            NotificationSound Good #Can be Good Issue Neutral Warning
+            }
+    ]
+    Chance 15
+}
 
 ###Employee steals companies money###
 Event
@@ -1356,7 +1397,7 @@ Event
     Title "Employee steals money"
     Description "Your employee steals money from the company!"
     Conditions[
-        "has_employee"
+        "has_employee&&!is_founder"
     ]
     Options[
         {
