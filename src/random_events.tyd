@@ -1345,7 +1345,9 @@ Event
         NotificationSound Good #Can be Good Issue Neutral Warning
         }
     ]
-    Chance 10
+    Chance 15
 }
 
-######
+###Employee wants to quit###
+
+###Employee steals companies money###
