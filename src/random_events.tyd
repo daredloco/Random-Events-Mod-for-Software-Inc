@@ -232,7 +232,7 @@ Event
         Notification "The prices for {NAME}s stocks are falling by <b>{0}%</b>!"
         NotificationSound Issue #Can be Good Issue Neutral Warning
     }]
-    Chance 10
+    Chance 20
 }
 ###StockMarket single win###
 Event
@@ -258,7 +258,7 @@ Event
         Notification "The prices for {NAME}s stocks raise by <b>{0}%</b>!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     }]
-    Chance 10
+    Chance 20
 }
 
 ###Stock Market crash (small)###
@@ -310,7 +310,7 @@ Event
         Notification "The Stockmarket did crash by <b>10%</b>!"
         NotificationSound Issue #Can be Good Issue Neutral Warning
     }]
-    Chance 10
+    Chance 20
 }
 
 ###Stock Market Crash (big)###
@@ -388,7 +388,7 @@ Event
         Notification "The Stockmarket prices raising by <b>10%</b>!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     }]
-    Chance 10
+    Chance 20
 }
 
 ###Stock Market Boom (big)###
@@ -986,7 +986,7 @@ Event
         NotificationSound Good #Can be Good Issue Neutral Warning
         }
     ]
-    Chance 10
+    Chance 20
 }
 
 ###Employee gains design experience###
@@ -1014,7 +1014,7 @@ Event
         NotificationSound Good #Can be Good Issue Neutral Warning
         }
     ]
-    Chance 10
+    Chance 20
 }
 
 ###Employee gains programming experience###
@@ -1042,7 +1042,7 @@ Event
         NotificationSound Good #Can be Good Issue Neutral Warning
         }
     ]
-    Chance 10
+    Chance 20
 }
 
 ###Employee gains art experience###
@@ -1070,7 +1070,7 @@ Event
         NotificationSound Good #Can be Good Issue Neutral Warning
         }
     ]
-    Chance 10
+    Chance 20
 }
 
 ###Employee gets happy because of snow
@@ -1098,7 +1098,7 @@ Event
         NotificationSound Good #Can be Good Issue Neutral Warning
         }
     ]
-    Chance 10
+    Chance 20
 }
 
 ###Employee gets sad because of snow
@@ -1126,7 +1126,7 @@ Event
         NotificationSound Issue #Can be Good Issue Neutral Warning
         }
     ]
-    Chance 10
+    Chance 20
 }
 
 ###Employee gets happy because of rain
@@ -1154,7 +1154,7 @@ Event
         NotificationSound Good #Can be Good Issue Neutral Warning
         }
     ]
-    Chance 10
+    Chance 20
 }
 
 ###Employee gets sad because of rain
@@ -1182,7 +1182,7 @@ Event
         NotificationSound Issue #Can be Good Issue Neutral Warning
         }
     ]
-    Chance 10
+    Chance 20
 }
 
 ###Water in Building
@@ -1210,7 +1210,7 @@ Event
         NotificationSound Issue #Can be Good Issue Neutral Warning
         }
     ]
-    Chance 10
+    Chance 20
 }
 
 ###Streamer promotes your game###
@@ -1238,7 +1238,7 @@ Event
         NotificationSound Good #Can be Good Issue Neutral Warning
         }
     ]
-    Chance 10
+    Chance 20
 }
 
 ###Streamer talked bad about your game###
@@ -1266,7 +1266,7 @@ Event
         NotificationSound Issue #Can be Good Issue Neutral Warning
         }
     ]
-    Chance 10
+    Chance 20
 }
 
 ###Secret Agency wants to buy your OS###
@@ -1317,7 +1317,7 @@ Event
             NotificationSound Issue #Can be Good Issue Neutral Warning
             }
     ]
-    Chance 10
+    Chance 20
 }
 
 ###Found money on the ground###
@@ -1388,7 +1388,7 @@ Event
             NotificationSound Good #Can be Good Issue Neutral Warning
             }
     ]
-    Chance 10
+    Chance 20
 }
 
 ###Employee steals companies money###
@@ -1438,5 +1438,5 @@ Event
             NotificationSound Neutral #Can be Good Issue Neutral Warning
             }
     ]
-    Chance 10
+    Chance 20
 }
