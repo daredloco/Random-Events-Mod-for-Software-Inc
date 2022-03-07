@@ -1240,9 +1240,7 @@ namespace RandomEvents
 					{
 						if(actor.employee != null)
 						{
-							actor.employee.Salary += float.Parse(EffectValue);
-							if (actor.employee.Salary < 100)
-								actor.employee.Salary = 100;
+							actor.employee.Salary += actor.employee.Salary * float.Parse(EffectValue);
 						}
 					}
 				}
