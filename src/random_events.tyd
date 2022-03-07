@@ -1376,15 +1376,64 @@ Event
             Effects[
                 {
                     IsVisible 1
-                    EffectMinValue 100
-                    EffectMaxValue 500
+                    EffectMinValue 5
+                    EffectMaxValue 15
                     EffectName "Change Salary"
                     Effect "change_salary"
                 }
             ]
             Title "You won't fire the employee!"
             Description "You give {NAME} a raise and convince him to stay."
-            Notification "You gave {NAME} a ${0} raise and talked him into staying."
+            Notification "You gave {NAME} a {0}% raise and talked him into staying."
+            NotificationSound Good #Can be Good Issue Neutral Warning
+            }
+    ]
+    Chance 20
+}
+
+###Employee wants to quit 2###
+Event
+{
+    Title "Employee wants to quit 2"
+    Description "Your employee {NAME} wants to quit, but would be persuaded to stay if you gave him money."
+    Conditions[
+        "has_employee"
+    ]
+    Options[
+        {
+        ButtonText "Let him go!"
+        Effects[
+            {
+                IsVisible 1
+                EffectName "Quit Employee"
+                Effect "quit_employee"
+            }
+        ]
+        Title "Your employee will quit!"
+        Description "Your employee {NAME} is quitting and you may need to find a replacement."
+        Notification "Your employee {NAME} quit."
+        NotificationSound Issue #Can be Good Issue Neutral Warning
+        };
+        {
+            ButtonText "Give him money!"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectMinValue -500
+                    EffectMaxValue -2500
+                    EffectName "Company Money"
+                    Effect "company_money"
+                };
+                {
+                    IsVisible 1
+                    EffectValue 0.25
+                    EffectName "Employee Satisfaction"
+                    Effect "change_employee_satisfaction"
+                }
+            ]
+            Title "You won't fire the employee!"
+            Description "You give {NAME} a raise and convince him to stay."
+            Notification "You gave {NAME} a {0}% raise and talked him into staying."
             NotificationSound Good #Can be Good Issue Neutral Warning
             }
     ]
