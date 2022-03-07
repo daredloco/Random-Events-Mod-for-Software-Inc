@@ -49,7 +49,7 @@ quit_employee = The employee will quit
 generates_bugs = Employee will generate bug in the project hes working on <= not included in this version
 fixes_bugs = Employee will fix bugs in the project hes working on <= not included in this version
 change_Salary = Changes the salary of an employee <= bugged out!
-
+call_event = Calls another event by title
 CONDITIONS: (most can be used with "is_year>2000" {valid signs: >, <, >=, <=, =, !, !=})
 has_software = checks if the player has a softwareproduct => returns SoftwareProduct
 has_workitem = checks if the player has a workitem (running project) => returns null

@@ -16,8 +16,8 @@ namespace RandomEvents
 	public class EventsHandlerV2 : ModBehaviour
 	{
 		public static EventsHandlerV2 Instance;
-		List<Event> RandomEvents = new List<Event>();
-		List<Event> WorldEvents = new List<Event>();
+		static List<Event> RandomEvents = new List<Event>();
+		static List<Event> WorldEvents = new List<Event>();
 
 		public static bool hasEventRunning = false;
 		public static bool debugMode = false;
@@ -1242,6 +1242,15 @@ namespace RandomEvents
 						{
 							actor.employee.Salary += actor.employee.Salary * float.Parse(EffectValue);
 						}
+					}
+				}
+				else if (Effect == "call_event")
+				{
+					//TODO: Check if its world or random event
+					var event2call = RandomEvents.FirstOrDefault(x => x.Title == EffectValue);
+					if(event2call != null)
+					{ 
+						event2call.Fire(false);
 					}
 				}
 				return EffectValue;
