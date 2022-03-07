@@ -1489,3 +1489,47 @@ Event
     ]
     Chance 20
 }
+
+###Win the lottery###
+Event
+{
+    Title "Win the lottery"
+    Description "You won in the lottery!"
+    Conditions[
+    ]
+    Options[
+        {
+        ButtonText "Great!"
+        Effects[
+            {
+                IsVisible 1
+                EffectMinValue 50000
+                EffectMaxValue 150000
+                EffectName "Company Money"
+                Effect "company_money"
+            };
+        ]
+        Title "I've alot of luck!"
+        Description "You will win <b>${0}</b> from the lottery!"
+        Notification "You won <b>${0}</b> in the lottery."
+        NotificationSound Good #Can be Good Issue Neutral Warning
+        };
+        {
+            ButtonText "I want to donate it!"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectMinValue 5000
+                    EffectMaxValue 10000
+                    EffectName "Fans change"
+                    Effect "fans_change"
+                }
+            ]
+            Title "Your fans will like it!"
+            Description "You will win {0} new fans by donating the money from the lottery!"
+            Notification "You won {0} new fans by donating the money from the lottery"
+            NotificationSound Good #Can be Good Issue Neutral Warning
+            }
+    ]
+    Chance 20
+}
