@@ -203,7 +203,7 @@ namespace RandomEvents
 			catch(Exception ex)
 			{
 				if (debugMode)
-					DevConsole.Console.LogWarning("Coudln't find file inside the local folder, trying the steam folder! => " + ex.Message);
+					DevConsole.Console.LogWarning("Couldn't find file inside the local folder, trying the steam folder! => " + ex.Message);
 				
 				try
 				{
@@ -460,6 +460,11 @@ namespace RandomEvents
 
 						//Replace {NAME} with name of object
 						string option1description = windowEvent.Options[0].Description.Replace("{NAME}", descriptionName);
+						for (int i = 0; i < effectvalues.Count; i++)
+						{
+							string key = "{" + i + "}";
+							option1description = option1description.Replace(key, effectvalues[i]);
+						}
 
 						//Add the tooltips
 						Helpers.AddTooltip($"{windowEvent.Options[0].Title}", $"{option1description}\n\n<b>Effects:</b>\n{bt1effects}", bt1.gameObject);
@@ -494,7 +499,12 @@ namespace RandomEvents
 						//Replace {NAME} with name of object
 						option1description = windowEvent.Options[0].Description.Replace("{NAME}", descriptionName);
 						string option2description = windowEvent.Options[1].Description.Replace("{NAME}", descriptionName);
-
+						for (int i = 0; i < effectvalues.Count; i++)
+						{
+							string key = "{" + i + "}";
+							option1description = option1description.Replace(key, effectvalues[i]);
+							option2description = option2description.Replace(key, effectvalues[i]);
+						}
 						//Add the tooltips
 						Helpers.AddTooltip($"{windowEvent.Options[0].Title}", $"{option1description}\n\n<b>Effects:</b>\n{bt1effects}", bt1.gameObject);
 						Helpers.AddTooltip($"{windowEvent.Options[1].Title}", $"{option2description}\n\n<b>Effects:</b>\n{bt2effects}", bt2.gameObject);
@@ -540,7 +550,13 @@ namespace RandomEvents
 						option1description = windowEvent.Options[0].Description.Replace("{NAME}", descriptionName);
 						option2description = windowEvent.Options[1].Description.Replace("{NAME}", descriptionName);
 						string option3description = windowEvent.Options[2].Description.Replace("{NAME}", descriptionName);
-
+						for (int i = 0; i < effectvalues.Count; i++)
+						{
+							string key = "{" + i + "}";
+							option1description = option1description.Replace(key, effectvalues[i]);
+							option2description = option2description.Replace(key, effectvalues[i]);
+							option3description = option3description.Replace(key, effectvalues[i]);
+						}
 						//Add the tooltips
 						Helpers.AddTooltip($"{windowEvent.Options[0].Title}", $"{option1description}\n\n<b>Effects:</b>\n{bt1effects}", bt1.gameObject);
 						Helpers.AddTooltip($"{windowEvent.Options[1].Title}", $"{option2description}\n\n<b>Effects:</b>\n{bt2effects}", bt2.gameObject);
@@ -598,7 +614,14 @@ namespace RandomEvents
 						option2description = windowEvent.Options[1].Description.Replace("{NAME}", descriptionName);
 						option3description = windowEvent.Options[2].Description.Replace("{NAME}", descriptionName);
 						string option4description = windowEvent.Options[3].Description.Replace("{NAME}", descriptionName);
-
+						for (int i = 0; i < effectvalues.Count; i++)
+						{
+							string key = "{" + i + "}";
+							option1description = option1description.Replace(key, effectvalues[i]);
+							option2description = option2description.Replace(key, effectvalues[i]);
+							option3description = option3description.Replace(key, effectvalues[i]);
+							option4description = option4description.Replace(key, effectvalues[i]);
+						}
 						//Add the tooltips
 						Helpers.AddTooltip($"{windowEvent.Options[0].Title}", $"{option1description}\n\n<b>Effects:</b>\n{bt1effects}", bt1.gameObject);
 						Helpers.AddTooltip($"{windowEvent.Options[1].Title}", $"{option2description}\n\n<b>Effects:</b>\n{bt2effects}", bt2.gameObject);
@@ -1240,7 +1263,7 @@ namespace RandomEvents
 					{
 						if(actor.employee != null)
 						{
-							actor.employee.Salary += actor.employee.Salary * float.Parse(EffectValue);
+							actor.employee.Salary += actor.employee.Salary * (float.Parse(EffectValue) / 100);
 						}
 					}
 				}
