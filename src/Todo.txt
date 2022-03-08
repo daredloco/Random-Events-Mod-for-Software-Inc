@@ -37,6 +37,8 @@ Done:
 [*] Added new Events
 [*] Added new Conditions
 [*] Added new SubConditions
+[*] Added World Events to Newspaper
+[*] Fixed several bugs
 [/list]
 
 [h3]Version 2.3[/h3]

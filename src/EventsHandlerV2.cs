@@ -351,6 +351,16 @@ namespace RandomEvents
 
 			public void Show()
 			{
+
+				//Add to the newspaper if its worldevent and don't show popup
+				if (windowEvent.IsWorldEvent)
+				{
+					DevConsole.Console.Log($"Write event '{ windowEvent.Title }' to newspaper");
+					Utils.WriteNewspaper(windowEvent.Title, windowEvent.Description);
+					windowEvent.Options[0].Select();
+					return;
+				}
+
 				if (_shown)
 				{
 					window.Close();
@@ -384,12 +394,6 @@ namespace RandomEvents
 				window.name = "EventWindow";
 				window.MainPanel.name = "EventPanel";
 				window.ShowCentered = true;
-
-				//Add to the newspaper
-				if(windowEvent.IsWorldEvent)
-				{
-					Utils.WriteNewspaper(windowEvent.Title, windowEvent.Description);
-				}
 
 				//Remove default Window Buttons
 				if (window.name == "EventWindow")
