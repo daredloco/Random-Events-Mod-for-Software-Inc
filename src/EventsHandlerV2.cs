@@ -448,7 +448,7 @@ namespace RandomEvents
 						string bt1effects = "";
 						foreach (EventEffect effect in windowEvent.Options[0].Effects)
 						{
-							effect.GenerateValue();
+							//effect.GenerateValue();
 							if (effect.IsVisible)
 								bt1effects += Utils.UpperFirstLetters(effect.EffectName) + ": " + effect.EffectValue + "\n";
 						}
@@ -477,13 +477,13 @@ namespace RandomEvents
 						string bt2effects = "";
 						foreach (EventEffect effect in windowEvent.Options[0].Effects)
 						{
-							effect.GenerateValue();
+							//effect.GenerateValue();
 							if (effect.IsVisible)
 								bt1effects += Utils.UpperFirstLetters(effect.EffectName) + ": " + effect.EffectValue + "\n";
 						}
 						foreach (EventEffect effect in windowEvent.Options[1].Effects)
 						{
-							effect.GenerateValue();
+							//effect.GenerateValue();
 							if (effect.IsVisible)
 								bt2effects += Utils.UpperFirstLetters(effect.EffectName) + ": " + effect.EffectValue + "\n";
 						}
@@ -518,19 +518,19 @@ namespace RandomEvents
 						string bt3effects = "";
 						foreach (EventEffect effect in windowEvent.Options[0].Effects)
 						{
-							effect.GenerateValue();
+							//effect.GenerateValue();
 							if (effect.IsVisible)
 								bt1effects += Utils.UpperFirstLetters(effect.EffectName) + ": " + effect.EffectValue + "\n";
 						}
 						foreach (EventEffect effect in windowEvent.Options[1].Effects)
 						{
-							effect.GenerateValue();
+							//effect.GenerateValue();
 							if (effect.IsVisible)
 								bt2effects += Utils.UpperFirstLetters(effect.EffectName) + ": " + effect.EffectValue + "\n";
 						}
 						foreach (EventEffect effect in windowEvent.Options[2].Effects)
 						{
-							effect.GenerateValue();
+							//effect.GenerateValue();
 							if (effect.IsVisible)
 								bt3effects += Utils.UpperFirstLetters(effect.EffectName) + ": " + effect.EffectValue + "\n";
 						}
@@ -572,25 +572,25 @@ namespace RandomEvents
 						string bt4effects = "";
 						foreach (EventEffect effect in windowEvent.Options[0].Effects)
 						{
-							effect.GenerateValue();
+							//effect.GenerateValue();
 							if (effect.IsVisible)
 								bt1effects += Utils.UpperFirstLetters(effect.EffectName) + ": " + effect.EffectValue + "\n";
 						}
 						foreach (EventEffect effect in windowEvent.Options[1].Effects)
 						{
-							effect.GenerateValue();
+							//effect.GenerateValue();
 							if (effect.IsVisible)
 								bt2effects += Utils.UpperFirstLetters(effect.EffectName) + ": " + effect.EffectValue + "\n";
 						}
 						foreach (EventEffect effect in windowEvent.Options[2].Effects)
 						{
-							effect.GenerateValue();
+							//effect.GenerateValue();
 							if (effect.IsVisible)
 								bt3effects += Utils.UpperFirstLetters(effect.EffectName) + ": " + effect.EffectValue + "\n";
 						}
 						foreach (EventEffect effect in windowEvent.Options[3].Effects)
 						{
-							effect.GenerateValue();
+							//effect.GenerateValue();
 							if (effect.IsVisible)
 								bt4effects += Utils.UpperFirstLetters(effect.EffectName) + ": " + effect.EffectValue + "\n";
 						}
