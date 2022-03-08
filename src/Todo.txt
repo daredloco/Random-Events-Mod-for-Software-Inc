@@ -38,6 +38,7 @@ Done:
 [*] Added new Conditions
 [*] Added new SubConditions
 [*] Added World Events to Newspaper
+[*] Removed World Event Popup
 [*] Fixed several bugs
 [/list]
 
