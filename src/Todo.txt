@@ -24,6 +24,7 @@ BUGS:
 *SubConditions sometimes use mainlist directly, but should check if sublist is bigger than 0 and if so they should take from there (fixed)
 
 *Employee won't go home and has_crunch check seems to be broken
+*Button Description won't show values like {0}
 
 Done:
 56 Effects

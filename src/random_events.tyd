@@ -1432,8 +1432,8 @@ Event
                 }
             ]
             Title "You won't fire the employee!"
-            Description "You give {NAME} a raise and convince him to stay."
-            Notification "You gave {NAME} a {0}% raise and talked him into staying."
+            Description "You give {NAME} money and convince him to stay."
+            Notification "You gave {NAME} ${0} raise and talked him into staying."
             NotificationSound Good #Can be Good Issue Neutral Warning
             }
     ]
@@ -1507,7 +1507,7 @@ Event
                 EffectMaxValue 150000
                 EffectName "Company Money"
                 Effect "company_money"
-            };
+            }
         ]
         Title "I've alot of luck!"
         Description "You will win <b>${0}</b> from the lottery!"
