@@ -385,6 +385,12 @@ namespace RandomEvents
 				window.MainPanel.name = "EventPanel";
 				window.ShowCentered = true;
 
+				//Add to the newspaper
+				if(windowEvent.IsWorldEvent)
+				{
+					Utils.WriteNewspaper(windowEvent.Title, windowEvent.Description);
+				}
+
 				//Remove default Window Buttons
 				if (window.name == "EventWindow")
 				{

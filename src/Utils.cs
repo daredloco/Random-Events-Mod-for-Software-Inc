@@ -68,5 +68,11 @@ namespace RandomEvents
 		{
 			return ReplaceValues(str, values.Split('|'), replacements.Split('|'));
 		}
+
+		public static void WriteNewspaper(string title, string content)
+		{
+			Newspaper.Story story = new Newspaper.Story(title, content, Newspaper.Section.All, null, 0);
+			Newspaper.Instance.AddNewStory(SDateTime.Now(), story);
+		}
 	}
 }
