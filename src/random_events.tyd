@@ -1496,6 +1496,7 @@ Event
     Title "Win the lottery"
     Description "You won in the lottery!"
     Conditions[
+        "has_fans"
     ]
     Options[
         {
