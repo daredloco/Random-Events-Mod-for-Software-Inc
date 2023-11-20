@@ -1225,7 +1225,7 @@ namespace RandomEvents
 				}
 				else if (Effect == "change_bugs")
 				{
-					product.Bugs += int.Parse(EffectValue);
+					product.AddBugs(int.Parse(EffectValue));
 				}
 				else if (Effect == "goes_home")
 				{
@@ -4169,7 +4169,7 @@ namespace RandomEvents
 									SoftwareProduct product = obj as SoftwareProduct;
 									if (product != null)
 									{
-										if (product.Bugs < bugs)
+										if (product.Bugss < bugs)
 											tmplst.Add(product);
 									}
 								}
@@ -4182,7 +4182,7 @@ namespace RandomEvents
 									SoftwareProduct product = obj as SoftwareProduct;
 									if (product != null)
 									{
-										if (product.Bugs < bugs)
+										if (product.Bugss < bugs)
 											sublist.Add(product);
 									}
 								}
@@ -4198,7 +4198,7 @@ namespace RandomEvents
 									SoftwareProduct product = obj as SoftwareProduct;
 									if (product != null)
 									{
-										if (product.Bugs > bugs)
+										if (product.Bugss > bugs)
 											tmplst.Add(product);
 									}
 								}
@@ -4211,7 +4211,7 @@ namespace RandomEvents
 									SoftwareProduct product = obj as SoftwareProduct;
 									if (product != null)
 									{
-										if (product.Bugs > bugs)
+										if (product.Bugss > bugs)
 											sublist.Add(product);
 									}
 								}
@@ -4227,7 +4227,7 @@ namespace RandomEvents
 									SoftwareProduct product = obj as SoftwareProduct;
 									if (product != null)
 									{
-										if (product.Bugs <= bugs)
+										if (product.Bugss <= bugs)
 											tmplst.Add(product);
 									}
 								}
@@ -4240,7 +4240,7 @@ namespace RandomEvents
 									SoftwareProduct product = obj as SoftwareProduct;
 									if (product != null)
 									{
-										if (product.Bugs <= bugs)
+										if (product.Bugss <= bugs)
 											sublist.Add(product);
 									}
 								}
@@ -4256,7 +4256,7 @@ namespace RandomEvents
 									SoftwareProduct product = obj as SoftwareProduct;
 									if (product != null)
 									{
-										if (product.Bugs >= bugs)
+										if (product.Bugss >= bugs)
 											tmplst.Add(product);
 									}
 								}
@@ -4269,7 +4269,7 @@ namespace RandomEvents
 									SoftwareProduct product = obj as SoftwareProduct;
 									if (product != null)
 									{
-										if (product.Bugs >= bugs)
+										if (product.Bugss >= bugs)
 											sublist.Add(product);
 									}
 								}
@@ -4285,7 +4285,7 @@ namespace RandomEvents
 									SoftwareProduct product = obj as SoftwareProduct;
 									if (product != null)
 									{
-										if (product.Bugs != bugs)
+										if (product.Bugss != bugs)
 											tmplst.Add(product);
 									}
 								}
@@ -4298,7 +4298,7 @@ namespace RandomEvents
 									SoftwareProduct product = obj as SoftwareProduct;
 									if (product != null)
 									{
-										if (product.Bugs != bugs)
+										if (product.Bugss != bugs)
 											sublist.Add(product);
 									}
 								}
@@ -4314,7 +4314,7 @@ namespace RandomEvents
 									SoftwareProduct product = obj as SoftwareProduct;
 									if (product != null)
 									{
-										if (product.Bugs == bugs)
+										if (product.Bugss == bugs)
 											tmplst.Add(product);
 									}
 								}
@@ -4327,7 +4327,7 @@ namespace RandomEvents
 									SoftwareProduct product = obj as SoftwareProduct;
 									if (product != null)
 									{
-										if (product.Bugs == bugs)
+										if (product.Bugss == bugs)
 											sublist.Add(product);
 									}
 								}
