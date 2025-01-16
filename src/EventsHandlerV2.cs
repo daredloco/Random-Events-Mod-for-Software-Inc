@@ -2776,7 +2776,7 @@ namespace RandomEvents
 				}
 				else if (ConditionString == "has_money")
 				{
-					float val = GameSettings.Instance.MyCompany.Money;
+					float val = (float)GameSettings.Instance.MyCompany.Money;
 
 					if (IsVariableCondition)
 					{
