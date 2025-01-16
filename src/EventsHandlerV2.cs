@@ -1118,7 +1118,7 @@ namespace RandomEvents
 				else if (Effect == "pay_debt")
 				{
 					//Pay the debts of the player
-					float debttopay = -GameSettings.Instance.MyCompany.Money;
+					float debttopay = (float)-GameSettings.Instance.MyCompany.Money;
 					GameSettings.Instance.MyCompany.MakeTransaction(debttopay, Company.TransactionCategory.NA);
 				}
 				else if (Effect == "add_exp")
@@ -1241,7 +1241,7 @@ namespace RandomEvents
 					if(actor != null)
 						actor.Fire(false);
 				}
-				else  if (Effect == "quit_employee")
+				else if (Effect == "quit_employee")
 				{
 					if(actor != null)
 						actor.Fire(true);
