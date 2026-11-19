@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -9,9 +9,10 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RandomEvents</RootNamespace>
     <AssemblyName>RandomEvents</AssemblyName>
-    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -29,14 +31,14 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Assembly-CSharp">
-      <HintPath>D:\Apps\Steam\steamapps\common\Software Inc\Software Inc_Data\Managed\Assembly-CSharp.dll</HintPath>
+      <HintPath>..\..\..\Apps\Steam\steamapps\common\Software Inc\Software Inc_Data\Managed\Assembly-CSharp.dll</HintPath>
     </Reference>
-    <Reference Include="Assembly-CSharp-firstpass, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>D:\Apps\Steam\steamapps\common\Software Inc\Software Inc_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>..\..\..\Apps\Steam\steamapps\common\Software Inc\Software Inc_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,20 +48,33 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
     <Reference Include="UnityEngine">
-      <HintPath>D:\Apps\Steam\steamapps\common\Software Inc\Software Inc_Data\Managed\UnityEngine.dll</HintPath>
+      <HintPath>..\..\..\Apps\Steam\steamapps\common\Software Inc\Software Inc_Data\Managed\UnityEngine.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.CoreModule">
-      <HintPath>D:\Apps\Steam\steamapps\common\Software Inc\Software Inc_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+      <HintPath>..\..\..\Apps\Steam\steamapps\common\Software Inc\Software Inc_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TextRenderingModule">
-      <HintPath>D:\Apps\Steam\steamapps\common\Software Inc\Software Inc_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
+      <HintPath>..\..\..\Apps\Steam\steamapps\common\Software Inc\Software Inc_Data\Managed\UnityEngine.TextRenderingModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-      <HintPath>D:\Apps\Steam\steamapps\common\Software Inc\Software Inc_Data\Managed\UnityEngine.UI.dll</HintPath>
+      <HintPath>..\..\..\Apps\Steam\steamapps\common\Software Inc\Software Inc_Data\Managed\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Conditions\ConditionExpression.cs" />
+    <Compile Include="Conditions\MainConditionEvaluator.cs" />
+    <Compile Include="Conditions\SubConditionEvaluator.cs" />
+    <Compile Include="Conditions\VariableCondition.cs" />
+    <Compile Include="Effects\CompanyEffects.cs" />
+    <Compile Include="Effects\EffectDispatcher.cs" />
+    <Compile Include="Effects\EmployeeEffects.cs" />
+    <Compile Include="Effects\EventEffect.cs" />
+    <Compile Include="Effects\MarketEffects.cs" />
+    <Compile Include="Effects\MiscEffects.cs" />
+    <Compile Include="Effects\ProductEffects.cs" />
     <Compile Include="EventsHandlerV2.cs" />
+    <Compile Include="Models\Event.cs" />
+    <Compile Include="UI\EventWindow.cs" />
     <Compile Include="Helpers.cs" />
     <Compile Include="MyModMeta.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

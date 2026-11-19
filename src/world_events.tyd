@@ -263,7 +263,1121 @@ Event
 ##November 10.83##
 ##December 11.83##
 
+Event
+    {
+        Title "The AIDS epidemic gains global attention"
+        Description "Doctors and public-health organizations begin warning the world about a rapidly spreading health crisis."
+        Date "1.83"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Support public health"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue -4
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 0
+                    EffectValue 500
+                    EffectName "Emergency bill"
+                    Effect "company_bill"
+                }
+            ]
+            Title "A worldwide crisis"
+            Description "Fear and uncertainty put pressure on institutions and markets."
+            Notification "The AIDS epidemic becomes a global public-health crisis!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+Event
+    {
+        Title "The Lebanon War escalates"
+        Description "Conflict in Lebanon intensifies, creating a major humanitarian and geopolitical crisis in the Middle East."
+        Date "5.83"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Protect the company"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue -5
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 0
+                    EffectValue 600
+                    EffectName "Emergency bill"
+                    Effect "company_bill"
+                }
+            ]
+            Title "A regional shock"
+            Description "Conflict disrupts trade and increases uncertainty for businesses."
+            Notification "The Lebanon War escalates and unsettles the region!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###1984###
+Event
+    {
+        Title "The miners' strike reshapes Britain"
+        Description "A prolonged coal miners' strike becomes one of the most bitter labor disputes in modern British history."
+        Date "1.84"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Hold steady"
+            Effects[
+                { IsVisible 1 EffectValue 5 EffectName "Stock market loss" Effect "stockmarket_loss" }
+                { IsVisible 0 EffectValue 400 EffectName "Labor dispute bill" Effect "company_bill" }
+            ]
+            Title "A divided workforce"
+            Description "Industrial action disrupts production and weighs on business confidence."
+            Notification "The miners' strike sends shockwaves through British industry!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The video game crash"
+        Description "A flood of poorly received games causes a severe collapse in the North American home console market."
+        Date "5.84"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Weather the crash"
+            Effects[
+                { IsVisible 1 EffectValue 8 EffectName "Sports game popularity" Effect "popularity_change_gamesports" }
+                { IsVisible 1 EffectValue 5 EffectName "Stock market" Effect "stockmarket_loss" }
+            ]
+            Title "A hard reset"
+            Description "The games industry loses confidence before eventually rebuilding."
+            Notification "The video game market suffers a major crash!"
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The first space shuttle flight after Challenger"
+        Description "After the Challenger disaster, the return of shuttle missions restores confidence in reusable spaceflight."
+        Date "9.84"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Reach for orbit"
+            Effects[
+                { IsVisible 1 EffectValue 5 EffectName "Simulation game popularity" Effect "popularity_change_gamesimulation" }
+                { IsVisible 0 EffectValue 500 EffectName "Research cost" Effect "company_bill" }
+            ]
+            Title "Confidence restored"
+            Description "Spaceflight inspires simulation and engineering software."
+            Notification "The shuttle returns to space and reignites public interest!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###1985###
+Event
+    {
+        Title "The Mexico City earthquake"
+        Description "A devastating earthquake strikes Mexico City, causing widespread destruction and a massive emergency response."
+        Date "1.85"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Respond to the disaster"
+            Effects[
+                { IsVisible 1 EffectValue 6 EffectName "Stock market loss" Effect "stockmarket_loss" }
+                { IsVisible 0 EffectValue 800 EffectName "Emergency relief bill" Effect "company_bill" }
+            ]
+            Title "A city in ruins"
+            Description "The disaster disrupts commerce and demands extraordinary relief efforts."
+            Notification "A powerful earthquake devastates Mexico City!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "Live Aid unites the world"
+        Description "The Live Aid concerts broadcast performances across the globe and demonstrate the cultural power of satellite television."
+        Date "5.85"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Turn it up"
+            Effects[
+                { IsVisible 1 EffectValue 5 EffectName "Audio tool popularity" Effect "popularity_change_audiotool" }
+                { IsVisible 1 EffectValue 3 EffectName "Company fans" Effect "fans_change" }
+            ]
+            Title "A global audience"
+            Description "Music and broadcast technology reach an unprecedented audience."
+            Notification "Live Aid becomes a worldwide media phenomenon!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The hole in the ozone layer"
+        Description "Scientists announce clear evidence of ozone depletion over Antarctica, prompting urgent environmental concern."
+        Date "9.85"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Invest in solutions"
+            Effects[
+                { IsVisible 1 EffectValue 4 EffectName "Business reputation" Effect "change_businessrep" }
+                { IsVisible 1 EffectValue 4 EffectName "Stock market loss" Effect "stockmarket_loss" }
+            ]
+            Title "A warning from the sky"
+            Description "Environmental risks unsettle markets while responsible technology gains attention."
+            Notification "The ozone layer is in danger, shaking public confidence!"
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+
+###1986###
+Event
+    {
+        Title "The Chernobyl disaster"
+        Description "A reactor accident at Chernobyl releases radioactive material and changes the world's view of nuclear safety."
+        Date "1.86"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Contain the damage"
+            Effects[
+                { IsVisible 1 EffectValue 8 EffectName "Stock market loss" Effect "stockmarket_loss" }
+                { IsVisible 1 EffectValue -3 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "A global shock"
+            Description "A major industrial disaster hurts confidence across markets."
+            Notification "The Chernobyl disaster sends shockwaves through the world!"
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Reykjavik Summit"
+        Description "Ronald Reagan and Mikhail Gorbachev meet in Reykjavik to discuss reducing nuclear weapons and easing Cold War tensions."
+        Date "5.86"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Continue negotiations"
+            Effects[
+                { IsVisible 1 EffectValue 5 EffectName "Stock market gain" Effect "stockmarket_win" }
+                { IsVisible 1 EffectValue 4 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "A thaw in the Cold War"
+            Description "Diplomatic progress raises cautious hopes for stability and lower military tensions."
+            Notification "The Reykjavik Summit brings the superpowers closer to agreement!"
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Voyager spacecraft reaches Uranus"
+        Description "Voyager 2 sends humanity its first close observations of Uranus and its moons."
+        Date "9.86"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Explore the unknown"
+            Effects[
+                { IsVisible 1 EffectValue 5 EffectName "Simulation game popularity" Effect "popularity_change_gamesimulation" }
+                { IsVisible 1 EffectValue 2 EffectName "Company fans" Effect "fans_change" }
+            ]
+            Title "A distant world"
+            Description "Scientific discovery inspires curiosity and simulation."
+            Notification "Voyager 2 reveals the strange world of Uranus!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###1987###
+Event
+    {
+        Title "The stock market crash"
+        Description "Black Monday becomes one of the largest one-day falls in stock market history."
+        Date "1.87"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Hold steady"
+            Effects[
+                { IsVisible 1 EffectValue 12 EffectName "Stock market loss" Effect "stockmarket_loss" }
+                { IsVisible 1 EffectValue 800 EffectName "Emergency bill" Effect "company_bill" }
+            ]
+            Title "Black Monday"
+            Description "Investors retreat as markets around the world tumble."
+            Notification "Black Monday sends stock markets into a historic plunge!"
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Great Storm of 1987"
+        Description "A powerful storm strikes Britain and northern Europe, damaging homes, forests, and infrastructure."
+        Date "5.87"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Repair the damage"
+            Effects[
+                { IsVisible 1 EffectValue 6 EffectName "Stock market loss" Effect "stockmarket_loss" }
+                { IsVisible 0 EffectValue 700 EffectName "Repair bill" Effect "company_bill" }
+            ]
+            Title "Nature overwhelms the city"
+            Description "Businesses face costly repairs as transport and communications are disrupted."
+            Notification "The Great Storm of 1987 batters northern Europe!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Montreal Protocol"
+        Description "Nations agree to phase out chemicals that damage the ozone layer, creating a landmark environmental treaty."
+        Date "9.87"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Build responsibly"
+            Effects[
+                { IsVisible 1 EffectValue 5 EffectName "Business reputation" Effect "change_businessrep" }
+                { IsVisible 1 EffectValue 3 EffectName "Stock market gain" Effect "stockmarket_win" }
+            ]
+            Title "A cooperative solution"
+            Description "Markets reward a rare moment of international cooperation."
+            Notification "The Montreal Protocol gives the world hope for coordinated action!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###1988###
+Event
+    {
+        Title "The Lockerbie bombing"
+        Description "A terrorist bombing destroys Pan Am Flight 103 over Lockerbie, Scotland, killing everyone aboard and people on the ground."
+        Date "1.88"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Support the investigation"
+            Effects[
+                { IsVisible 1 EffectValue 6 EffectName "Stock market loss" Effect "stockmarket_loss" }
+                { IsVisible 0 EffectValue 500 EffectName "Security bill" Effect "company_bill" }
+            ]
+            Title "A national tragedy"
+            Description "The attack causes grief, investigations, and a renewed focus on security."
+            Notification "The Lockerbie bombing shocks the world!"
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Seoul Olympics"
+        Description "The Seoul Olympic Games bring athletes from around the world together during a period of major geopolitical change."
+        Date "5.88"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Celebrate the games"
+            Effects[
+                { IsVisible 1 EffectValue 6 EffectName "Sports game popularity" Effect "popularity_change_gamesports" }
+                { IsVisible 1 EffectValue 3 EffectName "Company fans" Effect "fans_change" }
+            ]
+            Title "Competition without borders"
+            Description "International sport creates shared excitement and a rare moment of cooperation."
+            Notification "The Seoul Olympics bring the world together!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Seoul Olympics close"
+        Description "The Olympic Games conclude after showcasing athletic achievement and renewed international participation."
+        Date "9.88"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Keep the peace"
+            Effects[
+                { IsVisible 1 EffectValue 4 EffectName "Business reputation" Effect "change_businessrep" }
+                { IsVisible 1 EffectValue 3 EffectName "Company fans" Effect "fans_change" }
+            ]
+            Title "A global sporting moment"
+            Description "The closing ceremony leaves audiences with a sense of international connection."
+            Notification "The Seoul Olympics close after a memorable global celebration!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###1989###
+Event
+    {
+        Title "The Exxon Valdez oil spill"
+        Description "The tanker Exxon Valdez runs aground in Alaska, causing one of the most notorious environmental disasters of the era."
+        Date "1.89"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Clean up the coastline"
+            Effects[
+                { IsVisible 1 EffectValue 7 EffectName "Stock market loss" Effect "stockmarket_loss" }
+                { IsVisible 1 EffectValue -3 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "An environmental catastrophe"
+            Description "The spill damages wildlife, local businesses, and public confidence in industrial safety."
+            Notification "The Exxon Valdez oil spill devastates Alaska's coastline!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The fall of the Berlin Wall"
+        Description "The Berlin Wall falls, symbolizing the end of a divided Europe and a major geopolitical shift."
+        Date "5.89"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Open the borders"
+            Effects[
+                { IsVisible 1 EffectValue 7 EffectName "Stock market gain" Effect "stockmarket_win" }
+                { IsVisible 1 EffectValue 5 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "A new market horizon"
+            Description "Political barriers fall and optimism spreads through markets."
+            Notification "The Berlin Wall falls and Europe celebrates!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Romanian Revolution"
+        Description "Mass protests and a violent uprising bring an end to Nicolae Ceausescu's rule in Romania."
+        Date "9.89"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Support the transition"
+            Effects[
+                { IsVisible 1 EffectValue 6 EffectName "Stock market gain" Effect "stockmarket_win" }
+                { IsVisible 1 EffectValue 4 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "A regime falls"
+            Description "Political change brings uncertainty, hope, and the possibility of a new economy."
+            Notification "The Romanian Revolution ends a dictatorship!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
 ###1990###
+Event
+    {
+        Title "The Hubble Space Telescope launches"
+        Description "The Hubble Space Telescope begins its mission, promising a clearer view of the universe despite an early mirror defect."
+        Date "1.90"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Look beyond"
+            Effects[
+                { IsVisible 1 EffectValue 6 EffectName "Simulation game popularity" Effect "popularity_change_gamesimulation" }
+                { IsVisible 1 EffectValue 2 EffectName "Company fans" Effect "fans_change" }
+            ]
+            Title "A new window on space"
+            Description "Astronomy and simulation capture the public imagination."
+            Notification "Hubble opens a new era of space observation!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The release of Nelson Mandela"
+        Description "Nelson Mandela is released from prison after 27 years, becoming a central figure in South Africa's transition."
+        Date "5.90"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Welcome the change"
+            Effects[
+                { IsVisible 1 EffectValue 6 EffectName "Stock market gain" Effect "stockmarket_win" }
+                { IsVisible 1 EffectValue 5 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "A symbol of reconciliation"
+            Description "The release raises hopes for a peaceful end to apartheid."
+            Notification "Nelson Mandela is released after 27 years in prison!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The reunification of Germany"
+        Description "East and West Germany reunite, marking a historic political and economic transformation in Europe."
+        Date "9.90"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Rebuild together"
+            Effects[
+                { IsVisible 1 EffectValue 6 EffectName "Stock market gain" Effect "stockmarket_win" }
+                { IsVisible 1 EffectValue 4 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "A country reunited"
+            Description "Economic optimism rises as a divided market becomes one."
+            Notification "Germany reunites and markets respond with optimism!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###1991###
+Event
+    {
+        Title "The Soviet Union dissolves"
+        Description "The Soviet Union formally ends, reshaping global politics and opening new economic relationships."
+        Date "1.91"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Enter new markets"
+            Effects[
+                { IsVisible 1 EffectValue 7 EffectName "Stock market gain" Effect "stockmarket_win" }
+                { IsVisible 1 EffectValue 5 EffectName "Company fans" Effect "fans_change" }
+            ]
+            Title "A new world order"
+            Description "Companies look toward new customers and partnerships."
+            Notification "The Soviet Union dissolves and the global economy shifts!"
+            NotificationSound Neutral
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Gulf War begins"
+        Description "A coalition begins military operations to expel Iraqi forces from Kuwait, reshaping regional politics and energy markets."
+        Date "5.91"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Protect the supply chain"
+            Effects[
+                { IsVisible 1 EffectValue 6 EffectName "Stock market loss" Effect "stockmarket_loss" }
+                { IsVisible 0 EffectValue 700 EffectName "Emergency bill" Effect "company_bill" }
+            ]
+            Title "A war shakes the economy"
+            Description "Conflict threatens energy supplies and unsettles companies around the world."
+            Notification "The Gulf War begins and energy markets react!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The breakup of Yugoslavia begins"
+        Description "The collapse of Yugoslavia begins a long period of conflict and political upheaval in southeastern Europe."
+        Date "9.91"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Protect the company"
+            Effects[
+                { IsVisible 1 EffectValue 6 EffectName "Stock market loss" Effect "stockmarket_loss" }
+                { IsVisible 1 EffectValue -3 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "A region breaks apart"
+            Description "Political fragmentation creates uncertainty and disrupts trade."
+            Notification "The breakup of Yugoslavia begins a period of turmoil!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###1992###
+Event
+    {
+        Title "The Maastricht Treaty is signed"
+        Description "European leaders sign the treaty that will create the European Union and deepen political cooperation."
+        Date "1.92"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Trade together"
+            Effects[
+                { IsVisible 1 EffectValue 6 EffectName "Stock market gain" Effect "stockmarket_win" }
+                { IsVisible 1 EffectValue 4 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "A closer union"
+            Description "Closer cooperation encourages investment and cross-border business."
+            Notification "The Maastricht Treaty lays the foundation for the European Union!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Barcelona Olympics"
+        Description "The Barcelona Olympic Games showcase new sports heroes, international cooperation, and spectacular broadcasting."
+        Date "5.92"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Let the games begin"
+            Effects[
+                { IsVisible 1 EffectValue 6 EffectName "Sports game popularity" Effect "popularity_change_gamesports" }
+                { IsVisible 1 EffectValue 3 EffectName "Company fans" Effect "fans_change" }
+            ]
+            Title "A global stage"
+            Description "Sports and broadcast entertainment attract a worldwide audience."
+            Notification "The Barcelona Olympics capture the world's attention!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The first exoplanets are confirmed"
+        Description "Astronomers confirm planets orbiting a star beyond the Sun, changing humanity's understanding of its place in space."
+        Date "9.92"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Search the stars"
+            Effects[
+                { IsVisible 1 EffectValue 5 EffectName "Simulation game popularity" Effect "popularity_change_gamesimulation" }
+                { IsVisible 1 EffectValue 3 EffectName "Research bill" Effect "company_bill" }
+            ]
+            Title "Other worlds"
+            Description "New discoveries drive interest in scientific modeling and simulation."
+            Notification "Astronomers confirm worlds beyond our solar system!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###1993###
+Event
+    {
+        Title "The Oslo Accords are signed"
+        Description "Israeli and Palestinian representatives sign a declaration intended to begin a path toward peace."
+        Date "1.93"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Choose dialogue"
+            Effects[
+                { IsVisible 1 EffectValue 5 EffectName "Business reputation" Effect "change_businessrep" }
+                { IsVisible 1 EffectValue 4 EffectName "Stock market gain" Effect "stockmarket_win" }
+            ]
+            Title "A fragile hope"
+            Description "The agreement creates cautious optimism and encourages cooperation."
+            Notification "The Oslo Accords offer hope for peace!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The European Union is established"
+        Description "The Maastricht Treaty enters into force and establishes the European Union."
+        Date "5.93"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Trade together"
+            Effects[
+                { IsVisible 1 EffectValue 5 EffectName "Stock market gain" Effect "stockmarket_win" }
+                { IsVisible 1 EffectValue 4 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "A larger market"
+            Description "Closer cooperation encourages investment and cross-border business."
+            Notification "The European Union begins a new era of cooperation!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Oslo Accords are implemented"
+        Description "The first stages of the Oslo peace process reshape politics and diplomacy in the region."
+        Date "9.93"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Invest in stability"
+            Effects[
+                { IsVisible 1 EffectValue 4 EffectName "Stock market gain" Effect "stockmarket_win" }
+                { IsVisible 1 EffectValue 3 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "Diplomacy takes root"
+            Description "Continued negotiations encourage cautious confidence and investment."
+            Notification "The Oslo peace process enters a new stage!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###1994###
+Event
+    {
+        Title "Nelson Mandela is elected president"
+        Description "South Africa holds its first multiracial democratic election, and Nelson Mandela becomes president."
+        Date "1.94"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Build a new future"
+            Effects[
+                { IsVisible 1 EffectValue 7 EffectName "Stock market gain" Effect "stockmarket_win" }
+                { IsVisible 1 EffectValue 6 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "A historic election"
+            Description "A peaceful democratic transition creates optimism and new economic possibilities."
+            Notification "Nelson Mandela is elected president of South Africa!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Rwandan genocide ends"
+        Description "The Rwandan genocide comes to an end after months of mass violence and immense human suffering."
+        Date "5.94"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Support recovery"
+            Effects[
+                { IsVisible 1 EffectValue 8 EffectName "Stock market loss" Effect "stockmarket_loss" }
+                { IsVisible 1 EffectValue -4 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "A humanitarian catastrophe"
+            Description "The end of the violence leaves a devastated country facing an enormous recovery."
+            Notification "The Rwandan genocide comes to an end after terrible loss!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Channel Tunnel opens"
+        Description "The Channel Tunnel opens for service, linking Britain and continental Europe by rail."
+        Date "9.94"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Connect the continents"
+            Effects[
+                { IsVisible 1 EffectValue 4 EffectName "Stock market gain" Effect "stockmarket_win" }
+                { IsVisible 1 EffectValue 3 EffectName "Company fans" Effect "fans_change" }
+            ]
+            Title "Closer markets"
+            Description "Infrastructure makes international business feel more immediate."
+            Notification "The Channel Tunnel links Britain and Europe!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###1995###
+Event
+    {
+        Title "The Dayton Agreement is signed"
+        Description "The Dayton Agreement brings an end to the Bosnian War and outlines a difficult path toward peace."
+        Date "1.95"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Rebuild together"
+            Effects[
+                { IsVisible 1 EffectValue 6 EffectName "Stock market gain" Effect "stockmarket_win" }
+                { IsVisible 1 EffectValue 5 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "Peace after years of war"
+            Description "A peace agreement creates hope while reconstruction begins."
+            Notification "The Dayton Agreement brings an end to the Bosnian War!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Dunblane school tragedy"
+        Description "A school shooting in Dunblane, Scotland, shocks the public and renews debate about gun laws and child safety."
+        Date "5.95"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Protect the community"
+            Effects[
+                { IsVisible 1 EffectValue 5 EffectName "Stock market loss" Effect "stockmarket_loss" }
+                { IsVisible 0 EffectValue 500 EffectName "Safety bill" Effect "company_bill" }
+            ]
+            Title "A community in mourning"
+            Description "The tragedy prompts grief, public debate, and demands for stronger safeguards."
+            Notification "The Dunblane school tragedy shocks Scotland!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Taliban capture Kabul"
+        Description "The Taliban capture Kabul, deepening Afghanistan's political crisis and humanitarian suffering."
+        Date "9.95"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Protect stability"
+            Effects[
+                { IsVisible 1 EffectValue 7 EffectName "Stock market loss" Effect "stockmarket_loss" }
+                { IsVisible 1 EffectValue -3 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "A country in crisis"
+            Description "Political instability creates uncertainty for businesses and international markets."
+            Notification "The Taliban capture Kabul and Afghanistan's crisis deepens!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###1996###
+Event
+    {
+        Title "Hong Kong returns to China"
+        Description "Hong Kong is handed back to China after more than a century and a half of British administration."
+        Date "1.96"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Build a peaceful handover"
+            Effects[
+                { IsVisible 1 EffectValue 5 EffectName "Stock market gain" Effect "stockmarket_win" }
+                { IsVisible 1 EffectValue 4 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "A historic handover"
+            Description "The transition raises questions about trade, identity, and the future of a major financial center."
+            Notification "Hong Kong returns to China in a historic handover!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "Princess Diana dies"
+        Description "Princess Diana dies in a car crash in Paris, prompting an extraordinary public outpouring of grief."
+        Date "5.96"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Remember her legacy"
+            Effects[
+                { IsVisible 1 EffectValue -3 EffectName "Business reputation" Effect "change_businessrep" }
+                { IsVisible 1 EffectValue 3 EffectName "Company fans" Effect "fans_change" }
+            ]
+            Title "A nation mourns"
+            Description "The tragedy dominates public attention and leaves a lasting cultural impact."
+            Notification "The death of Princess Diana prompts worldwide mourning!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Mars Pathfinder mission"
+        Description "NASA's Pathfinder mission lands on Mars and sends back images and rover data."
+        Date "9.96"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Drive on Mars"
+            Effects[
+                { IsVisible 1 EffectValue 6 EffectName "Simulation game popularity" Effect "popularity_change_gamesimulation" }
+                { IsVisible 1 EffectValue 3 EffectName "Research bill" Effect "company_bill" }
+            ]
+            Title "Robots on another world"
+            Description "Remote exploration inspires simulation and engineering projects."
+            Notification "Pathfinder sends a small rover across the surface of Mars!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###1997###
+Event
+    {
+        Title "The Asian financial crisis begins"
+        Description "Currency turmoil spreads through East Asia, unsettling investors and forcing painful economic reforms."
+        Date "1.97"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Protect the company"
+            Effects[
+                { IsVisible 1 EffectValue 8 EffectName "Stock market loss" Effect "stockmarket_loss" }
+                { IsVisible 1 EffectValue 600 EffectName "Emergency bill" Effect "company_bill" }
+            ]
+            Title "Turbulent markets"
+            Description "International financial shocks make expansion riskier."
+            Notification "The Asian financial crisis rattles markets around the world!"
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Hong Kong handover approaches"
+        Description "As the handover approaches, negotiations and public debate focus attention on Hong Kong's political future."
+        Date "5.97"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Prepare for change"
+            Effects[
+                { IsVisible 1 EffectValue 5 EffectName "Stock market gain" Effect "stockmarket_win" }
+                { IsVisible 1 EffectValue 3 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "A city at a crossroads"
+            Description "Businesses weigh uncertainty and opportunity as sovereignty is about to change."
+            Notification "Hong Kong prepares for its historic handover!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Mars Pathfinder rover succeeds"
+        Description "The Sojourner rover explores Mars, demonstrating the value of remote-controlled robotics and autonomous software."
+        Date "9.97"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Send a rover"
+            Effects[
+                { IsVisible 1 EffectValue 5 EffectName "Simulation game popularity" Effect "popularity_change_gamesimulation" }
+                { IsVisible 1 EffectValue 2 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "Small machine, giant world"
+            Description "Robotics and simulation gain a burst of public attention."
+            Notification "Sojourner rolls across Mars and captures the public imagination!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###1998###
+Event
+    {
+        Title "The Good Friday Agreement"
+        Description "Political parties sign the Good Friday Agreement, establishing a framework for peace in Northern Ireland."
+        Date "1.98"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Choose peace"
+            Effects[
+                { IsVisible 1 EffectValue 6 EffectName "Stock market gain" Effect "stockmarket_win" }
+                { IsVisible 1 EffectValue 5 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "A fragile peace"
+            Description "The agreement creates hope for stability, investment, and reconciliation."
+            Notification "The Good Friday Agreement offers a path toward peace!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Euro is introduced"
+        Description "European countries introduce the Euro as a common currency for electronic and financial transactions."
+        Date "5.98"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Trade in euros"
+            Effects[
+                { IsVisible 1 EffectValue 5 EffectName "Stock market gain" Effect "stockmarket_win" }
+                { IsVisible 1 EffectValue 4 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "One currency"
+            Description "Cross-border business becomes simpler for a new economic bloc."
+            Notification "The Euro begins changing European commerce!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The International Space Station begins"
+        Description "The first major components of the International Space Station are launched, beginning a long multinational construction project."
+        Date "9.98"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Build in orbit"
+            Effects[
+                { IsVisible 1 EffectValue 6 EffectName "Simulation game popularity" Effect "popularity_change_gamesimulation" }
+                { IsVisible 1 EffectValue 700 EffectName "Research bill" Effect "company_bill" }
+            ]
+            Title "A permanent presence"
+            Description "Long-term engineering projects inspire new simulations and expenses."
+            Notification "Construction of the International Space Station begins!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###1999###
+Event
+    {
+        Title "The Seattle WTO protests"
+        Description "Large demonstrations in Seattle bring globalization, trade policy, and labor concerns into the international spotlight."
+        Date "1.99"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Listen to concerns"
+            Effects[
+                { IsVisible 1 EffectValue 5 EffectName "Stock market loss" Effect "stockmarket_loss" }
+                { IsVisible 1 EffectValue -2 EffectName "Business reputation" Effect "change_businessrep" }
+            ]
+            Title "A backlash against globalization"
+            Description "Public protests expose deep disagreements about trade, labor, and corporate power."
+            Notification "The Seattle WTO protests put globalization under intense scrutiny!"
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The East Timor independence referendum"
+        Description "East Timor votes for independence in a landmark referendum followed by a violent humanitarian crisis."
+        Date "5.99"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Support the relief effort"
+            Effects[
+                { IsVisible 1 EffectValue 7 EffectName "Stock market loss" Effect "stockmarket_loss" }
+                { IsVisible 0 EffectValue 800 EffectName "Relief bill" Effect "company_bill" }
+            ]
+            Title "A nation demands freedom"
+            Description "Political transition brings hope, but violence creates an urgent humanitarian burden."
+            Notification "East Timor votes for independence amid a deepening crisis!"
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Matrix popularizes digital worlds"
+        Description "The science-fiction film The Matrix brings simulated reality and digital identity into mainstream conversation."
+        Date "9.99"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Choose the red pill"
+            Effects[
+                { IsVisible 1 EffectValue 7 EffectName "Simulation game popularity" Effect "popularity_change_gamesimulation" }
+                { IsVisible 1 EffectValue 5 EffectName "3D editor popularity" Effect "popularity_change_3deditor" }
+            ]
+            Title "Reality is negotiable"
+            Description "Audiences become fascinated by virtual worlds and computer-generated reality."
+            Notification "The Matrix makes digital realities a cultural obsession!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
 ###2000###
+Event
+    {
+        Title "The dot-com bubble peaks"
+        Description "Internet companies attract enormous investment as confidence in the new online economy reaches a fever pitch."
+        Date "1.100"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Invest online"
+            Effects[
+                { IsVisible 1 EffectValue 8 EffectName "Stock market gain" Effect "stockmarket_win" }
+                { IsVisible 1 EffectValue 6 EffectName "Office software popularity" Effect "popularity_change_office" }
+            ]
+            Title "A digital gold rush"
+            Description "Investors pour money into companies promising to transform commerce."
+            Notification "The dot-com boom reaches a fever pitch!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The human genome draft is announced"
+        Description "Scientists announce a working draft of the human genome, opening new possibilities for medicine and research."
+        Date "5.100"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Decode life"
+            Effects[
+                { IsVisible 1 EffectValue 6 EffectName "Simulation game popularity" Effect "popularity_change_gamesimulation" }
+                { IsVisible 1 EffectValue 500 EffectName "Research investment" Effect "company_deals" }
+            ]
+            Title "The code of life"
+            Description "Data-intensive research points toward powerful new software tools."
+            Notification "The human genome draft opens a new scientific frontier!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The dot-com bubble bursts"
+        Description "Technology stocks fall sharply as investors question the value of Internet companies."
+        Date "9.100"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Survive the crash"
+            Effects[
+                { IsVisible 1 EffectValue 12 EffectName "Stock market loss" Effect "stockmarket_loss" }
+                { IsVisible 1 EffectValue 1000 EffectName "Restructuring bill" Effect "company_bill" }
+            ]
+            Title "Reality returns"
+            Description "The online economy survives, but speculation gives way to hard business questions."
+            Notification "The dot-com bubble bursts and technology stocks tumble!"
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+
 ###2010###
 ###2020###
