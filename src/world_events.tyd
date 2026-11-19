@@ -279,12 +279,7 @@ Event
                     EffectName "Stock market loss"
                     Effect "stockmarket_loss"
                 }
-                {
-                    IsVisible 0
-                    EffectValue 500
-                    EffectName "Emergency bill"
-                    Effect "company_bill"
-                }
+
             ]
             Title "A worldwide crisis"
             Description "Fear and uncertainty put pressure on institutions and markets."
@@ -310,12 +305,7 @@ Event
                     EffectName "Stock market loss"
                     Effect "stockmarket_loss"
                 }
-                {
-                    IsVisible 0
-                    EffectValue 600
-                    EffectName "Emergency bill"
-                    Effect "company_bill"
-                }
+
             ]
             Title "A regional shock"
             Description "Conflict disrupts trade and increases uncertainty for businesses."
@@ -342,12 +332,7 @@ Event
                     EffectName "Stock market loss"
                     Effect "stockmarket_loss"
                 }
-                {
-                    IsVisible 0
-                    EffectValue 400
-                    EffectName "Labor dispute bill"
-                    Effect "company_bill"
-                }
+
             ]
             Title "A divided workforce"
             Description "Industrial action disrupts production and weighs on business confidence."
@@ -428,12 +413,7 @@ Event
                     EffectName "Stock market loss"
                     Effect "stockmarket_loss"
                 }
-                {
-                    IsVisible 0
-                    EffectValue 800
-                    EffectName "Emergency relief bill"
-                    Effect "company_bill"
-                }
+
             ]
             Title "A city in ruins"
             Description "The disaster disrupts commerce and demands extraordinary relief efforts."
@@ -612,12 +592,7 @@ Event
                     EffectName "Stock market loss"
                     Effect "stockmarket_loss"
                 }
-                {
-                    IsVisible 1
-                    EffectValue 800
-                    EffectName "Emergency bill"
-                    Effect "company_bill"
-                }
+
             ]
             Title "Black Monday"
             Description "Investors retreat as markets around the world tumble."
@@ -642,12 +617,7 @@ Event
                     EffectName "Stock market loss"
                     Effect "stockmarket_loss"
                 }
-                {
-                    IsVisible 0
-                    EffectValue 700
-                    EffectName "Repair bill"
-                    Effect "company_bill"
-                }
+
             ]
             Title "Nature overwhelms the city"
             Description "Businesses face costly repairs as transport and communications are disrupted."
@@ -704,12 +674,7 @@ Event
                     EffectName "Stock market loss"
                     Effect "stockmarket_loss"
                 }
-                {
-                    IsVisible 0
-                    EffectValue 500
-                    EffectName "Security bill"
-                    Effect "company_bill"
-                }
+
             ]
             Title "A national tragedy"
             Description "The attack causes grief, investigations, and a renewed focus on security."
@@ -1010,12 +975,7 @@ Event
                     EffectName "Stock market loss"
                     Effect "stockmarket_loss"
                 }
-                {
-                    IsVisible 0
-                    EffectValue 700
-                    EffectName "Emergency bill"
-                    Effect "company_bill"
-                }
+
             ]
             Title "A war shakes the economy"
             Description "Conflict threatens energy supplies and unsettles companies around the world."
@@ -1372,12 +1332,7 @@ Event
                     EffectName "Stock market loss"
                     Effect "stockmarket_loss"
                 }
-                {
-                    IsVisible 0
-                    EffectValue 500
-                    EffectName "Safety bill"
-                    Effect "company_bill"
-                }
+
             ]
             Title "A community in mourning"
             Description "The tragedy prompts grief, public debate, and demands for stronger safeguards."
@@ -1520,12 +1475,7 @@ Event
                     EffectName "Stock market loss"
                     Effect "stockmarket_loss"
                 }
-                {
-                    IsVisible 1
-                    EffectValue 600
-                    EffectName "Emergency bill"
-                    Effect "company_bill"
-                }
+
             ]
             Title "Turbulent markets"
             Description "International financial shocks make expansion riskier."
@@ -1728,12 +1678,7 @@ Event
                     EffectName "Stock market loss"
                     Effect "stockmarket_loss"
                 }
-                {
-                    IsVisible 0
-                    EffectValue 800
-                    EffectName "Relief bill"
-                    Effect "company_bill"
-                }
+
             ]
             Title "A nation demands freedom"
             Description "Political transition brings hope, but violence creates an urgent humanitarian burden."
@@ -1844,12 +1789,7 @@ Event
                     EffectName "Stock market loss"
                     Effect "stockmarket_loss"
                 }
-                {
-                    IsVisible 1
-                    EffectValue 1000
-                    EffectName "Restructuring bill"
-                    Effect "company_bill"
-                }
+
             ]
             Title "Reality returns"
             Description "The online economy survives, but speculation gives way to hard business questions."
@@ -1859,5 +1799,1510 @@ Event
         Chance 50
     }
 
+###2001###
+Event
+    {
+        Title "The euro enters circulation"
+        Description "Euro banknotes and coins enter circulation in twelve European countries, marking a major step toward monetary integration."
+        Date "0.101"
+        Conditions[]
+        Options[
+        {
+            ButtonText "A new currency"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 4
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+            ]
+            Title "Europe shares its money"
+            Description "The transition is broadly peaceful and trade becomes easier across participating countries."
+            Notification "The euro enters everyday circulation across Europe!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The September 11 attacks"
+        Description "Coordinated terrorist attacks in the United States kill thousands and change international politics for years to come."
+        Date "8.101"
+        Conditions[]
+        Options[
+        {
+            ButtonText "A day of mourning"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 8
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+            ]
+            Title "A world in shock"
+            Description "Markets close briefly and uncertainty spreads through economies around the world."
+            Notification "The September 11 attacks shock the world."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "War begins in Afghanistan"
+        Description "An international coalition begins military operations against the Taliban after the September 11 attacks."
+        Date "9.101"
+        Conditions[]
+        Options[
+        {
+            ButtonText "A difficult campaign"
+            Effects[]
+            Title "A new conflict"
+            Description "The campaign removes the Taliban government but begins a long and costly war."
+            Notification "International forces begin operations in Afghanistan."
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+
+###2002###
+Event
+    {
+        Title "The Winter Olympics in Salt Lake City"
+        Description "The Winter Olympic Games open in Salt Lake City, bringing athletes from around the world together."
+        Date "1.102"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Let the games begin"
+            Effects[]
+            Title "An international festival"
+            Description "Sport provides a brief moment of shared celebration."
+            Notification "The Winter Olympics open in Salt Lake City!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Bali bombings"
+        Description "A terrorist bombing in Bali kills more than two hundred people and devastates the island's tourism industry."
+        Date "9.102"
+        Conditions[]
+        Options[
+        {
+            ButtonText "A terrible tragedy"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 4
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+            ]
+            Title "Communities grieve"
+            Description "The attack leaves families and communities mourning across several countries."
+            Notification "The Bali bombings claim many lives."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The euro banknotes spread"
+        Description "Euro notes and coins become familiar to millions of people as the first year of the common currency continues."
+        Date "11.102"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Convenient"
+            Effects[]
+            Title "A common market"
+            Description "Travelers and businesses adjust to the new currency."
+            Notification "The euro becomes a normal part of daily life."
+            NotificationSound Neutral
+        }]
+        Chance 50
+    }
+
+###2003###
+Event
+    {
+        Title "The Iraq War begins"
+        Description "A US-led coalition invades Iraq, beginning a conflict that will reshape the Middle East."
+        Date "2.103"
+        Conditions[]
+        Options[
+        {
+            ButtonText "A dangerous decision"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 7
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+            ]
+            Title "War returns to the headlines"
+            Description "The invasion quickly topples the Iraqi government, but a long insurgency follows."
+            Notification "The Iraq War begins."
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The SARS outbreak"
+        Description "Severe acute respiratory syndrome spreads across several countries, prompting quarantines and travel warnings."
+        Date "2.103"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Take precautions"
+            Effects[
+
+            ]
+            Title "A global health warning"
+            Description "Hospitals and public authorities work to contain the new disease."
+            Notification "The SARS outbreak causes fear and disruption."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Human Genome Project is completed"
+        Description "Scientists announce the completion of a working sequence of the human genome, a landmark for biology and medicine."
+        Date "3.103"
+        Conditions[]
+        Options[
+        {
+            ButtonText "A scientific milestone"
+            Effects[]
+            Title "The book of life"
+            Description "Researchers gain an unprecedented map for studying human biology."
+            Notification "The Human Genome Project reaches completion!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###2004###
+Event
+    {
+        Title "The Indian Ocean tsunami"
+        Description "A massive undersea earthquake triggers a tsunami that devastates coastal communities around the Indian Ocean."
+        Date "11.104"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Help the survivors"
+            Effects[]
+            Title "A humanitarian disaster"
+            Description "Millions are affected and an international relief effort begins."
+            Notification "The Indian Ocean tsunami causes immense destruction."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The European Union expands east"
+        Description "Ten countries join the European Union in the largest enlargement in its history."
+        Date "4.104"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Welcome"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 4
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+            ]
+            Title "A larger union"
+            Description "The enlargement strengthens political and economic ties across the continent."
+            Notification "The European Union welcomes ten new members."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Athens Olympic Games"
+        Description "The Summer Olympics return to their birthplace in Athens, Greece."
+        Date "7.104"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Celebrate sport"
+            Effects[]
+            Title "The world comes together"
+            Description "Athletes compete in a modern games framed by ancient history."
+            Notification "The Athens Olympic Games open!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###2005###
+Event
+    {
+        Title "The Indian Ocean earthquake relief effort"
+        Description "Governments and charities coordinate one of the largest international disaster relief efforts in modern history."
+        Date "0.105"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Donate"
+            Effects[]
+            Title "Aid across borders"
+            Description "Volunteers, aid workers and ordinary people support devastated communities."
+            Notification "International relief efforts continue across the Indian Ocean region."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "Hurricane Katrina"
+        Description "Hurricane Katrina devastates the US Gulf Coast, flooding New Orleans and displacing hundreds of thousands."
+        Date "7.105"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Brace for the storm"
+            Effects[]
+            Title "A city under water"
+            Description "The storm causes enormous damage and exposes failures in disaster preparedness."
+            Notification "Hurricane Katrina devastates the US Gulf Coast."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Kyoto Protocol enters force"
+        Description "The Kyoto Protocol enters into force, committing participating countries to reduce greenhouse gas emissions."
+        Date "1.105"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Protect the climate"
+            Effects[]
+            Title "A global commitment"
+            Description "Climate policy becomes a more visible part of international cooperation."
+            Notification "The Kyoto Protocol enters into force."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###2006###
+Event
+    {
+        Title "Montenegro declares independence"
+        Description "Montenegro declares independence after a referendum, peacefully ending its union with Serbia."
+        Date "5.106"
+        Conditions[]
+        Options[
+        {
+            ButtonText "A peaceful change"
+            Effects[]
+            Title "A new country"
+            Description "The separation proceeds without a major conflict."
+            Notification "Montenegro declares independence."
+            NotificationSound Neutral
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Lebanon War"
+        Description "Fighting between Israel and Hezbollah causes heavy casualties and a major humanitarian crisis in Lebanon."
+        Date "6.106"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Seek peace"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+            ]
+            Title "A fragile ceasefire"
+            Description "International pressure leads to a ceasefire after weeks of fighting."
+            Notification "War spreads across Lebanon."
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "Pluto is reclassified"
+        Description "Astronomers adopt a new definition of planet and classify Pluto as a dwarf planet."
+        Date "7.106"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Science evolves"
+            Effects[]
+            Title "A smaller solar system"
+            Description "The decision sparks debate about how humanity categorizes the cosmos."
+            Notification "Pluto is reclassified as a dwarf planet."
+            NotificationSound Neutral
+        }]
+        Chance 50
+    }
+
+###2007###
+Event
+    {
+        Title "The Treaty of Lisbon is signed"
+        Description "European leaders sign the Treaty of Lisbon, reforming the institutions of the European Union."
+        Date "11.107"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Cooperate"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 3
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+            ]
+            Title "Europe reforms"
+            Description "The treaty aims to make the enlarged union more effective and democratic."
+            Notification "European leaders sign the Treaty of Lisbon."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The IPCC climate report"
+        Description "The Intergovernmental Panel on Climate Change publishes strong evidence that human activity is warming the planet."
+        Date "1.107"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Plan for the future"
+            Effects[]
+            Title "The warning grows louder"
+            Description "Governments face increasing pressure to address climate change."
+            Notification "Scientists issue a clear warning about climate change."
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The global credit crisis begins"
+        Description "Problems in the US subprime mortgage market begin spreading through the international financial system."
+        Date "7.107"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Stay cautious"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 7
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+            ]
+            Title "Warning signs"
+            Description "Credit becomes harder to obtain and investors begin questioning financial institutions."
+            Notification "The global credit crisis begins to spread."
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+
+###2008###
+Event
+    {
+        Title "The global financial crisis"
+        Description "The collapse of Lehman Brothers intensifies the global financial crisis and freezes credit markets."
+        Date "8.108"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Survive the crash"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 25
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 15
+                    EffectName "Software sales loss"
+                    Effect "software_offsales"
+                }
+
+            ]
+            Title "A historic downturn"
+            Description "Businesses cut spending, credit disappears and unemployment rises across much of the world."
+            Notification "The global financial crisis becomes a worldwide economic emergency!"
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Beijing Olympic Games"
+        Description "The Summer Olympic Games open in Beijing, China, with record participation from around the world."
+        Date "7.108"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Celebrate the games"
+            Effects[]
+            Title "A global spectacle"
+            Description "Sport provides a moment of shared attention during an increasingly uncertain year."
+            Notification "The Beijing Olympic Games open."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Russia-Georgia War"
+        Description "Fighting erupts between Russia and Georgia over South Ossetia and Abkhazia."
+        Date "7.108"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Call for peace"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+            ]
+            Title "A short but serious war"
+            Description "A ceasefire ends the main fighting, but regional tensions remain."
+            Notification "Fighting breaks out between Russia and Georgia."
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+
+###2009###
+Event
+    {
+        Title "The H1N1 influenza pandemic"
+        Description "A new strain of influenza spreads around the world and is declared a pandemic by the World Health Organization."
+        Date "3.109"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Take care"
+            Effects[]
+            Title "A worldwide health alert"
+            Description "Schools, workplaces and hospitals prepare for a new wave of illness."
+            Notification "H1N1 influenza spreads around the world."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Copenhagen climate summit"
+        Description "World leaders meet in Copenhagen to negotiate a global response to climate change."
+        Date "11.109"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Keep negotiating"
+            Effects[]
+            Title "An unfinished agreement"
+            Description "The summit raises awareness but falls short of a binding global treaty."
+            Notification "The Copenhagen climate summit ends amid difficult negotiations."
+            NotificationSound Neutral
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Iranian election protests"
+        Description "Disputed election results in Iran trigger large demonstrations and a severe political crackdown."
+        Date "5.109"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Stand with civilians"
+            Effects[]
+            Title "A contested result"
+            Description "The protests become one of the largest challenges to Iran's leadership in years."
+            Notification "Mass protests follow Iran's disputed election."
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+
 ###2010###
+Event
+    {
+        Title "The Haiti earthquake"
+        Description "A powerful earthquake strikes Haiti, killing hundreds of thousands and overwhelming the capital."
+        Date "0.110"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Help Haiti"
+            Effects[
+
+            ]
+            Title "A humanitarian emergency"
+            Description "Rescue teams and aid organizations work amid immense destruction."
+            Notification "A devastating earthquake strikes Haiti."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Chilean miners are rescued"
+        Description "Thirty-three miners trapped underground in Chile are brought safely to the surface after 69 days."
+        Date "9.110"
+        Conditions[]
+        Options[
+        {
+            ButtonText "A happy ending"
+            Effects[]
+            Title "All thirty-three survive"
+            Description "The rescue becomes a rare moment of global optimism."
+            Notification "The trapped Chilean miners are rescued."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Arab Spring begins in Tunisia"
+        Description "Protests in Tunisia force President Zine El Abidine Ben Ali from power and inspire demonstrations across the region."
+        Date "11.110"
+        Conditions[]
+        Options[
+        {
+            ButtonText "People demand change"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 4
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+            ]
+            Title "A region awakens"
+            Description "The consequences of the uprising will be felt across North Africa and the Middle East."
+            Notification "Mass protests begin the Arab Spring in Tunisia."
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+
+###2011###
+Event
+    {
+        Title "The Arab Spring spreads"
+        Description "Protests and uprisings spread across the Middle East and North Africa, challenging long-standing governments."
+        Date "0.111"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Listen to the people"
+            Effects[]
+            Title "A season of upheaval"
+            Description "Some governments fall while others respond with force."
+            Notification "The Arab Spring spreads across the region."
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Tohoku earthquake and tsunami"
+        Description "A massive earthquake and tsunami strike Japan, causing enormous loss of life and the Fukushima nuclear disaster."
+        Date "2.111"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Support Japan"
+            Effects[]
+            Title "A national catastrophe"
+            Description "Communities rebuild after one of the most powerful earthquakes ever recorded."
+            Notification "An earthquake and tsunami devastate northeastern Japan."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "Osama bin Laden is killed"
+        Description "US forces kill Osama bin Laden in Abbottabad, Pakistan, nearly a decade after the September 11 attacks."
+        Date "4.111"
+        Conditions[]
+        Options[
+        {
+            ButtonText "A major announcement"
+            Effects[]
+            Title "The end of a manhunt"
+            Description "The operation becomes one of the most consequential counterterrorism actions of the decade."
+            Notification "Osama bin Laden is killed in Pakistan."
+            NotificationSound Neutral
+        }]
+        Chance 50
+    }
+
+###2012###
+Event
+    {
+        Title "The London Olympic Games"
+        Description "The Olympic Games return to London, bringing athletes and spectators together from across the globe."
+        Date "6.112"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Celebrate sport"
+            Effects[]
+            Title "A global celebration"
+            Description "London stages a widely watched festival of sport and culture."
+            Notification "The London Olympic Games open."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "Hurricane Sandy"
+        Description "Hurricane Sandy strikes the Caribbean and the US east coast, causing severe flooding and widespread damage."
+        Date "9.112"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Prepare for flooding"
+            Effects[]
+            Title "A superstorm"
+            Description "Transport and businesses are disrupted across a densely populated region."
+            Notification "Hurricane Sandy hits the US east coast."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Curiosity rover lands on Mars"
+        Description "NASA's Curiosity rover successfully lands in Gale Crater to study the geology and climate of Mars."
+        Date "7.112"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Look to the stars"
+            Effects[]
+            Title "A new world to explore"
+            Description "The mission sends back remarkable images and scientific data."
+            Notification "Curiosity lands safely on Mars."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###2013###
+Event
+    {
+        Title "Pope Francis is elected"
+        Description "Jorge Mario Bergoglio is elected pope, becoming the first pope from the Americas and the first Jesuit pope."
+        Date "2.113"
+        Conditions[]
+        Options[
+        {
+            ButtonText "A new chapter"
+            Effects[]
+            Title "A historic election"
+            Description "The new pope emphasizes humility, service and concern for the poor."
+            Notification "Pope Francis is elected."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "Typhoon Haiyan"
+        Description "One of the strongest tropical cyclones ever recorded devastates the Philippines and nearby regions."
+        Date "10.113"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Send aid"
+            Effects[]
+            Title "A devastating storm"
+            Description "Millions are affected as communities begin a long recovery."
+            Notification "Typhoon Haiyan devastates the Philippines."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "Nelson Mandela dies"
+        Description "Nelson Mandela, a central figure in the struggle against apartheid and South Africa's first democratic president, dies at 95."
+        Date "11.113"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Remember his legacy"
+            Effects[]
+            Title "A global farewell"
+            Description "People around the world honor Mandela's commitment to reconciliation."
+            Notification "Nelson Mandela dies at the age of 95."
+            NotificationSound Neutral
+        }]
+        Chance 50
+    }
+
+###2014###
+Event
+    {
+        Title "The annexation of Crimea"
+        Description "Russia annexes Crimea after a disputed referendum, prompting international condemnation and sanctions."
+        Date "2.114"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Protect stability"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+            ]
+            Title "A dangerous precedent"
+            Description "The crisis sharply worsens relations between Russia and the West."
+            Notification "The Crimea crisis changes the European security landscape."
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Ebola outbreak in West Africa"
+        Description "An Ebola epidemic spreads through West Africa, placing enormous pressure on local health systems."
+        Date "2.114"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Support health workers"
+            Effects[]
+            Title "A public health emergency"
+            Description "International medical teams work to contain the outbreak."
+            Notification "Ebola spreads through West Africa."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "Scotland votes on independence"
+        Description "Scotland holds a referendum on independence from the United Kingdom and votes to remain part of the union."
+        Date "8.114"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Respect the vote"
+            Effects[]
+            Title "A peaceful decision"
+            Description "The result settles the immediate question while leaving constitutional debate alive."
+            Notification "Scotland votes to remain in the United Kingdom."
+            NotificationSound Neutral
+        }]
+        Chance 50
+    }
+
+###2015###
+Event
+    {
+        Title "The Nepal earthquake"
+        Description "A major earthquake strikes Nepal, killing thousands and damaging historic sites in Kathmandu."
+        Date "3.115"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Help Nepal"
+            Effects[]
+            Title "A nation in ruins"
+            Description "Rescue teams and volunteers search for survivors across the mountains."
+            Notification "A devastating earthquake strikes Nepal."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Paris climate agreement"
+        Description "Nearly every country adopts the Paris Agreement to limit global warming and strengthen climate action."
+        Date "11.115"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Act on climate"
+            Effects[]
+            Title "A global promise"
+            Description "The agreement creates a shared framework for future climate policy."
+            Notification "The Paris climate agreement is adopted."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Iran nuclear deal"
+        Description "Iran and world powers reach an agreement limiting Iran's nuclear program in exchange for sanctions relief."
+        Date "6.115"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Choose diplomacy"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 4
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+            ]
+            Title "A negotiated settlement"
+            Description "Years of diplomacy produce a fragile but significant agreement."
+            Notification "World powers and Iran reach a nuclear agreement."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###2016###
+Event
+    {
+        Title "The United Kingdom votes for Brexit"
+        Description "A referendum in the United Kingdom produces a vote to leave the European Union."
+        Date "5.116"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Markets react"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 7
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+            ]
+            Title "A political earthquake"
+            Description "The result begins years of negotiations and uncertainty."
+            Notification "The United Kingdom votes to leave the European Union."
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Rio Olympic Games"
+        Description "The Summer Olympic Games open in Rio de Janeiro, the first Olympics held in South America."
+        Date "7.116"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Let the games begin"
+            Effects[]
+            Title "A first for South America"
+            Description "Athletes compete against the backdrop of Brazil's vibrant culture."
+            Notification "The Rio Olympic Games open."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Paris climate agreement enters force"
+        Description "The Paris Agreement enters into force after enough countries ratify the landmark climate accord."
+        Date "10.116"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Keep the promise"
+            Effects[]
+            Title "Climate action begins"
+            Description "Countries begin translating their commitments into national policy."
+            Notification "The Paris climate agreement enters into force."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###2017###
+Event
+    {
+        Title "Hurricane Harvey"
+        Description "Hurricane Harvey brings catastrophic flooding to Texas and Louisiana, especially around Houston."
+        Date "7.117"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Help the region"
+            Effects[]
+            Title "Historic flooding"
+            Description "Residents, volunteers and emergency crews respond to unprecedented rainfall."
+            Notification "Hurricane Harvey floods large parts of Texas."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The #MeToo movement grows"
+        Description "Survivors of sexual harassment and assault speak publicly, creating a worldwide movement for accountability."
+        Date "9.117"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Listen and change"
+            Effects[]
+            Title "Voices are heard"
+            Description "Institutions and workplaces begin confronting long-ignored misconduct."
+            Notification "The #MeToo movement spreads around the world."
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Rohingya refugee crisis"
+        Description "Violence in Myanmar forces hundreds of thousands of Rohingya people to flee to Bangladesh."
+        Date "7.117"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Protect refugees"
+            Effects[]
+            Title "A humanitarian crisis"
+            Description "Aid agencies struggle to support displaced families in overcrowded camps."
+            Notification "The Rohingya refugee crisis deepens."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+
+###2018###
+Event
+    {
+        Title "The Thai cave rescue"
+        Description "An international team rescues twelve boys and their coach from a flooded cave in Thailand."
+        Date "6.118"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Bring them home"
+            Effects[]
+            Title "A remarkable rescue"
+            Description "The dangerous operation succeeds after a worldwide effort."
+            Notification "The Thai youth soccer team is rescued from the cave."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Kilauea eruption"
+        Description "Kilauea volcano erupts for months in Hawaii, destroying homes and reshaping the landscape."
+        Date "4.118"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Respect nature"
+            Effects[]
+            Title "The earth moves"
+            Description "Residents are evacuated as lava flows through communities on Hawaii's Big Island."
+            Notification "Kilauea erupts in Hawaii."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The World Cup in Russia"
+        Description "The FIFA World Cup takes place in Russia, with France winning the tournament."
+        Date "5.118"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Celebrate football"
+            Effects[]
+            Title "France are champions"
+            Description "The tournament brings a month of international sport and celebration."
+            Notification "France win the FIFA World Cup."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###2019###
+Event
+    {
+        Title "Notre-Dame burns"
+        Description "A fire severely damages Notre-Dame Cathedral in Paris, one of Europe's most famous landmarks."
+        Date "3.119"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Rebuild"
+            Effects[]
+            Title "A historic landmark damaged"
+            Description "People around the world pledge support for the cathedral's restoration."
+            Notification "Fire damages Notre-Dame Cathedral in Paris."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Amazon fires"
+        Description "Record attention focuses on fires in the Amazon rainforest and the global debate over deforestation."
+        Date "7.119"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Protect the forest"
+            Effects[]
+            Title "A global concern"
+            Description "The fires intensify calls for stronger protection of the rainforest."
+            Notification "The Amazon fires draw worldwide attention."
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "A new coronavirus is identified"
+        Description "Chinese authorities report a cluster of pneumonia cases caused by a previously unknown coronavirus in Wuhan."
+        Date "11.119"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Monitor the outbreak"
+            Effects[]
+            Title "An uncertain warning"
+            Description "Public health authorities begin investigating an illness that will soon spread internationally."
+            Notification "A new coronavirus is identified in Wuhan."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+
 ###2020###
+Event
+    {
+        Title "The COVID-19 pandemic"
+        Description "COVID-19 spreads worldwide, leading to public health restrictions, business closures and a historic economic shock."
+        Date "2.120"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Protect the community"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 15
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 10
+                    EffectName "Software sales loss"
+                    Effect "software_offsales"
+                }
+
+            ]
+            Title "An unprecedented crisis"
+            Description "Communities adapt to lockdowns while hospitals face intense pressure."
+            Notification "The COVID-19 pandemic changes daily life around the world."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Beirut port explosion"
+        Description "A massive explosion at the port of Beirut kills and injures thousands and devastates large parts of the city."
+        Date "7.120"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Support Beirut"
+            Effects[]
+            Title "A city in shock"
+            Description "Residents and volunteers begin clearing streets and helping displaced families."
+            Notification "A massive explosion devastates Beirut."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Black Lives Matter protests"
+        Description "The killing of George Floyd sparks mass protests against racism and police violence in the United States and around the world."
+        Date "4.120"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Demand justice"
+            Effects[]
+            Title "A worldwide call for change"
+            Description "Communities debate policing, equality and the meaning of justice."
+            Notification "Black Lives Matter protests spread worldwide."
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+
+###2021###
+Event
+    {
+        Title "The Suez Canal blockage"
+        Description "The container ship Ever Given blocks the Suez Canal for nearly a week, disrupting global shipping."
+        Date "2.121"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Clear the route"
+            Effects[]
+            Title "Trade comes to a halt"
+            Description "The incident highlights how dependent world trade is on a few vital routes."
+            Notification "The Suez Canal is blocked by the Ever Given."
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Taliban return to Kabul"
+        Description "The Taliban capture Kabul as foreign forces withdraw from Afghanistan, ending two decades of international military presence."
+        Date "7.121"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Protect civilians"
+            Effects[]
+            Title "A sudden change of power"
+            Description "Afghans face uncertainty as evacuation and humanitarian efforts begin."
+            Notification "The Taliban return to power in Afghanistan."
+            NotificationSound Issue
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The COP26 climate summit"
+        Description "Countries meet in Glasgow and agree on a package of commitments intended to accelerate climate action."
+        Date "10.121"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Keep working"
+            Effects[]
+            Title "A difficult compromise"
+            Description "Governments promise stronger action, though major gaps remain."
+            Notification "The COP26 climate summit reaches an agreement."
+            NotificationSound Neutral
+        }]
+        Chance 50
+    }
+
+###2022###
+Event
+    {
+        Title "Russia invades Ukraine"
+        Description "Russia launches a full-scale invasion of Ukraine, causing a major war and the largest refugee crisis in Europe in decades."
+        Date "1.122"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Stand with civilians"
+            Effects[
+                {
+                    IsVisible 1
+                    EffectValue 10
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+            ]
+            Title "War returns to Europe"
+            Description "Sanctions, displacement and energy shocks affect countries far beyond the battlefield."
+            Notification "Russia launches a full-scale invasion of Ukraine."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "Queen Elizabeth II dies"
+        Description "Queen Elizabeth II dies after seventy years on the throne, prompting mourning and a constitutional transition in the United Kingdom."
+        Date "8.122"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Remember a long reign"
+            Effects[]
+            Title "The end of an era"
+            Description "Her death marks one of the most significant transitions in modern British public life."
+            Notification "Queen Elizabeth II dies at the age of 96."
+            NotificationSound Neutral
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The FIFA World Cup in Qatar"
+        Description "The FIFA World Cup is held in Qatar, with Argentina winning the final in a dramatic tournament."
+        Date "10.122"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Celebrate football"
+            Effects[]
+            Title "Argentina lift the trophy"
+            Description "The tournament ends with Lionel Messi leading Argentina to victory."
+            Notification "Argentina win the FIFA World Cup."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+
+###2023###
+Event
+    {
+        Title "The Turkey-Syria earthquake"
+        Description "A series of powerful earthquakes devastates southern Turkey and northern Syria, killing tens of thousands."
+        Date "1.123"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Send rescue teams"
+            Effects[]
+            Title "A catastrophe across borders"
+            Description "Rescuers work through winter conditions to find survivors and support displaced families."
+            Notification "Earthquakes devastate Turkey and Syria."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The coronation of King Charles III"
+        Description "Charles III is crowned king of the United Kingdom and the other Commonwealth realms."
+        Date "4.123"
+        Conditions[]
+        Options[
+        {
+            ButtonText "A new reign"
+            Effects[]
+            Title "A constitutional ceremony"
+            Description "The coronation marks a formal transition after the death of Queen Elizabeth II."
+            Notification "King Charles III is crowned in London."
+            NotificationSound Neutral
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Morocco earthquake"
+        Description "A powerful earthquake strikes Morocco, causing widespread destruction in the High Atlas region."
+        Date "8.123"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Help the survivors"
+            Effects[]
+            Title "Communities rebuild"
+            Description "Rescue and relief efforts face difficult terrain and damaged infrastructure."
+            Notification "A devastating earthquake strikes Morocco."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+
+###2024###
+Event
+    {
+        Title "The total solar eclipse across North America"
+        Description "A total solar eclipse crosses Mexico, the United States and Canada, drawing millions of spectators."
+        Date "3.124"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Look to the sky"
+            Effects[]
+            Title "Day briefly becomes night"
+            Description "Crowds gather to witness one of nature's most dramatic spectacles."
+            Notification "A total solar eclipse crosses North America."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The Paris Olympic Games"
+        Description "The Summer Olympic Games return to Paris, with athletes competing across France."
+        Date "6.124"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Celebrate sport"
+            Effects[]
+            Title "The games return to Paris"
+            Description "The event combines international competition with a historic host city."
+            Notification "The Paris Olympic Games open."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "Hurricane Beryl"
+        Description "Hurricane Beryl becomes an unusually powerful early-season storm and causes severe damage across the Caribbean and the US Gulf Coast."
+        Date "6.124"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Prepare for the storm"
+            Effects[]
+            Title "An extreme hurricane season"
+            Description "Communities rebuild after a storm that intensified unusually quickly over very warm waters."
+            Notification "Hurricane Beryl causes widespread destruction."
+            NotificationSound Warning
+        }]
+        Chance 50
+    }
+
+###2025###
+Event
+    {
+        Title "A new pope is elected"
+        Description "The Catholic Church elects a new pope after the death of Pope Francis, beginning a new chapter for the church."
+        Date "4.125"
+        Conditions[]
+        Options[
+        {
+            ButtonText "A new chapter"
+            Effects[]
+            Title "A global transition"
+            Description "Catholics around the world look to the new pontiff for direction and leadership."
+            Notification "A new pope is elected in Rome."
+            NotificationSound Neutral
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The 2025 Canadian federal election"
+        Description "Canada holds a federal election amid debates over the economy, housing and the country's future direction."
+        Date "3.125"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Respect democracy"
+            Effects[]
+            Title "A peaceful transfer of power"
+            Description "Voters choose a new government through the country's democratic process."
+            Notification "Canada holds a closely watched federal election."
+            NotificationSound Neutral
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The 2025 climate summit"
+        Description "Governments meet to strengthen climate commitments as extreme weather and the energy transition remain global concerns."
+        Date "10.125"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Keep negotiating"
+            Effects[]
+            Title "The work continues"
+            Description "Delegates seek practical compromises between economic development and emissions cuts."
+            Notification "World leaders continue negotiations on climate action."
+            NotificationSound Neutral
+        }]
+        Chance 50
+    }
+
+###2026###
+Event
+    {
+        Title "The Milano Cortina Winter Olympics"
+        Description "The Winter Olympic Games take place in Italy, bringing athletes together in Milano and Cortina d'Ampezzo."
+        Date "1.126"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Celebrate sport"
+            Effects[]
+            Title "Winter sport in Italy"
+            Description "The games provide an international festival of competition and culture."
+            Notification "The Milano Cortina Winter Olympics open."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The 2026 FIFA World Cup begins"
+        Description "The FIFA World Cup is hosted across Canada, Mexico and the United States, bringing the world's teams together."
+        Date "5.126"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Celebrate football"
+            Effects[]
+            Title "A tournament across North America"
+            Description "The expanded tournament draws fans from every continent."
+            Notification "The 2026 FIFA World Cup begins across North America."
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
+        Title "The 2026 United States midterm elections"
+        Description "Voters across the United States choose members of Congress and many state and local officials in the midterm elections."
+        Date "10.126"
+        Conditions[]
+        Options[
+        {
+            ButtonText "Respect democracy"
+            Effects[]
+            Title "A national vote"
+            Description "The results shape the direction of US policy for the remainder of the decade."
+            Notification "The United States holds its 2026 midterm elections."
+            NotificationSound Neutral
+        }]
+        Chance 50
+    }

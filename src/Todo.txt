@@ -2,13 +2,14 @@
 *Add 10 more Events
 *Add World Events for 1980 (Done)
 *Add World Events for 1990 (Done)
-*Add World Events for 2000
-*Add World Events for 2010
-*Add World Events for 2020
+*Add World Events for 2000 (Done)
+*Add World Events for 2010 (Done)
+*Add World Events for 2020 (Done)
+*Check if World Events are balanced
 *Add an option to choose from "Fire all World Events or Fire per chance"
-*change the Car on Ice and busticket event to add condition founder_at_work
+*change the Car on Ice and busticket event to add condition founder_at_work (Done)
 *make release_date & has_bugs to read SoftwareAlpha as well so you can check SoftwareAlpha as well
-*make an effect so actors will go home
+*make an effect so actors will go home (goes_home exists in EmployeeEffects.cs)
 *make an effect to fix bugs in beta phase
 *make a subcondition to check if an employee is satisfied and one to check if he is stressed
 
