@@ -10,8 +10,9 @@ namespace RandomEvents
             if (effect.Effect == "stockmarket_loss" || effect.Effect == "stockmarket_win")
             {
                 bool loss = effect.Effect.EndsWith("loss", StringComparison.OrdinalIgnoreCase);
+                int value = Math.Abs(int.Parse(effect.EffectValue));
                 foreach (StockMarket market in GameSettings.Instance.StockMarkets)
-                    market.Value = Utils.GetPercentage(market.Value, int.Parse(effect.EffectValue), loss);
+                    market.Value = Utils.GetPercentage(market.Value, value, loss);
                 return true;
             }
 
@@ -21,7 +22,10 @@ namespace RandomEvents
                 if (market == null && GameSettings.Instance.StockMarkets.Count > 0)
                     market = GameSettings.Instance.StockMarkets[UnityEngine.Random.Range(0, GameSettings.Instance.StockMarkets.Count)];
                 if (market != null)
-                    market.Value = Utils.GetPercentage(market.Value, int.Parse(effect.EffectValue), effect.Effect.EndsWith("loss", StringComparison.OrdinalIgnoreCase));
+                {
+                    int value = Math.Abs(int.Parse(effect.EffectValue));
+                    market.Value = Utils.GetPercentage(market.Value, value, effect.Effect.EndsWith("loss", StringComparison.OrdinalIgnoreCase));
+                }
                 return true;
             }
             return false;

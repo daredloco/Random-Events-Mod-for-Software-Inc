@@ -56,6 +56,14 @@ namespace RandomEvents
 
             if (effect.Effect.StartsWith("popularity_change_", StringComparison.OrdinalIgnoreCase))
             {
+                if (effect.Effect.Equals("popularity_change_game", StringComparison.OrdinalIgnoreCase))
+                {
+                    int popularityValue = int.Parse(effect.EffectValue);
+                    foreach (var category in MarketSimulation.Active.SoftwareTypes["Game"].Categories)
+                        category.Value.Popularity += popularityValue;
+                    return true;
+                }
+
                 string[] target = PopularityTarget(effect.Effect);
                 MarketSimulation.Active.SoftwareTypes[target[0]].Categories[target[1]].Popularity += int.Parse(effect.EffectValue);
                 return true;

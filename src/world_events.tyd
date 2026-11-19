@@ -369,13 +369,13 @@ Event
                 {
                     IsVisible 1
                     EffectValue 8
-                    EffectName "Sports game popularity"
-                    Effect "popularity_change_gamesports"
+                    EffectName "Game popularity"
+                    Effect "popularity_change_game"
                 }
                 {
                     IsVisible 1
                     EffectValue 5
-                    EffectName "Stock market"
+                    EffectName "Stock market loss"
                     Effect "stockmarket_loss"
                 }
             ]
@@ -401,12 +401,6 @@ Event
                     EffectValue 5
                     EffectName "Simulation game popularity"
                     Effect "popularity_change_gamesimulation"
-                }
-                {
-                    IsVisible 0
-                    EffectValue 500
-                    EffectName "Research cost"
-                    Effect "company_bill"
                 }
             ]
             Title "Confidence restored"
@@ -614,7 +608,7 @@ Event
             Effects[
                 {
                     IsVisible 1
-                    EffectValue 12
+                    EffectValue 8
                     EffectName "Stock market loss"
                     Effect "stockmarket_loss"
                 }
@@ -1138,14 +1132,8 @@ Event
                     EffectName "Simulation game popularity"
                     Effect "popularity_change_gamesimulation"
                 }
-                {
-                    IsVisible 1
-                    EffectValue 3
-                    EffectName "Research bill"
-                    Effect "company_bill"
-                }
-            ]
-            Title "Other worlds"
+                ]
+                Title "Other worlds"
             Description "New discoveries drive interest in scientific modeling and simulation."
             Notification "Astronomers confirm worlds beyond our solar system!"
             NotificationSound Good
@@ -1506,14 +1494,8 @@ Event
                     EffectName "Simulation game popularity"
                     Effect "popularity_change_gamesimulation"
                 }
-                {
-                    IsVisible 1
-                    EffectValue 3
-                    EffectName "Research bill"
-                    Effect "company_bill"
-                }
-            ]
-            Title "Robots on another world"
+                ]
+                Title "Robots on another world"
             Description "Remote exploration inspires simulation and engineering projects."
             Notification "Pathfinder sends a small rover across the surface of Mars!"
             NotificationSound Good
@@ -1690,12 +1672,6 @@ Event
                     EffectName "Simulation game popularity"
                     Effect "popularity_change_gamesimulation"
                 }
-                {
-                    IsVisible 1
-                    EffectValue 700
-                    EffectName "Research bill"
-                    Effect "company_bill"
-                }
             ]
             Title "A permanent presence"
             Description "Long-term engineering projects inspire new simulations and expenses."
@@ -1844,12 +1820,6 @@ Event
                     EffectName "Simulation game popularity"
                     Effect "popularity_change_gamesimulation"
                 }
-                {
-                    IsVisible 1
-                    EffectValue 500
-                    EffectName "Research investment"
-                    Effect "company_deals"
-                }
             ]
             Title "The code of life"
             Description "Data-intensive research points toward powerful new software tools."
@@ -1870,7 +1840,7 @@ Event
             Effects[
                 {
                     IsVisible 1
-                    EffectValue 12
+                    EffectValue 8
                     EffectName "Stock market loss"
                     Effect "stockmarket_loss"
                 }

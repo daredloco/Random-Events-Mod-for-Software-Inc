@@ -221,8 +221,8 @@ Event
         Effects[
             {
             IsVisible 1
-            EffectMinValue 15
-            EffectMaxValue 5
+            EffectMinValue 3
+            EffectMaxValue 8
             EffectName "Stockmarket SingleLoss"
             Effect "stockmarket_singleloss"
             }
@@ -247,8 +247,8 @@ Event
         Effects[
             {
             IsVisible 1
-            EffectMinValue 5
-            EffectMaxValue 15
+            EffectMinValue 3
+            EffectMaxValue 8
             EffectName "Stockmarket SingleWin"
             Effect "stockmarket_singlewin"
             }
@@ -291,7 +291,7 @@ Event
 Event
 {
     Title "Stock Market Crash"
-    Description "Due to bad investments by major investment agencies the Stockmarket crashes by 10%!"
+    Description "Due to bad investments by major investment agencies the Stockmarket crashes by 8%!"
     Conditions[
         "has_stockmarket"
     ]
@@ -300,14 +300,14 @@ Event
         Effects[
             {
             IsVisible 1
-            EffectValue 10
+            EffectValue 8
             EffectName "Stockmarket Loss"
             Effect "stockmarket_loss"
             }
         ]
         Title "Stockmarket crashes"
-        Description "The Stockmarket will crash by 10%."
-        Notification "The Stockmarket did crash by <b>10%</b>!"
+        Description "The Stockmarket will crash by 8%."
+        Notification "The Stockmarket did crash by <b>8%</b>!"
         NotificationSound Issue #Can be Good Issue Neutral Warning
     }]
     Chance 20
@@ -317,7 +317,7 @@ Event
 Event
 {
     Title "Stock Market Crash"
-    Description "Due to the crash of various big banks and investment agencies the Stockmarket crashes by 25%!"
+    Description "Due to the crash of various big banks and investment agencies the Stockmarket crashes by 8%!"
     Conditions[
         "has_stockmarket"
     ]
@@ -326,14 +326,14 @@ Event
         Effects[
             {
             IsVisible 1
-            EffectValue 25
+            EffectValue 8
             EffectName "Stockmarket Loss"
             Effect "stockmarket_loss"
             }
         ]
         Title "Stockmarket crashes"
-        Description "The Stockmarket will crash by 25%."
-        Notification "The Stockmarket did crash by <b>25%</b>!"
+        Description "The Stockmarket will crash by 8%."
+        Notification "The Stockmarket did crash by <b>8%</b>!"
         NotificationSound Issue #Can be Good Issue Neutral Warning
     }]
     Chance 5
@@ -369,7 +369,7 @@ Event
 Event
 {
     Title "Stock Market Boom"
-    Description "Due to good investments by major investment agencies the Stockmarket prices will raise by 10%!"
+    Description "Due to good investments by major investment agencies the Stockmarket prices will raise by 8%!"
     Conditions[
         "has_stockmarket"
     ]
@@ -378,14 +378,14 @@ Event
         Effects[
             {
             IsVisible 1
-            EffectValue 10
-            EffectName "Stockmarket win"
+            EffectValue 8
+            EffectName "Stockmarket Win"
             Effect "stockmarket_win"
             }
         ]
         Title "Stockmarket booms"
-        Description "The Stockmarket prices will raise by 10%."
-        Notification "The Stockmarket prices raising by <b>10%</b>!"
+        Description "The Stockmarket prices will raise by 8%."
+        Notification "The Stockmarket prices raising by <b>8%</b>!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     }]
     Chance 20
@@ -395,7 +395,7 @@ Event
 Event
 {
     Title "Stock Market Boom"
-    Description "Due to excelent investments by major investment agencies the Stockmarket prices will raise by 25%!"
+    Description "Due to excellent investments by major investment agencies the Stockmarket prices will raise by 8%!"
     Conditions[
         "has_stockmarket"
     ]
@@ -404,14 +404,14 @@ Event
         Effects[
             {
             IsVisible 1
-            EffectValue 25
-            EffectName "Stockmarket win"
+            EffectValue 8
+            EffectName "Stockmarket Win"
             Effect "stockmarket_win"
             }
         ]
         Title "Stockmarket booms"
-        Description "The Stockmarket prices will raise by 25%."
-        Notification "The Stockmarket prices raising by <b>25%</b>!"
+        Description "The Stockmarket prices will raise by 8%."
+        Notification "The Stockmarket prices raising by <b>8%</b>!"
         NotificationSound Good #Can be Good Issue Neutral Warning
     }]
     Chance 5
