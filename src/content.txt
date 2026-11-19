@@ -50,6 +50,7 @@ generates_bugs = Employee will generate bug in the project hes working on <= not
 fixes_bugs = Employee will fix bugs in the project hes working on <= not included in this version
 change_Salary = Changes the salary of an employee <= bugged out!
 call_event = Calls another event by title
+
 CONDITIONS: (most can be used with "is_year>2000" {valid signs: >, <, >=, <=, =, !, !=})
 has_software = checks if the player has a softwareproduct => returns SoftwareProduct
 has_workitem = checks if the player has a workitem (running project) => returns null
@@ -82,6 +83,7 @@ has_softwareworkitem = checks if any workitem is a softwareworkitem => returns S
 has_softwarealpha = checks if any workitem is in alpha/beta stage => returns SoftwareAlpha
 has_designdocument = checks if any workitem is in design stage => returns DesignDocument
 has_multiple_founders = checks if the company has more than one founder => returns nothing
+has_founder_at_work = checks if any founder is currently working => returns nothing
 
 SUB CONDITIONS: (Use: "has_2deditor&&release_date>2" for true/false use "has_alpha" <- true or "has_alpha!" <- false)
 release_date = checks if the Main Conditions release date is X months difference to the value from today <= reads SoftwareProduct

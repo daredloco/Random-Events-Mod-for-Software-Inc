@@ -93,7 +93,7 @@ Main condition families currently implemented include:
 
 - Products: `has_software`, `has_game` and `has_game{rpg|adventure|simulation|sports|rts|fps}`, `has_os` and `has_os{computer|console|phone}`, `has_2deditor`, `has_3deditor`, `has_audiotool`, `has_office`, `has_antivirus`.
 - Employees/objects: `has_staff`, `has_employee`, `has_leader`, `has_designer`, `has_programmer`, `has_artist`, `has_service`, `has_stockmarket`, `has_supportwork`, `has_activedeal`, `has_softwareworkitem`, `has_softwarealpha`, `has_designdocument`.
-- Scalar/state checks: `has_multiple_founders`, `player_has_car`, `is_year`, `is_month`, `has_fans`, `has_money`, `has_snow`, `has_stars`, `has_rain`, and `has_popularity...`.
+- Scalar/state checks: `has_founder_at_work`, `has_multiple_founders`, `player_has_car`, `is_year`, `is_month`, `has_fans`, `has_money`, `has_snow`, `has_stars`, `has_rain`, and `has_popularity...`.
 
 Subconditions currently implemented include `has_sequel`, `is_sequel`, `is_alpha`, `is_beta`, `from_playercompany`, `has_addon`, `release_date`, `has_bugs`, `has_offsales`, `has_onsales`, `sick_days`, `is_female`, `is_working`, `is_founder`, `is_crunching`, `is_stressed`, `is_satisfied`, and `salary`. `years_in_company` currently returns no candidates and must not be treated as working support.
 

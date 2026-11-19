@@ -48,6 +48,12 @@ namespace RandomEvents
                 int founderCount = GameSettings.Instance.sActorManager.Actors.Count(actor => actor.employee.Founder);
                 return expression.Operator == "!" ? founderCount <= 1 : founderCount >= 2;
             }
+            else if (name == "has_founder_at_work")
+            {
+                var founders = GameSettings.Instance.sActorManager.Actors.Where(actor => actor.employee.Founder);
+                bool hasFounderAtWork = founders.Any(actor => actor.IsWorking);
+                return expression.Operator == "!" ? !hasFounderAtWork : hasFounderAtWork;
+            }
             else if (name == "player_has_car")
             {
                 Actor founder = GameSettings.Instance.sActorManager.Actors.GetRandomWhere(actor => actor.employee.Founder);

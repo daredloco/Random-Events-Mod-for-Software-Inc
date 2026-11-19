@@ -124,6 +124,7 @@ Event
     Conditions[
         "player_has_car"
         "has_snow"
+        "has_founder_at_work!"
     ]
     Options[{
         ButtonText "Full Brake"
@@ -190,6 +191,7 @@ Event
     Conditions[
         "player_has_car!"
         "has_snow"
+        "has_founder_at_work!"
     ]
     Options[{
         ButtonText "Thats expensive!"
