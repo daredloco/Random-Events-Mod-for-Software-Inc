@@ -1,7 +1,7 @@
 ﻿*Skandale (partially added)
 *Add 10 more Events
-*Add World Events for 1980
-*Add World Events for 1990
+*Add World Events for 1980 (Done)
+*Add World Events for 1990 (Done)
 *Add World Events for 2000
 *Add World Events for 2010
 *Add World Events for 2020
