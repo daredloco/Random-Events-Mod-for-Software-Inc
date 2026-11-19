@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -61,10 +61,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EventsHandlerV2.cs" />
+    <Compile Include="Conditions\ConditionExpression.cs" />
+    <Compile Include="Conditions\MainConditionEvaluator.cs" />
+    <Compile Include="Conditions\SubConditionEvaluator.cs" />
     <Compile Include="Conditions\VariableCondition.cs" />
-    <Compile Include="Effects\EventEffect.cs" />
     <Compile Include="Effects\CompanyEffects.cs" />
+    <Compile Include="Effects\EffectDispatcher.cs" />
+    <Compile Include="Effects\EmployeeEffects.cs" />
+    <Compile Include="Effects\EventEffect.cs" />
+    <Compile Include="Effects\MarketEffects.cs" />
+    <Compile Include="Effects\MiscEffects.cs" />
+    <Compile Include="Effects\ProductEffects.cs" />
+    <Compile Include="EventsHandlerV2.cs" />
     <Compile Include="Models\Event.cs" />
     <Compile Include="UI\EventWindow.cs" />
     <Compile Include="Helpers.cs" />
