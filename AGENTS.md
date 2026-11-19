@@ -79,6 +79,9 @@ Important authoring behavior:
 - The UI has explicit layouts for one, two, three, and four options. Do not add a fifth option without updating `EventWindow`.
 - Event titles are used by `call_event`; keep titles unique if events are chained.
 - Empty or malformed required Tyd nodes can throw during loading. Validate new definitions against nearby examples.
+- This project uses the Software Inc. fork of TyDSharp (`khornel/TyDSharp`), not a permissive generic parser. In a list such as `Effects[ ... ]`, each effect table must use multiline fields (or semicolon-separated fields). Do not write an inline table with whitespace-separated fields like `{ IsVisible 1 EffectValue 8 EffectName "..." Effect "..." }`; TyDSharp parses that as one string value, so `LoadTyd()` later sees missing `EffectName`/`Effect` nodes and can throw `NullReferenceException`.
+- After changing `.tyd` files, validate them with TyDSharp when possible and inspect the parsed node structure, not only bracket balance. Every event must have `Title`, `Description`, `Date` for world events, `Conditions`, `Options`, and `Chance`; every option must have `ButtonText`, `Title`, `Description`, `Notification`, `NotificationSound`, and `Effects`; every effect must have `IsVisible`, `EffectName`, and `Effect`.
+- For market effects, `stockmarket_loss` expects a positive percentage because `MarketEffects` passes `subtract = true` to `Utils.GetPercentage`; negative values would increase the market. `stockmarket_win` also uses positive percentages.
 
 ## Conditions DSL
 

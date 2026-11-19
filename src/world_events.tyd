@@ -1,4 +1,4 @@
-﻿###1970###
+###1970###
 
 ###1980###
 ##January 0.80##
@@ -336,8 +336,18 @@ Event
         {
             ButtonText "Hold steady"
             Effects[
-                { IsVisible 1 EffectValue 5 EffectName "Stock market loss" Effect "stockmarket_loss" }
-                { IsVisible 0 EffectValue 400 EffectName "Labor dispute bill" Effect "company_bill" }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 0
+                    EffectValue 400
+                    EffectName "Labor dispute bill"
+                    Effect "company_bill"
+                }
             ]
             Title "A divided workforce"
             Description "Industrial action disrupts production and weighs on business confidence."
@@ -356,8 +366,18 @@ Event
         {
             ButtonText "Weather the crash"
             Effects[
-                { IsVisible 1 EffectValue 8 EffectName "Sports game popularity" Effect "popularity_change_gamesports" }
-                { IsVisible 1 EffectValue 5 EffectName "Stock market" Effect "stockmarket_loss" }
+                {
+                    IsVisible 1
+                    EffectValue 8
+                    EffectName "Sports game popularity"
+                    Effect "popularity_change_gamesports"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Stock market"
+                    Effect "stockmarket_loss"
+                }
             ]
             Title "A hard reset"
             Description "The games industry loses confidence before eventually rebuilding."
@@ -376,8 +396,18 @@ Event
         {
             ButtonText "Reach for orbit"
             Effects[
-                { IsVisible 1 EffectValue 5 EffectName "Simulation game popularity" Effect "popularity_change_gamesimulation" }
-                { IsVisible 0 EffectValue 500 EffectName "Research cost" Effect "company_bill" }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Simulation game popularity"
+                    Effect "popularity_change_gamesimulation"
+                }
+                {
+                    IsVisible 0
+                    EffectValue 500
+                    EffectName "Research cost"
+                    Effect "company_bill"
+                }
             ]
             Title "Confidence restored"
             Description "Spaceflight inspires simulation and engineering software."
@@ -398,8 +428,18 @@ Event
         {
             ButtonText "Respond to the disaster"
             Effects[
-                { IsVisible 1 EffectValue 6 EffectName "Stock market loss" Effect "stockmarket_loss" }
-                { IsVisible 0 EffectValue 800 EffectName "Emergency relief bill" Effect "company_bill" }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 0
+                    EffectValue 800
+                    EffectName "Emergency relief bill"
+                    Effect "company_bill"
+                }
             ]
             Title "A city in ruins"
             Description "The disaster disrupts commerce and demands extraordinary relief efforts."
@@ -418,8 +458,18 @@ Event
         {
             ButtonText "Turn it up"
             Effects[
-                { IsVisible 1 EffectValue 5 EffectName "Audio tool popularity" Effect "popularity_change_audiotool" }
-                { IsVisible 1 EffectValue 3 EffectName "Company fans" Effect "fans_change" }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Audio tool popularity"
+                    Effect "popularity_change_audiotool"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 3
+                    EffectName "Company fans"
+                    Effect "fans_change"
+                }
             ]
             Title "A global audience"
             Description "Music and broadcast technology reach an unprecedented audience."
@@ -438,8 +488,18 @@ Event
         {
             ButtonText "Invest in solutions"
             Effects[
-                { IsVisible 1 EffectValue 4 EffectName "Business reputation" Effect "change_businessrep" }
-                { IsVisible 1 EffectValue 4 EffectName "Stock market loss" Effect "stockmarket_loss" }
+                {
+                    IsVisible 1
+                    EffectValue 4
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 4
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
             ]
             Title "A warning from the sky"
             Description "Environmental risks unsettle markets while responsible technology gains attention."
@@ -460,8 +520,18 @@ Event
         {
             ButtonText "Contain the damage"
             Effects[
-                { IsVisible 1 EffectValue 8 EffectName "Stock market loss" Effect "stockmarket_loss" }
-                { IsVisible 1 EffectValue -3 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 8
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 1
+                    EffectValue -3
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "A global shock"
             Description "A major industrial disaster hurts confidence across markets."
@@ -480,8 +550,18 @@ Event
         {
             ButtonText "Continue negotiations"
             Effects[
-                { IsVisible 1 EffectValue 5 EffectName "Stock market gain" Effect "stockmarket_win" }
-                { IsVisible 1 EffectValue 4 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 4
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "A thaw in the Cold War"
             Description "Diplomatic progress raises cautious hopes for stability and lower military tensions."
@@ -500,8 +580,18 @@ Event
         {
             ButtonText "Explore the unknown"
             Effects[
-                { IsVisible 1 EffectValue 5 EffectName "Simulation game popularity" Effect "popularity_change_gamesimulation" }
-                { IsVisible 1 EffectValue 2 EffectName "Company fans" Effect "fans_change" }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Simulation game popularity"
+                    Effect "popularity_change_gamesimulation"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 2
+                    EffectName "Company fans"
+                    Effect "fans_change"
+                }
             ]
             Title "A distant world"
             Description "Scientific discovery inspires curiosity and simulation."
@@ -522,8 +612,18 @@ Event
         {
             ButtonText "Hold steady"
             Effects[
-                { IsVisible 1 EffectValue 12 EffectName "Stock market loss" Effect "stockmarket_loss" }
-                { IsVisible 1 EffectValue 800 EffectName "Emergency bill" Effect "company_bill" }
+                {
+                    IsVisible 1
+                    EffectValue 12
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 800
+                    EffectName "Emergency bill"
+                    Effect "company_bill"
+                }
             ]
             Title "Black Monday"
             Description "Investors retreat as markets around the world tumble."
@@ -542,8 +642,18 @@ Event
         {
             ButtonText "Repair the damage"
             Effects[
-                { IsVisible 1 EffectValue 6 EffectName "Stock market loss" Effect "stockmarket_loss" }
-                { IsVisible 0 EffectValue 700 EffectName "Repair bill" Effect "company_bill" }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 0
+                    EffectValue 700
+                    EffectName "Repair bill"
+                    Effect "company_bill"
+                }
             ]
             Title "Nature overwhelms the city"
             Description "Businesses face costly repairs as transport and communications are disrupted."
@@ -562,8 +672,18 @@ Event
         {
             ButtonText "Build responsibly"
             Effects[
-                { IsVisible 1 EffectValue 5 EffectName "Business reputation" Effect "change_businessrep" }
-                { IsVisible 1 EffectValue 3 EffectName "Stock market gain" Effect "stockmarket_win" }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 3
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
             ]
             Title "A cooperative solution"
             Description "Markets reward a rare moment of international cooperation."
@@ -584,8 +704,18 @@ Event
         {
             ButtonText "Support the investigation"
             Effects[
-                { IsVisible 1 EffectValue 6 EffectName "Stock market loss" Effect "stockmarket_loss" }
-                { IsVisible 0 EffectValue 500 EffectName "Security bill" Effect "company_bill" }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 0
+                    EffectValue 500
+                    EffectName "Security bill"
+                    Effect "company_bill"
+                }
             ]
             Title "A national tragedy"
             Description "The attack causes grief, investigations, and a renewed focus on security."
@@ -604,8 +734,18 @@ Event
         {
             ButtonText "Celebrate the games"
             Effects[
-                { IsVisible 1 EffectValue 6 EffectName "Sports game popularity" Effect "popularity_change_gamesports" }
-                { IsVisible 1 EffectValue 3 EffectName "Company fans" Effect "fans_change" }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Sports game popularity"
+                    Effect "popularity_change_gamesports"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 3
+                    EffectName "Company fans"
+                    Effect "fans_change"
+                }
             ]
             Title "Competition without borders"
             Description "International sport creates shared excitement and a rare moment of cooperation."
@@ -624,8 +764,18 @@ Event
         {
             ButtonText "Keep the peace"
             Effects[
-                { IsVisible 1 EffectValue 4 EffectName "Business reputation" Effect "change_businessrep" }
-                { IsVisible 1 EffectValue 3 EffectName "Company fans" Effect "fans_change" }
+                {
+                    IsVisible 1
+                    EffectValue 4
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 3
+                    EffectName "Company fans"
+                    Effect "fans_change"
+                }
             ]
             Title "A global sporting moment"
             Description "The closing ceremony leaves audiences with a sense of international connection."
@@ -646,8 +796,18 @@ Event
         {
             ButtonText "Clean up the coastline"
             Effects[
-                { IsVisible 1 EffectValue 7 EffectName "Stock market loss" Effect "stockmarket_loss" }
-                { IsVisible 1 EffectValue -3 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 7
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 1
+                    EffectValue -3
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "An environmental catastrophe"
             Description "The spill damages wildlife, local businesses, and public confidence in industrial safety."
@@ -666,8 +826,18 @@ Event
         {
             ButtonText "Open the borders"
             Effects[
-                { IsVisible 1 EffectValue 7 EffectName "Stock market gain" Effect "stockmarket_win" }
-                { IsVisible 1 EffectValue 5 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 7
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "A new market horizon"
             Description "Political barriers fall and optimism spreads through markets."
@@ -686,8 +856,18 @@ Event
         {
             ButtonText "Support the transition"
             Effects[
-                { IsVisible 1 EffectValue 6 EffectName "Stock market gain" Effect "stockmarket_win" }
-                { IsVisible 1 EffectValue 4 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 4
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "A regime falls"
             Description "Political change brings uncertainty, hope, and the possibility of a new economy."
@@ -708,8 +888,18 @@ Event
         {
             ButtonText "Look beyond"
             Effects[
-                { IsVisible 1 EffectValue 6 EffectName "Simulation game popularity" Effect "popularity_change_gamesimulation" }
-                { IsVisible 1 EffectValue 2 EffectName "Company fans" Effect "fans_change" }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Simulation game popularity"
+                    Effect "popularity_change_gamesimulation"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 2
+                    EffectName "Company fans"
+                    Effect "fans_change"
+                }
             ]
             Title "A new window on space"
             Description "Astronomy and simulation capture the public imagination."
@@ -728,8 +918,18 @@ Event
         {
             ButtonText "Welcome the change"
             Effects[
-                { IsVisible 1 EffectValue 6 EffectName "Stock market gain" Effect "stockmarket_win" }
-                { IsVisible 1 EffectValue 5 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "A symbol of reconciliation"
             Description "The release raises hopes for a peaceful end to apartheid."
@@ -748,8 +948,18 @@ Event
         {
             ButtonText "Rebuild together"
             Effects[
-                { IsVisible 1 EffectValue 6 EffectName "Stock market gain" Effect "stockmarket_win" }
-                { IsVisible 1 EffectValue 4 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 4
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "A country reunited"
             Description "Economic optimism rises as a divided market becomes one."
@@ -770,8 +980,18 @@ Event
         {
             ButtonText "Enter new markets"
             Effects[
-                { IsVisible 1 EffectValue 7 EffectName "Stock market gain" Effect "stockmarket_win" }
-                { IsVisible 1 EffectValue 5 EffectName "Company fans" Effect "fans_change" }
+                {
+                    IsVisible 1
+                    EffectValue 7
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Company fans"
+                    Effect "fans_change"
+                }
             ]
             Title "A new world order"
             Description "Companies look toward new customers and partnerships."
@@ -790,8 +1010,18 @@ Event
         {
             ButtonText "Protect the supply chain"
             Effects[
-                { IsVisible 1 EffectValue 6 EffectName "Stock market loss" Effect "stockmarket_loss" }
-                { IsVisible 0 EffectValue 700 EffectName "Emergency bill" Effect "company_bill" }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 0
+                    EffectValue 700
+                    EffectName "Emergency bill"
+                    Effect "company_bill"
+                }
             ]
             Title "A war shakes the economy"
             Description "Conflict threatens energy supplies and unsettles companies around the world."
@@ -810,8 +1040,18 @@ Event
         {
             ButtonText "Protect the company"
             Effects[
-                { IsVisible 1 EffectValue 6 EffectName "Stock market loss" Effect "stockmarket_loss" }
-                { IsVisible 1 EffectValue -3 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 1
+                    EffectValue -3
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "A region breaks apart"
             Description "Political fragmentation creates uncertainty and disrupts trade."
@@ -832,8 +1072,18 @@ Event
         {
             ButtonText "Trade together"
             Effects[
-                { IsVisible 1 EffectValue 6 EffectName "Stock market gain" Effect "stockmarket_win" }
-                { IsVisible 1 EffectValue 4 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 4
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "A closer union"
             Description "Closer cooperation encourages investment and cross-border business."
@@ -852,8 +1102,18 @@ Event
         {
             ButtonText "Let the games begin"
             Effects[
-                { IsVisible 1 EffectValue 6 EffectName "Sports game popularity" Effect "popularity_change_gamesports" }
-                { IsVisible 1 EffectValue 3 EffectName "Company fans" Effect "fans_change" }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Sports game popularity"
+                    Effect "popularity_change_gamesports"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 3
+                    EffectName "Company fans"
+                    Effect "fans_change"
+                }
             ]
             Title "A global stage"
             Description "Sports and broadcast entertainment attract a worldwide audience."
@@ -872,8 +1132,18 @@ Event
         {
             ButtonText "Search the stars"
             Effects[
-                { IsVisible 1 EffectValue 5 EffectName "Simulation game popularity" Effect "popularity_change_gamesimulation" }
-                { IsVisible 1 EffectValue 3 EffectName "Research bill" Effect "company_bill" }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Simulation game popularity"
+                    Effect "popularity_change_gamesimulation"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 3
+                    EffectName "Research bill"
+                    Effect "company_bill"
+                }
             ]
             Title "Other worlds"
             Description "New discoveries drive interest in scientific modeling and simulation."
@@ -894,8 +1164,18 @@ Event
         {
             ButtonText "Choose dialogue"
             Effects[
-                { IsVisible 1 EffectValue 5 EffectName "Business reputation" Effect "change_businessrep" }
-                { IsVisible 1 EffectValue 4 EffectName "Stock market gain" Effect "stockmarket_win" }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 4
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
             ]
             Title "A fragile hope"
             Description "The agreement creates cautious optimism and encourages cooperation."
@@ -914,8 +1194,18 @@ Event
         {
             ButtonText "Trade together"
             Effects[
-                { IsVisible 1 EffectValue 5 EffectName "Stock market gain" Effect "stockmarket_win" }
-                { IsVisible 1 EffectValue 4 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 4
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "A larger market"
             Description "Closer cooperation encourages investment and cross-border business."
@@ -934,8 +1224,18 @@ Event
         {
             ButtonText "Invest in stability"
             Effects[
-                { IsVisible 1 EffectValue 4 EffectName "Stock market gain" Effect "stockmarket_win" }
-                { IsVisible 1 EffectValue 3 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 4
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 3
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "Diplomacy takes root"
             Description "Continued negotiations encourage cautious confidence and investment."
@@ -956,8 +1256,18 @@ Event
         {
             ButtonText "Build a new future"
             Effects[
-                { IsVisible 1 EffectValue 7 EffectName "Stock market gain" Effect "stockmarket_win" }
-                { IsVisible 1 EffectValue 6 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 7
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "A historic election"
             Description "A peaceful democratic transition creates optimism and new economic possibilities."
@@ -976,8 +1286,18 @@ Event
         {
             ButtonText "Support recovery"
             Effects[
-                { IsVisible 1 EffectValue 8 EffectName "Stock market loss" Effect "stockmarket_loss" }
-                { IsVisible 1 EffectValue -4 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 8
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 1
+                    EffectValue -4
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "A humanitarian catastrophe"
             Description "The end of the violence leaves a devastated country facing an enormous recovery."
@@ -996,8 +1316,18 @@ Event
         {
             ButtonText "Connect the continents"
             Effects[
-                { IsVisible 1 EffectValue 4 EffectName "Stock market gain" Effect "stockmarket_win" }
-                { IsVisible 1 EffectValue 3 EffectName "Company fans" Effect "fans_change" }
+                {
+                    IsVisible 1
+                    EffectValue 4
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 3
+                    EffectName "Company fans"
+                    Effect "fans_change"
+                }
             ]
             Title "Closer markets"
             Description "Infrastructure makes international business feel more immediate."
@@ -1018,8 +1348,18 @@ Event
         {
             ButtonText "Rebuild together"
             Effects[
-                { IsVisible 1 EffectValue 6 EffectName "Stock market gain" Effect "stockmarket_win" }
-                { IsVisible 1 EffectValue 5 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "Peace after years of war"
             Description "A peace agreement creates hope while reconstruction begins."
@@ -1038,8 +1378,18 @@ Event
         {
             ButtonText "Protect the community"
             Effects[
-                { IsVisible 1 EffectValue 5 EffectName "Stock market loss" Effect "stockmarket_loss" }
-                { IsVisible 0 EffectValue 500 EffectName "Safety bill" Effect "company_bill" }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 0
+                    EffectValue 500
+                    EffectName "Safety bill"
+                    Effect "company_bill"
+                }
             ]
             Title "A community in mourning"
             Description "The tragedy prompts grief, public debate, and demands for stronger safeguards."
@@ -1058,8 +1408,18 @@ Event
         {
             ButtonText "Protect stability"
             Effects[
-                { IsVisible 1 EffectValue 7 EffectName "Stock market loss" Effect "stockmarket_loss" }
-                { IsVisible 1 EffectValue -3 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 7
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 1
+                    EffectValue -3
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "A country in crisis"
             Description "Political instability creates uncertainty for businesses and international markets."
@@ -1080,8 +1440,18 @@ Event
         {
             ButtonText "Build a peaceful handover"
             Effects[
-                { IsVisible 1 EffectValue 5 EffectName "Stock market gain" Effect "stockmarket_win" }
-                { IsVisible 1 EffectValue 4 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 4
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "A historic handover"
             Description "The transition raises questions about trade, identity, and the future of a major financial center."
@@ -1100,8 +1470,18 @@ Event
         {
             ButtonText "Remember her legacy"
             Effects[
-                { IsVisible 1 EffectValue -3 EffectName "Business reputation" Effect "change_businessrep" }
-                { IsVisible 1 EffectValue 3 EffectName "Company fans" Effect "fans_change" }
+                {
+                    IsVisible 1
+                    EffectValue -3
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 3
+                    EffectName "Company fans"
+                    Effect "fans_change"
+                }
             ]
             Title "A nation mourns"
             Description "The tragedy dominates public attention and leaves a lasting cultural impact."
@@ -1120,8 +1500,18 @@ Event
         {
             ButtonText "Drive on Mars"
             Effects[
-                { IsVisible 1 EffectValue 6 EffectName "Simulation game popularity" Effect "popularity_change_gamesimulation" }
-                { IsVisible 1 EffectValue 3 EffectName "Research bill" Effect "company_bill" }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Simulation game popularity"
+                    Effect "popularity_change_gamesimulation"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 3
+                    EffectName "Research bill"
+                    Effect "company_bill"
+                }
             ]
             Title "Robots on another world"
             Description "Remote exploration inspires simulation and engineering projects."
@@ -1142,8 +1532,18 @@ Event
         {
             ButtonText "Protect the company"
             Effects[
-                { IsVisible 1 EffectValue 8 EffectName "Stock market loss" Effect "stockmarket_loss" }
-                { IsVisible 1 EffectValue 600 EffectName "Emergency bill" Effect "company_bill" }
+                {
+                    IsVisible 1
+                    EffectValue 8
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 600
+                    EffectName "Emergency bill"
+                    Effect "company_bill"
+                }
             ]
             Title "Turbulent markets"
             Description "International financial shocks make expansion riskier."
@@ -1162,8 +1562,18 @@ Event
         {
             ButtonText "Prepare for change"
             Effects[
-                { IsVisible 1 EffectValue 5 EffectName "Stock market gain" Effect "stockmarket_win" }
-                { IsVisible 1 EffectValue 3 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 3
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "A city at a crossroads"
             Description "Businesses weigh uncertainty and opportunity as sovereignty is about to change."
@@ -1182,8 +1592,18 @@ Event
         {
             ButtonText "Send a rover"
             Effects[
-                { IsVisible 1 EffectValue 5 EffectName "Simulation game popularity" Effect "popularity_change_gamesimulation" }
-                { IsVisible 1 EffectValue 2 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Simulation game popularity"
+                    Effect "popularity_change_gamesimulation"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 2
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "Small machine, giant world"
             Description "Robotics and simulation gain a burst of public attention."
@@ -1204,8 +1624,18 @@ Event
         {
             ButtonText "Choose peace"
             Effects[
-                { IsVisible 1 EffectValue 6 EffectName "Stock market gain" Effect "stockmarket_win" }
-                { IsVisible 1 EffectValue 5 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "A fragile peace"
             Description "The agreement creates hope for stability, investment, and reconciliation."
@@ -1224,8 +1654,18 @@ Event
         {
             ButtonText "Trade in euros"
             Effects[
-                { IsVisible 1 EffectValue 5 EffectName "Stock market gain" Effect "stockmarket_win" }
-                { IsVisible 1 EffectValue 4 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 4
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "One currency"
             Description "Cross-border business becomes simpler for a new economic bloc."
@@ -1244,8 +1684,18 @@ Event
         {
             ButtonText "Build in orbit"
             Effects[
-                { IsVisible 1 EffectValue 6 EffectName "Simulation game popularity" Effect "popularity_change_gamesimulation" }
-                { IsVisible 1 EffectValue 700 EffectName "Research bill" Effect "company_bill" }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Simulation game popularity"
+                    Effect "popularity_change_gamesimulation"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 700
+                    EffectName "Research bill"
+                    Effect "company_bill"
+                }
             ]
             Title "A permanent presence"
             Description "Long-term engineering projects inspire new simulations and expenses."
@@ -1266,8 +1716,18 @@ Event
         {
             ButtonText "Listen to concerns"
             Effects[
-                { IsVisible 1 EffectValue 5 EffectName "Stock market loss" Effect "stockmarket_loss" }
-                { IsVisible 1 EffectValue -2 EffectName "Business reputation" Effect "change_businessrep" }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 1
+                    EffectValue -2
+                    EffectName "Business reputation"
+                    Effect "change_businessrep"
+                }
             ]
             Title "A backlash against globalization"
             Description "Public protests expose deep disagreements about trade, labor, and corporate power."
@@ -1286,8 +1746,18 @@ Event
         {
             ButtonText "Support the relief effort"
             Effects[
-                { IsVisible 1 EffectValue 7 EffectName "Stock market loss" Effect "stockmarket_loss" }
-                { IsVisible 0 EffectValue 800 EffectName "Relief bill" Effect "company_bill" }
+                {
+                    IsVisible 1
+                    EffectValue 7
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 0
+                    EffectValue 800
+                    EffectName "Relief bill"
+                    Effect "company_bill"
+                }
             ]
             Title "A nation demands freedom"
             Description "Political transition brings hope, but violence creates an urgent humanitarian burden."
@@ -1306,8 +1776,18 @@ Event
         {
             ButtonText "Choose the red pill"
             Effects[
-                { IsVisible 1 EffectValue 7 EffectName "Simulation game popularity" Effect "popularity_change_gamesimulation" }
-                { IsVisible 1 EffectValue 5 EffectName "3D editor popularity" Effect "popularity_change_3deditor" }
+                {
+                    IsVisible 1
+                    EffectValue 7
+                    EffectName "Simulation game popularity"
+                    Effect "popularity_change_gamesimulation"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 5
+                    EffectName "3D editor popularity"
+                    Effect "popularity_change_3deditor"
+                }
             ]
             Title "Reality is negotiable"
             Description "Audiences become fascinated by virtual worlds and computer-generated reality."
@@ -1328,8 +1808,18 @@ Event
         {
             ButtonText "Invest online"
             Effects[
-                { IsVisible 1 EffectValue 8 EffectName "Stock market gain" Effect "stockmarket_win" }
-                { IsVisible 1 EffectValue 6 EffectName "Office software popularity" Effect "popularity_change_office" }
+                {
+                    IsVisible 1
+                    EffectValue 8
+                    EffectName "Stock market gain"
+                    Effect "stockmarket_win"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Office software popularity"
+                    Effect "popularity_change_office"
+                }
             ]
             Title "A digital gold rush"
             Description "Investors pour money into companies promising to transform commerce."
@@ -1348,8 +1838,18 @@ Event
         {
             ButtonText "Decode life"
             Effects[
-                { IsVisible 1 EffectValue 6 EffectName "Simulation game popularity" Effect "popularity_change_gamesimulation" }
-                { IsVisible 1 EffectValue 500 EffectName "Research investment" Effect "company_deals" }
+                {
+                    IsVisible 1
+                    EffectValue 6
+                    EffectName "Simulation game popularity"
+                    Effect "popularity_change_gamesimulation"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 500
+                    EffectName "Research investment"
+                    Effect "company_deals"
+                }
             ]
             Title "The code of life"
             Description "Data-intensive research points toward powerful new software tools."
@@ -1368,8 +1868,18 @@ Event
         {
             ButtonText "Survive the crash"
             Effects[
-                { IsVisible 1 EffectValue 12 EffectName "Stock market loss" Effect "stockmarket_loss" }
-                { IsVisible 1 EffectValue 1000 EffectName "Restructuring bill" Effect "company_bill" }
+                {
+                    IsVisible 1
+                    EffectValue 12
+                    EffectName "Stock market loss"
+                    Effect "stockmarket_loss"
+                }
+                {
+                    IsVisible 1
+                    EffectValue 1000
+                    EffectName "Restructuring bill"
+                    Effect "company_bill"
+                }
             ]
             Title "Reality returns"
             Description "The online economy survives, but speculation gives way to hard business questions."
