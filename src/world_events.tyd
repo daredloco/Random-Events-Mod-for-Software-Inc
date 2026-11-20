@@ -2656,6 +2656,23 @@ Event
     }
 Event
     {
+        Title "Software Inc was released"
+        Description "The worlds best software development game is finally here and the public goes absolutely mental over it."
+        Date "5.115"
+        Conditions[]
+        Options[
+        {
+            ButtonText "I love Software Inc"
+            Effects[]
+            Title "It's the best game ever"
+            Description "Software Inc is the absolute best game ever made."
+            Notification "Software Inc is released to public!"
+            NotificationSound Good
+        }]
+        Chance 50
+    }
+Event
+    {
         Title "The Paris climate agreement"
         Description "Nearly every country adopts the Paris Agreement to limit global warming and strengthen climate action."
         Date "11.115"
